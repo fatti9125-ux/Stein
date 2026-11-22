@@ -1,0 +1,212 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Patrick+Hand&family=Special+Elite&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;background:#BFE6F5;overflow:hidden}
+#stage{width:1920px;height:1080px}
+.hand{font-family:'Patrick Hand',cursive}.serif{font-family:'DM Serif Display',serif}.anton{font-family:Anton,sans-serif}.type{font-family:'Special Elite',monospace}
+</style></head><body><div id="stage"></div>
+<script>
+/* ===== palette ===== */
+const SKY='#BFE6F5',PAPER='#F6F1E4',INK='#1D1D1F',YEL='#F2C230',RED='#D0362C';
+let ASSETS={};
+/* ===== seeded random (per item, so geometry is stable) ===== */
+let seed=1;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};const J=a=>(rnd()-.5)*2*a;
+/* ===== easing ===== */
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const back=p=>{const c=1.9;p=clamp(p);return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)};
+const out3=p=>1-Math.pow(1-clamp(p),3);
+
+function defs(boil){return `<defs>
+${[0,1,2].map(i=>`<filter id="rough${i}" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="${i*7+3}"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>`).join('')}
+<filter id="paint"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="2" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/><feComponentTransfer in="g" result="g2"><feFuncA type="table" tableValues="0 0.22"/></feComponentTransfer><feComposite in="g2" in2="SourceGraphic" operator="in" result="tex"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge></filter>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="4" dy="7" stdDeviation="6" flood-color="#0b3a52" flood-opacity=".25"/></filter>
+<filter id="stone"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope=".85" intercept=".12"/><feFuncG type="linear" slope=".85" intercept=".12"/><feFuncB type="linear" slope=".85" intercept=".14"/></feComponentTransfer></filter>
+<filter id="archive"><feColorMatrix type="saturate" values="0.35"/><feComponentTransfer><feFuncR type="linear" slope="1.08" intercept="-0.03"/><feFuncG type="linear" slope="1.08" intercept="-0.03"/><feFuncB type="linear" slope="1.0" intercept="-0.03"/></feComponentTransfer></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="${boil*11+5}"/><feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.25  0 0 0 0 0.35  0 0 0 0.08 0"/></filter>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9cc6d8" stroke-width="1.3"/></pattern>
+</defs>`}
+
+/* ===== geometry helpers ===== */
+function torn(x,y,w,h,a=6,step=18){let p=[];for(let i=0;i<=w;i+=step)p.push([x+i,y+J(a)]);for(let i=0;i<=h;i+=step)p.push([x+w+J(a),y+i]);for(let i=w;i>=0;i-=step)p.push([x+i,y+h+J(a)]);for(let i=h;i>=0;i-=step)p.push([x+J(a),y+i]);return 'M'+p.map(q=>q.map(v=>v.toFixed(1)).join(',')).join('L')+'Z'}
+function blob(x,y,w,h,a=8){return `M${x+J(a)},${y+J(a)} C${x+w*.3},${y+J(a*2)} ${x+w*.7},${y+J(a*2)} ${x+w+J(a)},${y+J(a)} C${x+w+J(a*2)},${y+h*.3} ${x+w+J(a*2)},${y+h*.7} ${x+w+J(a)},${y+h+J(a)} C${x+w*.7},${y+h+J(a*2)} ${x+w*.3},${y+h+J(a*2)} ${x+J(a)},${y+h+J(a)} C${x+J(a*2)},${y+h*.7} ${x+J(a*2)},${y+h*.3} ${x+J(a)},${y+J(a)}Z`}
+function loopPath(cx,cy,rx,ry){let d='';for(let t=-.3;t<=Math.PI*2.15;t+=.22){const r=1+J(.05);d+=(d?'L':'M')+(cx+Math.cos(t)*rx*r).toFixed(1)+','+(cy+Math.sin(t)*ry*r).toFixed(1)}return d}
+
+/* ===== item renderers: each returns svg for time t; g = cached geometry ===== */
+const R={
+ img(it,t,p,boil){const [w0,h0]=ASSETS[it.a];const h=it.h,w=w0*h/h0;
+  const ax=it.center?h/2:h; // anchor bottom-centre (characters) or centre (props)
+  const breath=it.still?1:1+0.006*Math.sin(Math.floor(t*15/2)*0.9+it.x);
+  const s=it.noPop?1:back(p/0.28)*0.35+0.65*clamp(p/0.08);
+  const op=it.noPop?1:clamp(p/0.06);
+  const fl=it.flip?-1:1;
+  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot||0}) scale(${s*fl},${s*breath})" opacity="${op}"><image href="assets/${it.a}.png" x="${-w/2}" y="${-ax}" width="${w}" height="${h}" ${it.stone?'filter="url(#stone)"':''}/></g>`},
+ card(it,t,p,boil,g){if(!g.d){g.d=torn(it.x,it.y,it.w,it.h,6);g.b=blob(it.x-34,it.y-30,it.w+68,it.h+60,12)}
+  const s=it.noPop?1:back(p/0.3)*0.25+0.75, r=(it.rot||0)+(it.noPop?0:(1-out3(p/0.3))*4), op=it.noPop?1:clamp(p/0.06);
+  const cx=it.x+it.w/2,cy=it.y+it.h/2;
+  return `<g transform="translate(${cx},${cy}) rotate(${r}) scale(${s}) translate(${-cx},${-cy})" opacity="${op}">
+  ${it.yellow?`<g transform="rotate(${-(it.rot||0)*1.6-1.5} ${cx} ${cy})"><path d="${g.b}" fill="${YEL}" filter="url(#paint)"/></g>`:''}
+  <g filter="url(#shadow)"><path d="${g.d}" fill="${PAPER}"/></g>
+  <clipPath id="c${it.i}"><path d="${torn(it.x+16,it.y+16,it.w-32,it.h-32,0.01,400)}"/></clipPath>
+  ${it.grid?`<path d="${g.d}" fill="url(#grid)" opacity=".6"/>`:''}
+  ${it.bg?`<image href="assets/${it.bg}.png" x="${it.x+16}" y="${it.y+16}" width="${it.w-32}" height="${it.h-32}" preserveAspectRatio="xMidYMid slice" clip-path="url(#c${it.i})"/>`:''}</g>`},
+ archive(it,t,p,boil,g){const [w0,h0]=ASSETS[it.a];const w=it.w,h=w*h0/w0,x=it.x,y=it.y;
+  if(!g.d){g.d=torn(x-14,y-14,w+28,h+28,4,16);g.b=blob(x-40,y-36,w+80,h+72,12)}
+  const s=back(p/0.3)*0.25+0.75,r=(it.rot||0)+(1-out3(p/0.3))*4,op=clamp(p/0.06),cx=x+w/2,cy=y+h/2;
+  return `<g transform="translate(${cx},${cy}) rotate(${r}) scale(${s}) translate(${-cx},${-cy})" opacity="${op}">
+  <g transform="rotate(${-(it.rot||0)*1.5-2} ${cx} ${cy})"><path d="${g.b}" fill="${YEL}" filter="url(#paint)"/></g>
+  <g filter="url(#shadow)"><path d="${g.d}" fill="#FBF8F0"/></g>
+  <image href="assets/${it.a}.png" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" filter="url(#archive)"/></g>
+  <text x="${cx}" y="${y+h+76}" text-anchor="middle" class="type" font-size="20" fill="${INK}" opacity="${clamp((p-0.3)/0.2)*0.85}">${it.cap}</text>`},
+ text(it,t,p){const n=it.typeOn?Math.floor(clamp(p/(it.t.length*0.03))*it.t.length):it.t.length;
+  const op=it.typeOn?1:clamp(p/0.1);
+  return `<text x="${it.x}" y="${it.y}" text-anchor="${it.anchor||'middle'}" class="${it.cls||'hand'}" font-size="${it.size||40}" fill="${it.color||INK}" ${it.italic?'font-style="italic"':''} ${it.ls?`letter-spacing="${it.ls}"`:''} opacity="${op}">${it.t.slice(0,n)}</text>`},
+ hl(it,t,p,boil,g){if(!g.d)g.d=blob(0,0,it.w,it.h||30,3);const w=out3(p/0.35);
+  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot||-1})"><clipPath id="h${it.i}"><rect x="-10" y="-20" width="${(it.w+20)*w}" height="${(it.h||30)+40}"/></clipPath><path d="${g.d}" fill="${YEL}" opacity=".85" clip-path="url(#h${it.i})" filter="url(#rough${boil})"/></g>`},
+ loop(it,t,p,boil,g){if(!g.d)g.d=loopPath(it.cx,it.cy,it.rx,it.ry);const d=out3(p/0.45);
+  return `<path d="${g.d}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-d}" fill="none" stroke="${it.color||INK}" stroke-width="${it.sw||6}" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough${boil})"/>`},
+ arrow(it,t,p,boil,g){const {x1,y1,x2,y2}=it,b=it.bend??30;const mx=(x1+x2)/2-(y2-y1)*b/200,my=(y1+y2)/2+(x2-x1)*b/200;const a=Math.atan2(y2-my,x2-mx),L=24;
+  const d=out3(p/0.4),hd=clamp((p-0.3)/0.1),col=it.color||INK;
+  return `<g filter="url(#rough${boil})" stroke="${col}" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M${x1},${y1} Q${mx},${my} ${x2},${y2}" pathLength="1" stroke-dasharray="${it.dash?'0.012 0.03':'1'}" ${it.dash?`style="clip-path:inset(0 0 0 0)"`:''} stroke-dashoffset="${it.dash?0:1-d}" opacity="${it.dash?d:1}"/><path opacity="${hd}" d="M${x2-L*Math.cos(a-.45)},${y2-L*Math.sin(a-.45)} L${x2},${y2} L${x2-L*Math.cos(a+.45)},${y2-L*Math.sin(a+.45)}"/></g>`},
+ line(it,t,p,boil){const d=out3(p/0.35);return `<path d="${it.d}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-d}" fill="none" stroke="${it.color||INK}" stroke-width="${it.sw||5}" stroke-linecap="round" filter="url(#rough${boil})"/>`},
+ sticker(it,t,p,boil,g){const fs=it.size||36,w=it.t.length*fs*.5+40;if(!g.d)g.d=blob(-w/2,-fs*.85,w,fs*1.4,3);const s=back(p/0.25);
+  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot??-3}) scale(${s})" opacity="${clamp(p/0.05)}"><g filter="url(#shadow)"><path d="${g.d}" fill="${YEL}" filter="url(#paint)"/></g><text x="0" y="${fs*.22}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${it.t}</text></g>`},
+ stamp(it,t,p,boil){const fs=it.size||52,w=it.t.length*fs*.47+44;const s=p<0.12?1.7-0.7*(p/0.12):1;
+  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot??-8}) scale(${s})" opacity="${clamp(p/0.04)*0.93}" filter="url(#rough${boil})"><rect x="${-w/2}" y="${-fs*.9}" width="${w}" height="${fs*1.45}" fill="none" stroke="${RED}" stroke-width="7"/><text x="0" y="${fs*.27}" text-anchor="middle" class="anton" font-size="${fs}" fill="${RED}" letter-spacing="1">${it.t}</text></g>`},
+ bubble(it,t,p,boil,g){const {x,y,w,h}=it,fs=it.size||38;if(!g.d)g.d=blob(x,y,w,h,5);const s=back(p/0.25),cx=x+w/2,cy=y+h;
+  return `<g transform="translate(${it.tx},${it.ty}) scale(${s}) translate(${-it.tx},${-it.ty})" opacity="${clamp(p/0.05)}"><g filter="url(#rough${boil})"><path d="${g.d}" fill="#fff" stroke="${INK}" stroke-width="5"/><path d="M${x+w*.35},${y+h-3} L${it.tx},${it.ty} L${x+w*.5},${y+h-3}" fill="#fff" stroke="${INK}" stroke-width="5" stroke-linejoin="round"/><path d="M${x+w*.35+5},${y+h-6} L${x+w*.5-5},${y+h-6}" stroke="#fff" stroke-width="9"/></g><text x="${cx}" y="${y+h/2+fs*.35}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${it.t}</text></g>`},
+ xmark(it,t,p,boil){const d=out3(p/0.3),s=it.s||40;return `<g filter="url(#rough${boil})" stroke="${RED}" stroke-width="10" stroke-linecap="round"><path d="M${it.x-s},${it.y-s}L${it.x+s},${it.y+s}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-clamp(d*2)}"/><path d="M${it.x+s},${it.y-s}L${it.x-s},${it.y+s}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-clamp(d*2-1)}"/></g>`},
+};
+
+/* ===== storyboard (times are from the voiceover's word timings) ===== */
+const H=(a,b)=>({a,b});
+const SCENES=[
+{s:0,e:10.9,h:H("The Gorgons' cave",""),items:[
+ {k:'img',a:'perseus_sneak',x:330,y:1010,h:580,at:0.0},
+ {k:'img',a:'medusa_sleep',x:1080,y:960,h:240,at:0.3,still:1},
+ {k:'text',t:'Medusa',x:1080,y:680,size:48,at:1.62},
+ {k:'archive',a:'medusa_caravaggio',x:1480,y:170,w:340,cap:'Caravaggio, Medusa, 1597',at:2.85,out:6.1,rot:2},
+ {k:'stamp',t:'ONE LOOK = STONE',x:1640,y:640,at:4.84,out:6.1,size:46,rot:-5},
+ {k:'img',a:'stheno_sleep',x:800,y:560,h:170,at:6.79},
+ {k:'text',t:'Stheno',x:800,y:350,size:40,at:6.9},
+ {k:'img',a:'euryale_sleep',x:1480,y:560,h:170,at:7.0,flip:true},
+ {k:'text',t:'Euryale',x:1480,y:350,size:40,at:7.1},
+ {k:'stamp',t:'IMMORTAL',x:800,y:250,at:8.42,size:46,rot:-4},
+ {k:'stamp',t:'IMMORTAL',x:1480,y:250,at:8.6,size:46,rot:4},
+ {k:'sticker',t:'mortal',x:1250,y:670,at:9.3,size:36,rot:-3},
+]},
+{s:10.9,e:17.8,h:H("On the way in",""),items:[
+ {k:'img',a:'statue_warrior',x:330,y:1000,h:460,at:12.34},
+ {k:'img',a:'statue_seated',x:780,y:1000,h:350,at:12.77},
+ {k:'img',a:'statue_friend',x:1200,y:1000,h:470,at:13.2},
+ {k:'img',a:'cracks',x:330,y:740,h:260,center:1,at:14.07,still:1},
+ {k:'img',a:'cracks',x:790,y:830,h:220,center:1,at:14.2,still:1,flip:true},
+ {k:'img',a:'cracks',x:1200,y:740,h:260,center:1,at:14.35,still:1},
+ {k:'sticker',t:'turned to stone',x:770,y:300,at:13.47,size:46},
+ {k:'img',a:'horse',x:1640,y:1000,h:360,stone:1,at:15.4},
+ {k:'img',a:'cracks',x:1640,y:820,h:200,center:1,at:16.1,still:1},
+ {k:'sticker',t:'even the animals',x:1640,y:520,at:15.6,rot:3,size:40},
+]},
+{s:17.8,e:23.3,h:H("The Gorgons' cave",""),items:[
+ {k:'img',a:'perseus_strike',x:430,y:1010,h:600,at:17.83},
+ {k:'img',a:'swing',x:250,y:430,h:200,center:1,at:19.11,still:1,out:20.2},
+ {k:'img',a:'medusa_sleep',x:1150,y:1000,h:260,at:17.83,still:1},
+ {k:'archive',a:'pelike_met',x:1490,y:150,w:330,cap:'Athenian vase, c. 450 BC',at:19.47,rot:2},
+ {k:'sticker',t:'eyes on the shield',x:520,y:300,at:20.17,size:40},
+ {k:'loop',cx:905,cy:860,rx:115,ry:90,at:21.37,color:RED,sw:7},
+ {k:'stamp',t:"DON'T LOOK",x:1000,y:620,at:22.29,size:56,rot:-6},
+]},
+{s:23.3,e:25.05,h:H("",""),items:[
+ {k:'sticker',t:'rewind',x:960,y:380,at:23.36,size:44,rot:-4},
+ {k:'text',t:"And the reason he's here?",x:960,y:590,size:120,cls:'serif',italic:1,at:23.36,typeOn:1},
+ {k:'hl',x:1330,y:615,w:330,h:36,at:24.15},
+]},
+{s:25.05,e:33.2,h:H("The island of Seriphos",""),items:[
+ {k:'img',a:'polydectes_throne',x:1560,y:1010,h:600,at:25.09},
+ {k:'text',t:'King Polydectes',x:1560,y:370,size:44,at:25.21},
+ {k:'img',a:'gift',x:960,y:1000,h:180,at:26.66},
+ {k:'sticker',t:'wedding gift',x:960,y:770,at:27.14,rot:3},
+ {k:'img',a:'perseus_boast',x:330,y:1010,h:600,at:27.94},
+ {k:'bubble',t:"I'll bring you Medusa's head!",x:400,y:170,w:600,h:115,tx:390,ty:410,at:28.87,out:30.7,size:40},
+ {k:'stamp',t:'KING #2',x:1120,y:330,at:31.09,size:60,rot:-6},
+ {k:'text',t:'tried to get him killed',x:1120,y:440,size:40,at:31.82,typeOn:1},
+]},
+{s:33.2,e:38.8,h:H("Argos",""),items:[
+ {k:'img',a:'acr_serious',x:330,y:1010,h:620,at:33.27,out:37.41},
+ {k:'img',a:'acr_shove',x:350,y:1010,h:620,at:37.41,noPop:1},
+ {k:'stamp',t:'KING #1',x:330,y:280,at:33.82,size:60,rot:-6},
+ {k:'sticker',t:'his grandfather',x:800,y:420,at:34.11,out:37.41},
+ {k:'img',a:'infant',x:1200,y:820,h:190,center:1,at:36.35,out:37.41},
+ {k:'text',t:'baby Perseus',x:1200,y:680,size:42,at:36.35,out:37.41},
+ {k:'arrow',x1:620,y1:640,x2:1080,y2:800,bend:-25,at:37.45},
+ {k:'img',a:'chest_tilt',x:1250,y:960,h:280,at:37.41},
+ {k:'img',a:'wave',x:1640,y:1010,h:400,at:37.98},
+]},
+{s:38.8,e:42.45,h:H("Argos",""),items:[
+ {k:'img',a:'acr_serious',x:330,y:1010,h:620,at:38.8,noPop:1},
+ {k:'card',x:640,y:330,w:560,h:330,rot:-2,at:38.99},
+ {k:'text',t:'Acrisius',x:920,y:500,size:120,cls:'serif',at:39.81,typeOn:1},
+ {k:'hl',x:740,y:555,w:360,h:38,at:40.76},
+ {k:'text',t:'King of Argos',x:920,y:600,size:52,at:40.76},
+ {k:'archive',a:'cast_out_met',x:1300,y:190,w:540,cap:'Danaë and Perseus cast out to sea, engraving, 1543',at:41.0,rot:2},
+]},
+{s:42.45,e:59.9,h:H("The oracle","Argos"),items:[
+ {k:'img',a:'acr_serious',x:330,y:1010,h:620,at:42.45,noPop:1,out:53.67},
+ {k:'img',a:'acr_horror',x:370,y:1010,h:620,at:53.67,noPop:1},
+ {k:'img',a:'oracle',x:1610,y:1010,h:540,at:43.03},
+ {k:'text',t:'the oracle',x:1610,y:430,size:42,at:43.2},
+ {k:'card',x:860,y:230,w:480,h:340,rot:1.5,yellow:true,bg:'sanct',at:42.84,out:45.2},
+ {k:'bubble',t:'I want a son.',x:400,y:200,w:380,h:110,tx:380,ty:420,at:43.8,out:45.2,size:42},
+ {k:'sticker',t:'the prophecy',x:1000,y:220,at:45.6,size:44,rot:-2},
+ {k:'img',a:'danae_worried',x:860,y:1000,h:380,at:48.47},
+ {k:'text',t:'his daughter Danaë',x:860,y:580,size:40,at:48.6,out:57.97},
+ {k:'arrow',x1:960,y1:820,x2:1180,y2:870,bend:-20,at:50.32},
+ {k:'img',a:'infant',x:1270,y:900,h:130,center:1,at:50.68},
+ {k:'text',t:'a boy',x:1270,y:790,size:40,at:50.68,out:55.27},
+ {k:'arrow',x1:1300,y1:760,x2:620,y2:440,bend:45,color:RED,at:52.84},
+ {k:'stamp',t:'WILL KILL HIM',x:1000,y:330,at:53.67,size:54,rot:-5},
+ {k:'xmark',x:1270,y:900,s:55,at:55.27},
+ {k:'sticker',t:'not born yet',x:1270,y:790,at:55.46,rot:4,size:38},
+ {k:'sticker',t:'not even pregnant',x:860,y:575,at:57.97,rot:-2,size:38},
+]},
+{s:59.9,e:74.2,h:H("The bronze chamber","under the palace"),items:[
+ {k:'text',t:'the sensible response:',x:960,y:260,size:84,cls:'serif',italic:1,at:59.91,typeOn:1,out:63.2},
+ {k:'hl',x:900,y:280,w:290,h:32,at:61.83,out:63.2},
+ {k:'img',a:'acr_door',x:330,y:1010,h:620,at:59.91,out:70.43},
+ {k:'img',a:'acr_hurry',x:330,y:1010,h:620,at:70.43,noPop:1},
+ {k:'img',a:'bricks',x:1000,y:960,h:200,at:63.32,out:65.4},
+ {k:'card',x:700,y:200,w:700,h:450,rot:-1.5,yellow:true,bg:'chamber',at:63.78},
+ {k:'text',t:'underground, bronze',x:1050,y:710,size:44,at:64.54,out:67.7},
+ {k:'img',a:'danae_worried',x:1050,y:610,h:330,at:65.3},
+ {k:'img',a:'impact',x:1050,y:450,h:340,center:1,at:66.5,still:1,out:67.3},
+ {k:'img',a:'door',x:1050,y:625,h:370,at:66.6,still:1},
+ {k:'archive',a:'tower_brass',x:1560,y:170,w:250,cap:'Burne-Jones, Danaë, 1888',at:64.0,rot:2},
+ {k:'sticker',t:'his death',x:330,y:300,at:69.73,rot:-4},
+ {k:'arrow',x1:470,y1:320,x2:740,y2:420,bend:-20,at:71.29},
+ {k:'sticker',t:'her problem',x:1050,y:715,at:71.64,rot:3},
+ {k:'card',x:650,y:820,w:1190,h:190,rot:-1,at:72.11},
+ {k:'text',t:"someone else's",x:710,y:950,size:64,cls:'serif',italic:1,anchor:'start',at:72.11},
+ {k:'hl',x:1190,y:940,w:610,h:46,at:72.4},
+ {k:'text',t:'HOUSING PROBLEM',x:1210,y:955,size:80,cls:'anton',anchor:'start',at:72.4},
+]},
+];
+const SFX=[['stamp',4.84],['stamp',8.42],['stamp',8.6],['crack',14.07],['crack',16.1],['swish',19.11],['stamp',22.29],['rewind',23.3],['stamp',31.09],['stamp',33.82],['whoosh',37.35],['splash',37.98],['stamp',53.67],['clang',66.6]];
+window.SFX=SFX;
+let I=0;SCENES.forEach(sc=>sc.items.forEach(it=>{it.i=I++;it.g={}}));
+const GEOSEED=it=>{seed=it.i*977+13};
+
+function renderAt(t){
+ const frame=Math.round(t*15),boil=Math.floor(frame/3)%3;
+ const sc=SCENES.find(s=>t>=s.s&&t<s.e)||SCENES[SCENES.length-1];
+ let body='';
+ for(const it of sc.items){
+  if(t<it.at)continue; if(it.out!==undefined&&t>=it.out)continue;
+  const p=t-it.at; GEOSEED(it); body+=R[it.k](it,t,p,boil,it.g);
+ }
+ const hd=sc.h.a?`<text x="960" y="62" text-anchor="middle" class="hand" font-size="44" fill="${INK}">${sc.h.a}</text>${sc.h.b?`<text x="960" y="104" text-anchor="middle" class="hand" font-size="34" fill="${INK}" opacity=".8">${sc.h.b}</text>`:''}`:'';
+ document.getElementById('stage').innerHTML=`<svg width="1920" height="1080" viewBox="0 0 1920 1080">${defs(boil)}<rect width="1920" height="1080" fill="${SKY}"/><rect width="1920" height="1080" filter="url(#grain)"/>${body}${hd}</svg>`;
+}
+window.renderAt=renderAt;
+window.ready=(async()=>{ASSETS=await (await fetch('assets.json')).json();await document.fonts.ready;
+ await Promise.all(Object.keys(ASSETS).map(k=>new Promise(r=>{const im=new Image();im.onload=r;im.onerror=r;im.src=`assets/${k}.png`})));return true})();
+</script></body></html>

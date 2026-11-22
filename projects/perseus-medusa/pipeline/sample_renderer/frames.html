@@ -1,0 +1,156 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Patrick+Hand&family=Special+Elite&display=block" rel="stylesheet">
+<style>
+:root{--sky:#BFE6F5;--paper:#F6F1E4;--ink:#1D1D1F;--yellow:#F2C230;--red:#D0362C;--grey:#8C8C8C}
+body{margin:0;background:#666;display:flex;flex-direction:column;gap:20px;padding:20px}
+.frame{width:1280px;height:720px;position:relative;overflow:hidden;background:var(--sky)}
+svg{position:absolute;inset:0}
+.hand{font-family:'Patrick Hand',cursive}
+.serif{font-family:'DM Serif Display',serif}
+.anton{font-family:Anton,sans-serif}
+.type{font-family:'Special Elite',monospace}
+</style></head><body>
+<div class="frame" id="f1"></div>
+<div class="frame" id="f2"></div>
+<div class="frame" id="f3"></div>
+<script>
+// seeded random so the frames are reproducible
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+const J=a=>(rnd()-.5)*2*a;
+
+const DEFS=`<defs>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter>
+<filter id="rough2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter>
+<filter id="paint"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="2" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/><feComponentTransfer in="g" result="g2"><feFuncA type="table" tableValues="0 0.22"/></feComponentTransfer><feComposite in="g2" in2="SourceGraphic" operator="in" result="tex"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge></filter>
+<filter id="shadow"><feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#0b3a52" flood-opacity=".28"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="5"/><feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.25  0 0 0 0 0.35  0 0 0 0.09 0"/></filter>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#9cc6d8" stroke-width="1"/></pattern>
+<pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="9" stroke="#D0362C" stroke-width="4"/></pattern>
+<pattern id="hatchK" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="9" stroke="#1D1D1F" stroke-width="3"/></pattern>
+</defs>`;
+
+// torn-paper polygon
+function torn(x,y,w,h,a=4,step=14){let p=[];
+ for(let i=0;i<=w;i+=step)p.push([x+i,y+J(a)]);
+ for(let i=0;i<=h;i+=step)p.push([x+w+J(a),y+i]);
+ for(let i=w;i>=0;i-=step)p.push([x+i,y+h+J(a)]);
+ for(let i=h;i>=0;i-=step)p.push([x+J(a),y+i]);
+ return 'M'+p.map(q=>q.map(v=>v.toFixed(1)).join(',')).join('L')+'Z'}
+// wobbly hand-drawn rect (paint block)
+function blob(x,y,w,h,a=6){return `M${x+J(a)},${y+J(a)} C${x+w*.3},${y+J(a*2)} ${x+w*.7},${y+J(a*2)} ${x+w+J(a)},${y+J(a)} C${x+w+J(a*2)},${y+h*.3} ${x+w+J(a*2)},${y+h*.7} ${x+w+J(a)},${y+h+J(a)} C${x+w*.7},${y+h+J(a*2)} ${x+w*.3},${y+h+J(a*2)} ${x+J(a)},${y+h+J(a)} C${x+J(a*2)},${y+h*.7} ${x+J(a*2)},${y+h*.3} ${x+J(a)},${y+J(a)}Z`}
+// highlighter swipe
+const hl=(x,y,w,h=22)=>`<path d="${blob(x,y,w,h,3)}" fill="#F2C230" opacity=".85" style="mix-blend-mode:multiply" filter="url(#rough)"/>`;
+// felt-pen loop around a point
+function loop(cx,cy,rx,ry){let d='';for(let t=0;t<=Math.PI*2.25;t+=.25){const r=1+J(.06);d+=(d?'L':'M')+(cx+Math.cos(t)*rx*r).toFixed(1)+','+(cy+Math.sin(t)*ry*r).toFixed(1)}return `<path d="${d}" fill="none" stroke="#1D1D1F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)"/>`}
+// ink arrow with curve
+function arrow(x1,y1,x2,y2,bend=40,col='#1D1D1F',dash=''){const mx=(x1+x2)/2-(y2-y1)*bend/200,my=(y1+y2)/2+(x2-x1)*bend/200;const a=Math.atan2(y2-my,x2-mx),L=16;
+ return `<g filter="url(#rough)" stroke="${col}" stroke-width="4" fill="none" stroke-linecap="round"><path d="M${x1},${y1} Q${mx},${my} ${x2},${y2}" ${dash?`stroke-dasharray="${dash}"`:''}/><path d="M${x2-L*Math.cos(a-.45)},${y2-L*Math.sin(a-.45)} L${x2},${y2} L${x2-L*Math.cos(a+.45)},${y2-L*Math.sin(a+.45)}"/></g>`}
+// header like the cartoon refs: place / date, top centre
+const header=(a,b)=>`<text x="640" y="40" text-anchor="middle" class="hand" font-size="26" fill="#1D1D1F">${a}</text><text x="640" y="68" text-anchor="middle" class="hand" font-size="22" fill="#1D1D1F">${b}</text>`;
+const grain=`<rect width="1280" height="720" filter="url(#grain)"/>`;
+// yellow sticker label (retro/vox hybrid)
+const sticker=(x,y,t,rot=-3,fs=24)=>{const w=t.length*fs*.5+24;return `<g transform="rotate(${rot} ${x} ${y})" filter="url(#shadow)"><path d="${blob(x-w/2,y-fs*.85,w,fs*1.35,2)}" fill="#F2C230" filter="url(#paint)"/><text x="${x}" y="${y+fs*.2}" text-anchor="middle" class="hand" font-size="${fs}" fill="#1D1D1F">${t}</text></g>`};
+// red rubber stamp
+const stamp=(x,y,t,rot=-8,fs=34)=>{const w=t.length*fs*.48+30;return `<g transform="rotate(${rot} ${x} ${y})" filter="url(#rough2)" opacity=".92"><rect x="${x-w/2}" y="${y-fs*.9}" width="${w}" height="${fs*1.45}" fill="none" stroke="#D0362C" stroke-width="5"/><text x="${x}" y="${y+fs*.25}" text-anchor="middle" class="anton" font-size="${fs}" fill="#D0362C" letter-spacing="1">${t}</text></g>`};
+
+// cartoon scientist: simple flat figure, thin ink outline (the cartoon-ref look)
+function scientist(x,y,s=1,flip=false,point=true){
+ const arm=point?`<path d="M262,300 C320,282 370,262 420,248" stroke="#1D1D1F" stroke-width="46" stroke-linecap="round" fill="none"/><path d="M262,300 C320,282 370,262 420,248" stroke="#F7F7F2" stroke-width="38" stroke-linecap="round" fill="none"/>
+ <g transform="translate(432,244) rotate(-15)"><ellipse cx="0" cy="0" rx="17" ry="14" fill="#fff" stroke="#1D1D1F" stroke-width="3.5"/><path d="M10,-6 L44,-10 C50,-10 50,-1 44,-1 L12,2" fill="#fff" stroke="#1D1D1F" stroke-width="3.5" stroke-linejoin="round"/></g>`
+ :`<path d="M262,300 C290,350 296,390 292,430" stroke="#1D1D1F" stroke-width="46" stroke-linecap="round" fill="none"/><path d="M262,300 C290,350 296,390 292,430" stroke="#F7F7F2" stroke-width="38" stroke-linecap="round" fill="none"/>`;
+ return `<g transform="translate(${x},${y}) scale(${flip?-s:s},${s})" filter="url(#rough)">
+ <path d="M30,470 C30,320 80,262 170,252 C260,262 310,320 310,470 Z" fill="#F7F7F2" stroke="#1D1D1F" stroke-width="4"/>
+ <path d="M138,256 L170,330 L202,256 Z" fill="#fff" stroke="#1D1D1F" stroke-width="3.5"/>
+ <path d="M164,272 L176,272 L182,322 L170,336 L158,322 Z" fill="#2B2B2E"/>
+ <path d="M138,256 L120,330 L170,420 M202,256 L220,330 L170,420" fill="none" stroke="#1D1D1F" stroke-width="3.5"/>
+ <rect x="226" y="350" width="44" height="8" rx="2" fill="#1D1D1F"/>
+ <path d="M150,226 L150,258 L190,258 L190,226Z" fill="#fff" stroke="#1D1D1F" stroke-width="3.5"/>
+ <ellipse cx="96" cy="166" rx="12" ry="18" fill="#fff" stroke="#1D1D1F" stroke-width="3.5"/>
+ <ellipse cx="170" cy="150" rx="74" ry="86" fill="#fff" stroke="#1D1D1F" stroke-width="4"/>
+ <path d="M98,112 C100,84 120,70 132,74 M242,112 C240,84 222,70 210,74" fill="none" stroke="#A9A9A9" stroke-width="12" stroke-linecap="round"/>
+ <circle cx="150" cy="150" r="20" fill="none" stroke="#1D1D1F" stroke-width="4"/><circle cx="204" cy="150" r="20" fill="none" stroke="#1D1D1F" stroke-width="4"/><path d="M170,150 L184,150" stroke="#1D1D1F" stroke-width="4"/>
+ <circle cx="154" cy="152" r="4.5" fill="#1D1D1F"/><circle cx="208" cy="152" r="4.5" fill="#1D1D1F"/>
+ <path d="M132,118 L164,124 M190,124 L222,116" stroke="#1D1D1F" stroke-width="5" stroke-linecap="round"/>
+ <path d="M168,196 C178,200 192,200 200,194" fill="none" stroke="#1D1D1F" stroke-width="4" stroke-linecap="round"/>
+ ${arm}</g>`}
+
+// hand-drawn petri dish (engraving-ish, B&W)
+function dish(cx,cy,r){let dots='';for(let i=0;i<70;i++){const a=rnd()*6.283,d=r*(.48+rnd()*.42);dots+=`<circle cx="${(cx+Math.cos(a)*d).toFixed(1)}" cy="${(cy+Math.sin(a)*d*.62).toFixed(1)}" r="${(3+rnd()*4).toFixed(1)}" fill="#6b6b6b" stroke="#1D1D1F" stroke-width="1.5"/>`}
+ let mould='';for(let i=0;i<14;i++){const a=i/14*6.283;mould+=`<path d="M${cx},${cy} L${(cx+Math.cos(a-.17)*r*.3).toFixed(1)},${(cy+Math.sin(a-.17)*r*.19).toFixed(1)} L${(cx+Math.cos(a)*r*.36).toFixed(1)},${(cy+Math.sin(a)*r*.23).toFixed(1)} L${(cx+Math.cos(a+.17)*r*.3).toFixed(1)},${(cy+Math.sin(a+.17)*r*.19).toFixed(1)}Z" fill="#2B2B2E"/>`}
+ return `<g filter="url(#rough)"><ellipse cx="${cx}" cy="${cy+10}" rx="${r}" ry="${r*.62}" fill="#cfcfcf" stroke="#1D1D1F" stroke-width="4"/><ellipse cx="${cx}" cy="${cy}" rx="${r}" ry="${r*.62}" fill="#ececE6" stroke="#1D1D1F" stroke-width="4"/>
+ <ellipse cx="${cx}" cy="${cy}" rx="${r*.92}" ry="${r*.56}" fill="none" stroke="#1D1D1F" stroke-width="2" opacity=".5"/>${dots}
+ <ellipse cx="${cx}" cy="${cy}" rx="${r*.46}" ry="${r*.29}" fill="#f7f7f2" stroke="#1D1D1F" stroke-width="2" stroke-dasharray="4 7"/>${mould}<circle cx="${cx}" cy="${cy}" r="${r*.07}" fill="#111"/></g>`}
+
+function bubble(x,y,w,h,t,tx,ty,fs=26){return `<g filter="url(#rough)"><path d="${blob(x,y,w,h,4)}" fill="#fff" stroke="#1D1D1F" stroke-width="3.5"/><path d="M${x+w*.3},${y+h-2} L${tx},${ty} L${x+w*.45},${y+h-2}" fill="#fff" stroke="#1D1D1F" stroke-width="3.5" stroke-linejoin="round"/><path d="M${x+w*.3+3},${y+h-4} L${x+w*.45-3},${y+h-4}" stroke="#fff" stroke-width="6"/></g><text x="${x+w/2}" y="${y+h/2+fs*.35}" text-anchor="middle" class="hand" font-size="${fs}" fill="#1D1D1F">${t}</text>`}
+
+/* ---------- FRAME 1: subject / hook ---------- */
+seed=11;
+document.getElementById('f1').innerHTML=`<svg viewBox="0 0 1280 720">${DEFS}${grain}
+${header("St Mary's Hospital, London","September 1928")}
+${scientist(40,250,1,false,true)}
+<g transform="rotate(-2 860 360)"><path d="${blob(560,130,600,420,10)}" fill="#F2C230" filter="url(#paint)"/></g>
+<g filter="url(#shadow)" transform="rotate(1.5 850 330)"><path d="${torn(600,160,500,330,5)}" fill="#F6F1E4"/></g>
+${dish(850,330,200)}
+${loop(850,330,92,62)}
+${arrow(1080,190,895,318,-50)}
+<text x="1092" y="180" class="hand" font-size="30" fill="#1D1D1F">mould</text>
+${arrow(560,250,690,300,-30)}
+<text x="455" y="235" class="hand" font-size="30" fill="#1D1D1F">bacteria</text>
+<text x="1110" y="420" class="hand" font-size="26" fill="#1D1D1F" text-anchor="middle">clear ring =</text>
+<text x="1110" y="450" class="hand" font-size="26" fill="#1D1D1F" text-anchor="middle">nothing grows</text>
+${arrow(1040,435,945,372,30)}
+<g filter="url(#shadow)" transform="rotate(-2 830 640)"><path d="${torn(560,590,560,92,4,12)}" fill="#F6F1E4"/></g>
+${hl(998,644,170,30)}
+<text x="590" y="660" class="serif" font-style="italic" font-size="44" fill="#1D1D1F">He noticed something <tspan font-style="normal" class="anton" font-family="Anton" fill="#1D1D1F" font-size="48" letter-spacing="1">STRANGE</tspan></text>
+</svg>`;
+
+/* ---------- FRAME 2: data / counter + chart ---------- */
+seed=23;
+const bx=660,base=600,chartTop=230,H=base-chartTop, maxv=6800;
+const bars=[['1943',21,'21'],['1944',1663,'1,663'],['1945',6800,'6,800']];
+let barsSvg='';bars.forEach(([yr,v,lab],i)=>{const x=bx+i*150,h=Math.max(6,v/maxv*H),last=i==2;
+ barsSvg+=`<g filter="url(#rough)"><path d="${blob(x,base-h,92,h,3)}" fill="url(#${last?'hatch':'hatchK'})" stroke="#1D1D1F" stroke-width="4"/></g>
+ <text x="${x+46}" y="${base-h-14}" text-anchor="middle" class="hand" font-size="28" fill="${last?'#D0362C':'#1D1D1F'}">${lab}</text>
+ ${last?hl(x+8,base+16,78,26):''}<text x="${x+46}" y="${base+38}" text-anchor="middle" class="hand" font-size="28" fill="#1D1D1F">${yr}</text>`});
+document.getElementById('f2').innerHTML=`<svg viewBox="0 0 1280 720">${DEFS}${grain}
+${header("Penicillin made in the U.S.","1943 → 1945")}
+${scientist(-10,300,.9,false,true)}
+<g filter="url(#shadow)" transform="rotate(-1 860 400)"><path d="${torn(560,110,620,560,5)}" fill="#F6F1E4"/><rect x="580" y="130" width="580" height="520" fill="url(#grid)" opacity=".55"/></g>
+<text x="600" y="168" class="type" font-size="18" fill="#1D1D1F" letter-spacing="2">BILLIONS OF UNITS PER YEAR</text>
+<g filter="url(#rough)"><path d="M620,${base} L1150,${base+2}" stroke="#1D1D1F" stroke-width="4"/><path d="M630,${base+4} L628,190" stroke="#1D1D1F" stroke-width="4"/></g>
+${barsSvg}
+${stamp(780,300,'OVER 300×',-9,40)}
+${arrow(850,330,1080,base-H-10,-30,'#D0362C')}
+<g transform="rotate(3 330 140)" filter="url(#shadow)"><path d="${torn(150,90,370,120,4,12)}" fill="#F6F1E4"/></g>
+<text x="170" y="122" class="type" font-size="16" fill="#1D1D1F" letter-spacing="2">BY 1945, EACH YEAR</text>
+<text x="168" y="190" class="anton" font-size="64" fill="#D0362C">6.8 TRILLION</text>
+${hl(380,200,120,18)}<text x="440" y="214" text-anchor="middle" class="hand" font-size="22" fill="#1D1D1F">units</text>
+<text x="1160" y="690" text-anchor="end" class="type" font-size="13" fill="#1D1D1F" opacity=".7">Source: American Chemical Society, National Historic Chemical Landmarks</text>
+</svg>`;
+
+/* ---------- FRAME 3: map / route ---------- */
+seed=37;
+function land(cx,cy,rx,ry,a=.18){let d='';const n=26;for(let i=0;i<=n;i++){const t=i/n*6.283,r=1+J(a);d+=(d?'L':'M')+(cx+Math.cos(t)*rx*r).toFixed(1)+','+(cy+Math.sin(t)*ry*r).toFixed(1)}return d+'Z'}
+const xm=(x,y)=>`<g filter="url(#rough)" stroke="#D0362C" stroke-width="6" stroke-linecap="round"><path d="M${x-11},${y-11}L${x+11},${y+11}M${x+11},${y-11}L${x-11},${y+11}"/></g>`;
+document.getElementById('f3').innerHTML=`<svg viewBox="0 0 1280 720">${DEFS}${grain}
+${header("From one dish to the front line","1928 – 1944")}
+<g filter="url(#shadow)" transform="rotate(1 600 400)"><path d="${torn(60,110,850,520,5)}" fill="#F6F1E4"/></g>
+<g filter="url(#rough2)"><path d="${land(290,330,170,150,.06)}" fill="#E4DCC6" stroke="#1D1D1F" stroke-width="4"/><path d="${land(730,330,85,165,.07)}" fill="#E4DCC6" stroke="#1D1D1F" stroke-width="4"/></g>
+<g stroke="#1D1D1F" stroke-width="2" opacity=".35" fill="none" filter="url(#rough)"><path d="M520,250 q20,-10 40,0 t40,0"/><path d="M560,470 q20,-10 40,0 t40,0"/><path d="M500,560 q20,-10 40,0 t40,0"/></g>
+<text x="510" y="400" text-anchor="middle" class="type" font-size="20" fill="#1D1D1F" letter-spacing="6" opacity=".55">ATLANTIC</text>
+<text x="290" y="420" text-anchor="middle" class="hand" font-size="30" fill="#1D1D1F">U.S.</text>
+<text x="730" y="530" text-anchor="middle" class="hand" font-size="30" fill="#1D1D1F">BRITAIN</text>
+${xm(745,410)}${xm(715,365)}${xm(300,300)}
+${sticker(800,455,'London 1928',-3,24)}
+${sticker(720,240,'Oxford 1940',2,24)}
+${sticker(300,250,'Peoria 1941',-2,24)}
+${arrow(742,398,720,378,-60,'#1D1D1F')}
+${arrow(700,362,320,300,30,'#1D1D1F','2 12')}
+${stamp(470,560,'D-DAY 1944',-6,34)}
+<text x="470" y="608" text-anchor="middle" class="hand" font-size="26" fill="#1D1D1F">2.3 million doses ready</text>
+${hl(380,618,180,20)}
+${scientist(1275,330,.82,true,false)}
+${bubble(950,170,300,92,'Make it by the ton!',1120,370,28)}
+</svg>`;
+</script></body></html>

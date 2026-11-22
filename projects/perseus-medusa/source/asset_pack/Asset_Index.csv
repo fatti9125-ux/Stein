@@ -1,0 +1,269 @@
+﻿Asset ID,Description,File,Width,Height,Background
+B01-01,Argos Palace Courtyard,04_Backgrounds/01_Argos_to_Open_Sea/01_Argos_Palace_Courtyard.png,960,540,Opaque
+B01-02,Oracle Sanctuary,04_Backgrounds/01_Argos_to_Open_Sea/02_Oracle_Sanctuary.png,960,540,Opaque
+B01-03,Underground Bronze Chamber,04_Backgrounds/01_Argos_to_Open_Sea/03_Underground_Bronze_Chamber.png,960,540,Opaque
+B01-04,Open Sea,04_Backgrounds/01_Argos_to_Open_Sea/04_Open_Sea.png,960,540,Opaque
+B02-01,Seriphos Landing Beach,04_Backgrounds/02_Seriphos_and_the_Quest/01_Seriphos_Landing_Beach.png,960,540,Opaque
+B02-02,Wedding Gift Gathering Hall,04_Backgrounds/02_Seriphos_and_the_Quest/02_Wedding_Gift_Gathering_Hall.png,960,540,Opaque
+B02-03,Gray Sisters Rocky Shore,04_Backgrounds/02_Seriphos_and_the_Quest/03_Gray_Sisters_Rocky_Shore.png,960,540,Opaque
+B02-04,Nymphs Spring Grove,04_Backgrounds/02_Seriphos_and_the_Quest/04_Nymphs_Spring_Grove.png,960,540,Opaque
+B03-01,Gorgon Cave,04_Backgrounds/03_Gorgons_Andromeda_and_Refuge/01_Gorgon_Cave.png,960,540,Opaque
+B03-02,Andromeda Coastal Rock Shelf,04_Backgrounds/03_Gorgons_Andromeda_and_Refuge/02_Andromeda_Coastal_Rock_Shelf.png,960,540,Opaque
+B03-03,Flooded Port Settlement,04_Backgrounds/03_Gorgons_Andromeda_and_Refuge/03_Flooded_Port_Settlement.png,960,540,Opaque
+B03-04,Altar Refuge Courtyard,04_Backgrounds/03_Gorgons_Andromeda_and_Refuge/04_Altar_Refuge_Courtyard.png,960,540,Opaque
+B04-01,Polydectes Palace Throne Room,04_Backgrounds/04_Palace_Funeral_Games_and_Tiryns/01_Polydectes_Palace_Throne_Room.png,960,540,Opaque
+B04-02,Larissa Funeral Games Ground,04_Backgrounds/04_Palace_Funeral_Games_and_Tiryns/02_Larissa_Funeral_Games_Ground.png,960,540,Opaque
+B04-03,Gravesite Outside the City,04_Backgrounds/04_Palace_Funeral_Games_and_Tiryns/03_Gravesite_Outside_the_City.png,960,540,Opaque
+B04-04,Tiryns Citadel,04_Backgrounds/04_Palace_Funeral_Games_and_Tiryns/04_Tiryns_Citadel.png,960,540,Opaque
+E01-01,wood chest closed 3/4,02_Props/Palace_Travel_and_Ritual/01_wood_chest_closed_3_4.png,313,251,Transparent
+E01-02,same wood chest open with empty interior,02_Props/Palace_Travel_and_Ritual/02_same_wood_chest_open_with_empty_interior.png,308,335,Transparent
+E01-03,same wood chest tilted for rough sea,02_Props/Palace_Travel_and_Ritual/03_same_wood_chest_tilted_for_rough_sea.png,322,260,Transparent
+E01-04,bronze barred chamber door isolated,02_Props/Palace_Travel_and_Ritual/04_bronze_barred_chamber_door_isolated.png,257,336,Transparent
+E01-05,gathered pile of construction bricks and bronze rivets,02_Props/Palace_Travel_and_Ritual/05_gathered_pile_of_construction_bricks_and_bronze_rivets.png,345,254,Transparent
+E01-06,cluster of golden rain drops,02_Props/Palace_Travel_and_Ritual/06_cluster_of_golden_rain_drops.png,214,291,Transparent
+E01-07,single gold shower ray with sparkles in narrow vertical shape,02_Props/Palace_Travel_and_Ritual/07_single_gold_shower_ray_with_sparkles_in_narrow_vertical_shape.png,202,336,Transparent
+E01-08,golden king's diadem,02_Props/Palace_Travel_and_Ritual/08_golden_kings_diadem.png,345,214,Transparent
+E01-09,low rectangular stone altar,02_Props/Palace_Travel_and_Ritual/09_low_rectangular_stone_altar.png,338,224,Transparent
+E01-10,fishing net draped as standalone,02_Props/Palace_Travel_and_Ritual/10_fishing_net_draped_as_standalone.png,343,328,Transparent
+E01-11,parchment scroll with abstract lines and seal,02_Props/Palace_Travel_and_Ritual/11_parchment_scroll_with_abstract_lines_and_seal.png,299,323,Transparent
+E01-12,Greek horse reins and bridle,02_Props/Palace_Travel_and_Ritual/12_Greek_horse_reins_and_bridle.png,348,322,Transparent
+E02-01,winged sandals pair,02_Props/Quest_Equipment/01_winged_sandals_pair.png,337,274,Transparent
+E02-02,single left winged sandal,02_Props/Quest_Equipment/02_single_left_winged_sandal.png,306,270,Transparent
+E02-03,dark invisible helm cap,02_Props/Quest_Equipment/03_dark_invisible_helm_cap.png,287,264,Transparent
+E02-04,cinched leather kibisis bag,02_Props/Quest_Equipment/04_cinched_leather_kibisis_bag.png,256,305,Transparent
+E02-05,wide open leather bag seen 3/4,02_Props/Quest_Equipment/05_wide_open_leather_bag_seen_3_4.png,302,283,Transparent
+E02-06,curved bronze harpe sword,02_Props/Quest_Equipment/06_curved_bronze_harpe_sword.png,320,313,Transparent
+E02-07,bronze shield face plain reflective,02_Props/Quest_Equipment/07_bronze_shield_face_plain_reflective.png,320,321,Transparent
+E02-08,same bronze shield shown angled from rear with grip,02_Props/Quest_Equipment/08_same_bronze_shield_shown_angled_from_rear_with_grip.png,274,323,Transparent
+E02-09,bronze shield with green-haired Gorgon face at its center,02_Props/Quest_Equipment/09_bronze_shield_with_green_haired_Gorgon_face_at_its_center.png,335,345,Transparent
+E02-10,gray sister shared eye standalone white eyeball,02_Props/Quest_Equipment/10_gray_sister_shared_eye_standalone_white_eyeball.png,294,221,Transparent
+E02-11,gray sister shared tooth one ivory molar,02_Props/Quest_Equipment/11_gray_sister_shared_tooth_one_ivory_molar.png,231,273,Transparent
+E02-12,bronze herald staff,02_Props/Quest_Equipment/12_bronze_herald_staff.png,286,346,Transparent
+E03-01,large slab coastal rock where Andromeda is chained,02_Props/Coast_Cave_and_Flood/01_large_slab_coastal_rock_where_Andromeda_is_chained.png,347,265,Transparent
+E03-02,dangling chains with cuffs,02_Props/Coast_Cave_and_Flood/02_dangling_chains_with_cuffs.png,273,304,Transparent
+E03-03,same chains broken into separated links as one object,02_Props/Coast_Cave_and_Flood/03_same_chains_broken_into_separated_links_as_one_object.png,305,219,Transparent
+E03-04,small foreground sea foam breaker,02_Props/Coast_Cave_and_Flood/04_small_foreground_sea_foam_breaker.png,345,145,Transparent
+E03-05,large crest wave curling,02_Props/Coast_Cave_and_Flood/05_large_crest_wave_curling.png,348,271,Transparent
+E03-06,wispy flat flood current blue,02_Props/Coast_Cave_and_Flood/06_wispy_flat_flood_current_blue.png,346,145,Transparent
+E03-07,stone formation cave mouth dark interior,02_Props/Coast_Cave_and_Flood/07_stone_formation_cave_mouth_dark_interior.png,351,273,Transparent
+E03-08,stalagmite cluster,02_Props/Coast_Cave_and_Flood/08_stalagmite_cluster.png,297,287,Transparent
+E03-09,rough foreground cave boulder cluster,02_Props/Coast_Cave_and_Flood/09_rough_foreground_cave_boulder_cluster.png,344,212,Transparent
+E03-10,torches on short iron posts,02_Props/Coast_Cave_and_Flood/10_torches_on_short_iron_posts.png,266,309,Transparent
+E03-11,reaching olive branch,02_Props/Coast_Cave_and_Flood/11_reaching_olive_branch.png,329,260,Transparent
+E03-12,ancient limestone column,02_Props/Coast_Cave_and_Flood/12_ancient_limestone_column.png,198,318,Transparent
+E04-01,bronze discus front view,02_Props/Games_Voyage_and_Burial/01_bronze_discus_front_view.png,275,281,Transparent
+E04-02,bronze discus angled mid-flight,02_Props/Games_Voyage_and_Burial/02_bronze_discus_angled_mid_flight.png,342,154,Transparent
+E04-03,bronze discus side profile,02_Props/Games_Voyage_and_Burial/03_bronze_discus_side_profile.png,308,71,Transparent
+E04-04,leather athlete belt,02_Props/Games_Voyage_and_Burial/04_leather_athlete_belt.png,312,231,Transparent
+E04-05,laurel victor wreath,02_Props/Games_Voyage_and_Burial/05_laurel_victor_wreath.png,304,310,Transparent
+E04-06,footprint in dust,02_Props/Games_Voyage_and_Burial/06_footprint_in_dust.png,280,303,Transparent
+E04-07,stone burial marker with no letters,02_Props/Games_Voyage_and_Burial/07_stone_burial_marker_with_no_letters.png,269,318,Transparent
+E04-08,burial dirt mound,02_Props/Games_Voyage_and_Burial/08_burial_dirt_mound.png,344,151,Transparent
+E04-09,Greek funerary urn,02_Props/Games_Voyage_and_Burial/09_Greek_funerary_urn.png,262,324,Transparent
+E04-10,small two-oared fishing skiff,02_Props/Games_Voyage_and_Burial/10_small_two_oared_fishing_skiff.png,349,196,Transparent
+E04-11,separate oar,02_Props/Games_Voyage_and_Burial/11_separate_oar.png,302,303,Transparent
+E04-12,painted ceremonial Greek amphora,02_Props/Games_Voyage_and_Burial/12_painted_ceremonial_Greek_amphora.png,258,326,Transparent
+E05-01,wispy gold spark flecks,03_Effects/Splashes_Impact_and_Petrification/01_wispy_gold_spark_flecks.png,263,243,Transparent
+E05-02,pale gold flash burst,03_Effects/Splashes_Impact_and_Petrification/02_pale_gold_flash_burst.png,308,308,Transparent
+E05-03,warm orange dust puff,03_Effects/Splashes_Impact_and_Petrification/03_warm_orange_dust_puff.png,305,249,Transparent
+E05-04,gray petrification crack marks,03_Effects/Splashes_Impact_and_Petrification/04_gray_petrification_crack_marks.png,306,282,Transparent
+E05-05,separate gray pebble fragments flying,03_Effects/Splashes_Impact_and_Petrification/05_separate_gray_pebble_fragments_flying.png,298,219,Transparent
+E05-06,chalky wing beat motion lines,03_Effects/Splashes_Impact_and_Petrification/06_chalky_wing_beat_motion_lines.png,282,220,Transparent
+E05-07,blue-gray speed arc,03_Effects/Splashes_Impact_and_Petrification/07_blue_gray_speed_arc.png,338,171,Transparent
+E05-08,short slate sword swing crescent,03_Effects/Splashes_Impact_and_Petrification/08_short_slate_sword_swing_crescent.png,314,202,Transparent
+E05-09,concentric gray impact lines,03_Effects/Splashes_Impact_and_Petrification/09_concentric_gray_impact_lines.png,269,270,Transparent
+E05-10,separate white splash plume black outlines,03_Effects/Splashes_Impact_and_Petrification/10_separate_white_splash_plume_black_outlines.png,305,277,Transparent
+E05-11,blue and white sea foam droplets,03_Effects/Splashes_Impact_and_Petrification/11_blue_and_white_sea_foam_droplets.png,319,268,Transparent
+E05-12,swirling blue flood motion spiral,03_Effects/Splashes_Impact_and_Petrification/12_swirling_blue_flood_motion_spiral.png,309,301,Transparent
+E06-01,single hardback prophecy tablet no text,02_Props/Small_Objects/01_single_hardback_prophecy_tablet_no_text.png,244,289,Transparent
+E06-02,separate gold-amber gift saddle with blanket,02_Props/Small_Objects/02_separate_gold_amber_gift_saddle_with_blanket.png,338,274,Transparent
+E06-03,small tied bundle wedding gift,02_Props/Small_Objects/03_small_tied_bundle_wedding_gift.png,292,209,Transparent
+E06-04,bronze oracle tripod,02_Props/Small_Objects/04_bronze_oracle_tripod.png,311,272,Transparent
+E06-05,squat stylized oil lamp,02_Props/Small_Objects/05_squat_stylized_oil_lamp.png,313,222,Transparent
+E06-06,bronze horizontal door latch,02_Props/Small_Objects/06_bronze_horizontal_door_latch.png,337,161,Transparent
+E06-07,detailed gold lightning bolt,02_Props/Small_Objects/07_detailed_gold_lightning_bolt.png,281,337,Transparent
+E06-08,Poseidon's dark bronze trident,02_Props/Small_Objects/08_Poseidons_dark_bronze_trident.png,267,346,Transparent
+E06-09,Chrysaor's golden curved blade,02_Props/Small_Objects/09_Chrysaors_golden_curved_blade.png,326,278,Transparent
+E06-10,laid-out linen swaddle cloth,02_Props/Small_Objects/10_laid_out_linen_swaddle_cloth.png,365,221,Transparent
+E06-11,fish hook on short line,02_Props/Small_Objects/11_fish_hook_on_short_line.png,140,322,Transparent
+E06-12,crown and short scepter arranged as one object,02_Props/Small_Objects/12_crown_and_short_scepter_arranged_as_one_object.png,311,255,Transparent
+E07-01,detached red drapery,02_Props/Palace_and_Games_Set_Dressing/01_detached_red_drapery.png,329,318,Transparent
+E07-02,round bronze floor brazier,02_Props/Palace_and_Games_Set_Dressing/02_round_bronze_floor_brazier.png,297,323,Transparent
+E07-03,stone throne with plain dark red cushion,02_Props/Palace_and_Games_Set_Dressing/03_stone_throne_with_plain_dark_red_cushion.png,287,333,Transparent
+E07-04,long wooden banquet table with ceramic plates,02_Props/Palace_and_Games_Set_Dressing/04_long_wooden_banquet_table_with_ceramic_plates.png,373,227,Transparent
+E07-05,single brown stool,02_Props/Palace_and_Games_Set_Dressing/05_single_brown_stool.png,267,273,Transparent
+E07-06,short bronze scepter with a loop,02_Props/Palace_and_Games_Set_Dressing/06_short_bronze_scepter_with_a_loop.png,115,313,Transparent
+E07-07,abandoned wedding wreath on ground,02_Props/Palace_and_Games_Set_Dressing/07_abandoned_wedding_wreath_on_ground.png,336,232,Transparent
+E07-08,Argos rough stone lintel doorway,02_Props/Palace_and_Games_Set_Dressing/08_Argos_rough_stone_lintel_doorway.png,318,327,Transparent
+E07-09,wooden pier bollard with rope,02_Props/Palace_and_Games_Set_Dressing/09_wooden_pier_bollard_with_rope.png,278,271,Transparent
+E07-10,pennant on a standalone pole,02_Props/Palace_and_Games_Set_Dressing/10_pennant_on_a_standalone_pole.png,307,337,Transparent
+E07-11,Greek starting line rope between short stakes,02_Props/Palace_and_Games_Set_Dressing/11_Greek_starting_line_rope_between_short_stakes.png,340,166,Transparent
+E07-12,cluster of small Greek stone seating blocks,02_Props/Palace_and_Games_Set_Dressing/12_cluster_of_small_Greek_stone_seating_blocks.png,356,178,Transparent
+P01-01,standing alert 3/4 view,01_Characters/Perseus/Full_Body_Poses/01_standing_alert_3_4_view.png,191,343,Transparent
+P01-02,boasting with one hand on chest,01_Characters/Perseus/Full_Body_Poses/02_boasting_with_one_hand_on_chest.png,169,344,Transparent
+P01-03,accepting a quest with clenched determined fist,01_Characters/Perseus/Full_Body_Poses/03_accepting_a_quest_with_clenched_determined_fist.png,210,338,Transparent
+P01-04,walking with sword sheathed,01_Characters/Perseus/Full_Body_Poses/04_walking_with_sword_sheathed.png,215,332,Transparent
+P01-05,flying diagonally in winged sandals,01_Characters/Perseus/Full_Body_Poses/05_flying_diagonally_in_winged_sandals.png,342,309,Transparent
+P01-06,crouching and looking away while raising bronze shield,01_Characters/Perseus/Full_Body_Poses/06_crouching_and_looking_away_while_raising_bronze_shield.png,277,286,Transparent
+P01-07,swinging curved blade behind him looking into shield,01_Characters/Perseus/Full_Body_Poses/07_swinging_curved_blade_behind_him_looking_into_shield.png,323,321,Transparent
+P01-08,kneeling and opening small leather bag at ground,01_Characters/Perseus/Full_Body_Poses/08_kneeling_and_opening_small_leather_bag_at_ground.png,258,270,Transparent
+P01-09,standing with folded arms and face turned aside,01_Characters/Perseus/Full_Body_Poses/09_standing_with_folded_arms_and_face_turned_aside.png,170,348,Transparent
+P01-10,pulling Andromeda's chain free,01_Characters/Perseus/Full_Body_Poses/10_pulling_Andromedas_chain_free.png,391,272,Transparent
+P01-11,pentathlon discus wind-up,01_Characters/Perseus/Full_Body_Poses/11_pentathlon_discus_wind_up.png,304,298,Transparent
+P01-12,follow-through after the discus throw,01_Characters/Perseus/Full_Body_Poses/12_follow_through_after_the_discus_throw.png,395,313,Transparent
+P02-01,Neutral and standing naturally holding a travel bag,01_Characters/Perseus/Full_Body_Expressions/01_Neutral_and_standing_naturally_holding_a_travel_bag.png,174,350,Transparent
+P02-02,Delighted with big grin and open arms,01_Characters/Perseus/Full_Body_Expressions/02_Delighted_with_big_grin_and_open_arms.png,324,350,Transparent
+P02-03,Cocky half-smile with hands planted on waist,01_Characters/Perseus/Full_Body_Expressions/03_Cocky_half_smile_with_hands_planted_on_waist.png,188,352,Transparent
+P02-04,Shock with wide eyes stumbling a step back,01_Characters/Perseus/Full_Body_Expressions/04_Shock_with_wide_eyes_stumbling_a_step_back.png,264,342,Transparent
+P02-05,Determined striding forward with narrow eyes and fist clenched,01_Characters/Perseus/Full_Body_Expressions/05_Determined_striding_forward_with_narrow_eyes_and_fist_clenched.png,258,332,Transparent
+P02-06,"Worried while walking cautiously, glancing over shoulder",01_Characters/Perseus/Full_Body_Expressions/06_Worried_while_walking_cautiously_glancing_over_shoulder.png,199,341,Transparent
+P02-07,Tense sneaking on tiptoe while looking away,01_Characters/Perseus/Full_Body_Expressions/07_Tense_sneaking_on_tiptoe_while_looking_away.png,188,314,Transparent
+P02-08,Exertion pulling on a chain with both hands,01_Characters/Perseus/Full_Body_Expressions/08_Exertion_pulling_on_a_chain_with_both_hands.png,358,329,Transparent
+P02-09,Relieved with relaxed shoulders and grin,01_Characters/Perseus/Full_Body_Expressions/09_Relieved_with_relaxed_shoulders_and_grin.png,243,355,Transparent
+P02-10,Grieving on both knees with head lowered,01_Characters/Perseus/Full_Body_Expressions/10_Grieving_on_both_knees_with_head_lowered.png,228,254,Transparent
+P02-11,Regret standing with chin tucked and open hands,01_Characters/Perseus/Full_Body_Expressions/11_Regret_standing_with_chin_tucked_and_open_hands.png,237,350,Transparent
+P02-12,Quiet resolve standing straight with shield down at side,01_Characters/Perseus/Full_Body_Expressions/12_Quiet_resolve_standing_straight_with_shield_down_at_side.png,197,354,Transparent
+P03-01,Danaë calm standing at ease with hands loosely clasped,01_Characters/Danae_and_Young_Perseus/01_Danae_calm_standing_at_ease_with_hands_loosely_clasped.png,138,355,Transparent
+P03-02,"Danaë frightened recoil, leaning away with open palms",01_Characters/Danae_and_Young_Perseus/02_Danae_frightened_recoil_leaning_away_with_open_palms.png,222,343,Transparent
+P03-03,"Danaë protective determined standing in front of her child, arms out",01_Characters/Danae_and_Young_Perseus/03_Danae_protective_determined_standing_in_front_of_her_child_arms_out.png,315,356,Transparent
+P03-04,Danaë relieved standing with hand on heart,01_Characters/Danae_and_Young_Perseus/04_Danae_relieved_standing_with_hand_on_heart.png,145,357,Transparent
+P03-05,Danaë standing worried full-body,01_Characters/Danae_and_Young_Perseus/05_Danae_standing_worried_full_body.png,142,360,Transparent
+P03-06,Danaë cradling wrapped newborn full-body,01_Characters/Danae_and_Young_Perseus/06_Danae_cradling_wrapped_newborn_full_body.png,174,361,Transparent
+P03-07,Danaë seated cuddling infant full-body,01_Characters/Danae_and_Young_Perseus/07_Danae_seated_cuddling_infant_full_body.png,314,310,Transparent
+P03-08,old Danaë kneeling in prayer full-body,01_Characters/Danae_and_Young_Perseus/08_old_Danae_kneeling_in_prayer_full_body.png,230,328,Transparent
+P03-09,alone swaddled infant Perseus,01_Characters/Danae_and_Young_Perseus/09_alone_swaddled_infant_Perseus.png,190,158,Transparent
+P03-10,alone toddler Perseus smiling,01_Characters/Danae_and_Young_Perseus/10_alone_toddler_Perseus_smiling.png,212,278,Transparent
+P03-11,alone child Perseus running,01_Characters/Danae_and_Young_Perseus/11_alone_child_Perseus_running.png,241,279,Transparent
+P03-12,alone child Perseus holding fishing line,01_Characters/Danae_and_Young_Perseus/12_alone_child_Perseus_holding_fishing_line.png,194,302,Transparent
+P04-01,"Acrisius serious listening to oracle, standing straight arms clasped behind back",01_Characters/Acrisius_and_Polydectes/01_Acrisius_serious_listening_to_oracle_standing_straight_arms_clasped_behind_back.png,147,351,Transparent
+P04-02,Acrisius horrified taking a large step backward with one hand up,01_Characters/Acrisius_and_Polydectes/02_Acrisius_horrified_taking_a_large_step_backward_with_one_hand_up.png,293,343,Transparent
+P04-03,Acrisius ordering a door shut full-body,01_Characters/Acrisius_and_Polydectes/03_Acrisius_ordering_a_door_shut_full_body.png,293,343,Transparent
+P04-04,Acrisius shoving as if throwing chest out full-body,01_Characters/Acrisius_and_Polydectes/04_Acrisius_shoving_as_if_throwing_chest_out_full_body.png,267,346,Transparent
+P04-05,Acrisius hurrying away looking back full-body,01_Characters/Acrisius_and_Polydectes/05_Acrisius_hurrying_away_looking_back_full_body.png,276,341,Transparent
+P04-06,Acrisius collapsed holding hurt foot full-body,01_Characters/Acrisius_and_Polydectes/06_Acrisius_collapsed_holding_hurt_foot_full_body.png,314,282,Transparent
+P04-07,Polydectes smirking while standing and folding arms,01_Characters/Acrisius_and_Polydectes/07_Polydectes_smirking_while_standing_and_folding_arms.png,160,356,Transparent
+P04-08,Polydectes enraged lunging a step forward with both fists clenched,01_Characters/Acrisius_and_Polydectes/08_Polydectes_enraged_lunging_a_step_forward_with_both_fists_clenched.png,294,327,Transparent
+P04-09,Polydectes seated on simple throne,01_Characters/Acrisius_and_Polydectes/09_Polydectes_seated_on_simple_throne.png,270,331,Transparent
+P04-10,Polydectes extending an open palm and making a demand full-body,01_Characters/Acrisius_and_Polydectes/10_Polydectes_extending_an_open_palm_and_making_a_demand_full_body.png,289,356,Transparent
+P04-11,Polydectes recoiling in shock full-body,01_Characters/Acrisius_and_Polydectes/11_Polydectes_recoiling_in_shock_full_body.png,243,354,Transparent
+P04-12,Polydectes completely gray stone statue preserving the same recoil pose,01_Characters/Acrisius_and_Polydectes/12_Polydectes_completely_gray_stone_statue_preserving_the_same_recoil_pose.png,240,354,Transparent
+P05-01,Athena standing with round shield,01_Characters/Athena_Hermes_Zeus_Poseidon/01_Athena_standing_with_round_shield.png,196,361,Transparent
+P05-02,Athena crouching holding a guiding hand out,01_Characters/Athena_Hermes_Zeus_Poseidon/02_Athena_crouching_holding_a_guiding_hand_out.png,312,302,Transparent
+P05-03,Athena raising her round shield with Gorgon emblem,01_Characters/Athena_Hermes_Zeus_Poseidon/03_Athena_raising_her_round_shield_with_Gorgon_emblem.png,287,359,Transparent
+P05-04,Hermes standing with herald staff,01_Characters/Athena_Hermes_Zeus_Poseidon/04_Hermes_standing_with_herald_staff.png,240,355,Transparent
+P05-05,Hermes holding curved blade out horizontally,01_Characters/Athena_Hermes_Zeus_Poseidon/05_Hermes_holding_curved_blade_out_horizontally.png,341,324,Transparent
+P05-06,Hermes walking and pointing onward,01_Characters/Athena_Hermes_Zeus_Poseidon/06_Hermes_walking_and_pointing_onward.png,246,332,Transparent
+P05-07,Zeus standing tall holding tiny lightning bolt,01_Characters/Athena_Hermes_Zeus_Poseidon/07_Zeus_standing_tall_holding_tiny_lightning_bolt.png,232,347,Transparent
+P05-08,Zeus extending open hand and summoning gold rain while standing,01_Characters/Athena_Hermes_Zeus_Poseidon/08_Zeus_extending_open_hand_and_summoning_gold_rain_while_standing.png,339,344,Transparent
+P05-09,Poseidon standing upright with a trident,01_Characters/Athena_Hermes_Zeus_Poseidon/09_Poseidon_standing_upright_with_a_trident.png,212,354,Transparent
+P05-10,Poseidon thrusting trident with an angry face,01_Characters/Athena_Hermes_Zeus_Poseidon/10_Poseidon_thrusting_trident_with_an_angry_face.png,386,311,Transparent
+P05-11,Athena standing stern with shield lowered to side,01_Characters/Athena_Hermes_Zeus_Poseidon/11_Athena_standing_stern_with_shield_lowered_to_side.png,195,365,Transparent
+P05-12,Hermes standing at ease with sly smile and leaning on his staff,01_Characters/Athena_Hermes_Zeus_Poseidon/12_Hermes_standing_at_ease_with_sly_smile_and_leaning_on_his_staff.png,242,352,Transparent
+P06-01,"Medusa calm standing, both hands at sides, snake hair settled",01_Characters/Medusa_Stheno_Euryale/01_Medusa_calm_standing_both_hands_at_sides_snake_hair_settled.png,205,354,Transparent
+P06-02,"Medusa glaring with clenched hands and snakes lifted, standing",01_Characters/Medusa_Stheno_Euryale/02_Medusa_glaring_with_clenched_hands_and_snakes_lifted_standing.png,252,352,Transparent
+P06-03,"Medusa startled eyes wide, knees bent and both arms raised, standing",01_Characters/Medusa_Stheno_Euryale/03_Medusa_startled_eyes_wide_knees_bent_and_both_arms_raised_standing.png,271,355,Transparent
+P06-04,"FULLY VISIBLE STANDALONE OBJECT in this one cell only: Medusa’s detached head as a story prop, snakes for green hair, eyes closed, no blood or gore",02_Props/Gorgon_Story_Props/04_FULLY_VISIBLE_STANDALONE_OBJECT_in_this_one_cell_only_Medusas_detached_head_as_a_story_prop_snakes_for_green_hair_eyes_closed_no_blood_or_gore.png,314,278,Transparent
+P06-05,Medusa lying asleep full body,01_Characters/Medusa_Stheno_Euryale/05_Medusa_lying_asleep_full_body.png,363,157,Transparent
+P06-06,Medusa upright 3/4 view full body,01_Characters/Medusa_Stheno_Euryale/06_Medusa_upright_3_4_view_full_body.png,181,359,Transparent
+P06-07,Stheno lying asleep full body,01_Characters/Medusa_Stheno_Euryale/07_Stheno_lying_asleep_full_body.png,372,155,Transparent
+P06-08,Stheno sprinting furious arms out,01_Characters/Medusa_Stheno_Euryale/08_Stheno_sprinting_furious_arms_out.png,342,323,Transparent
+P06-09,"Stheno furious standing with snake hair raised, arms and legs in charging stance",01_Characters/Medusa_Stheno_Euryale/09_Stheno_furious_standing_with_snake_hair_raised_arms_and_legs_in_charging_stance.png,261,359,Transparent
+P06-10,Euryale lying asleep full body,01_Characters/Medusa_Stheno_Euryale/10_Euryale_lying_asleep_full_body.png,372,153,Transparent
+P06-11,Euryale sprinting furious arms out,01_Characters/Medusa_Stheno_Euryale/11_Euryale_sprinting_furious_arms_out.png,336,320,Transparent
+P06-12,Euryale shocked with a wide stance and recoiling hands,01_Characters/Medusa_Stheno_Euryale/12_Euryale_shocked_with_a_wide_stance_and_recoiling_hands.png,273,357,Transparent
+P07-01,Deino old hooded sister reaching palm out,01_Characters/Gray_Sisters_and_Nymphs/01_Deino_old_hooded_sister_reaching_palm_out.png,322,333,Transparent
+P07-02,Enyo old sister hand raised with a single eye resting in it,01_Characters/Gray_Sisters_and_Nymphs/02_Enyo_old_sister_hand_raised_with_a_single_eye_resting_in_it.png,255,350,Transparent
+P07-03,Pemphredo old round sister yelling and bending forward,01_Characters/Gray_Sisters_and_Nymphs/03_Pemphredo_old_round_sister_yelling_and_bending_forward.png,291,316,Transparent
+P07-04,"Deino suspicious with bent knees and chin lowered, standing",01_Characters/Gray_Sisters_and_Nymphs/04_Deino_suspicious_with_bent_knees_and_chin_lowered_standing.png,249,319,Transparent
+P07-05,"Enyo frustrated with hands lifted and shoulders hunched, standing",01_Characters/Gray_Sisters_and_Nymphs/05_Enyo_frustrated_with_hands_lifted_and_shoulders_hunched_standing.png,271,356,Transparent
+P07-06,"Pemphredo surprised, stepping back with open hands",01_Characters/Gray_Sisters_and_Nymphs/06_Pemphredo_surprised_stepping_back_with_open_hands.png,291,343,Transparent
+P07-07,short-haired teal nymph presents winged sandals,01_Characters/Gray_Sisters_and_Nymphs/07_short_haired_teal_nymph_presents_winged_sandals.png,298,354,Transparent
+P07-08,dark-skinned blue-robed nymph presents dark invisibility cap,01_Characters/Gray_Sisters_and_Nymphs/08_dark_skinned_blue_robed_nymph_presents_dark_invisibility_cap.png,268,351,Transparent
+P07-09,long-haired light-blue nymph presents leather bag,01_Characters/Gray_Sisters_and_Nymphs/09_long_haired_light_blue_nymph_presents_leather_bag.png,268,352,Transparent
+P07-10,Teal nymph smiles standing and clasping hands together,01_Characters/Gray_Sisters_and_Nymphs/10_Teal_nymph_smiles_standing_and_clasping_hands_together.png,149,357,Transparent
+P07-11,"Blue-robed nymph looks curious, standing and leaning forward",01_Characters/Gray_Sisters_and_Nymphs/11_Blue_robed_nymph_looks_curious_standing_and_leaning_forward.png,201,344,Transparent
+P07-12,light-blue nymph points in full-body pose,01_Characters/Gray_Sisters_and_Nymphs/12_light_blue_nymph_points_in_full_body_pose.png,312,352,Transparent
+P08-01,Andromeda neutral standing with arms loose,01_Characters/Andromeda_and_Dictys/01_Andromeda_neutral_standing_with_arms_loose.png,140,342,Transparent
+P08-02,Andromeda frightened stepping backward in panic,01_Characters/Andromeda_and_Dictys/02_Andromeda_frightened_stepping_backward_in_panic.png,210,332,Transparent
+P08-03,"Andromeda relieved, shoulders dropping and smiling as she stands",01_Characters/Andromeda_and_Dictys/03_Andromeda_relieved_shoulders_dropping_and_smiling_as_she_stands.png,145,343,Transparent
+P08-04,"Andromeda speaking while standing, one palm open",01_Characters/Andromeda_and_Dictys/04_Andromeda_speaking_while_standing_one_palm_open.png,197,344,Transparent
+P08-05,"Andromeda full-body leaning back restrained arms to sides with cuffs only, invisible rock",01_Characters/Andromeda_and_Dictys/05_Andromeda_full_body_leaning_back_restrained_arms_to_sides_with_cuffs_only_invisible_rock.png,227,347,Transparent
+P08-06,Andromeda standing and extending hands,01_Characters/Andromeda_and_Dictys/06_Andromeda_standing_and_extending_hands.png,199,345,Transparent
+P08-07,Andromeda walking forward,01_Characters/Andromeda_and_Dictys/07_Andromeda_walking_forward.png,185,345,Transparent
+P08-08,Dictys standing with fishing pole,01_Characters/Andromeda_and_Dictys/08_Dictys_standing_with_fishing_pole.png,210,353,Transparent
+P08-09,Dictys crouching reaching down to pull chest ashore,01_Characters/Andromeda_and_Dictys/09_Dictys_crouching_reaching_down_to_pull_chest_ashore.png,337,281,Transparent
+P08-10,Dictys full body kneeling in prayer,01_Characters/Andromeda_and_Dictys/10_Dictys_full_body_kneeling_in_prayer.png,184,314,Transparent
+P08-11,Dictys crowned and standing with scepter,01_Characters/Andromeda_and_Dictys/11_Dictys_crowned_and_standing_with_scepter.png,225,356,Transparent
+P08-12,"Dictys worried while standing, rubbing one hand over the other",01_Characters/Andromeda_and_Dictys/12_Dictys_worried_while_standing_rubbing_one_hand_over_the_other.png,159,338,Transparent
+P09-01,Argos oracle veiled priestess seated delivering prophecy,01_Characters/Oracles_and_Royal_Cast/01_Argos_oracle_veiled_priestess_seated_delivering_prophecy.png,283,345,Transparent
+P09-02,seaside oracle elderly priest standing with small staff and warning,01_Characters/Oracles_and_Royal_Cast/02_seaside_oracle_elderly_priest_standing_with_small_staff_and_warning.png,240,342,Transparent
+P09-03,"Cassiopeia queen with black braided hair, gold diadem and crimson peplos boasting",01_Characters/Oracles_and_Royal_Cast/03_Cassiopeia_queen_with_black_braided_hair_gold_diadem_and_crimson_peplos_boasting.png,255,354,Transparent
+P09-04,Cepheus bronze crown blue ochre robe hands raised in despair,01_Characters/Oracles_and_Royal_Cast/04_Cepheus_bronze_crown_blue_ochre_robe_hands_raised_in_despair.png,287,357,Transparent
+P09-05,Cepheus full-body pulling a chain,01_Characters/Oracles_and_Royal_Cast/05_Cepheus_full_body_pulling_a_chain.png,330,308,Transparent
+P09-06,Phineus dark braided hair beard maroon cape scowling,01_Characters/Oracles_and_Royal_Cast/06_Phineus_dark_braided_hair_beard_maroon_cape_scowling.png,164,344,Transparent
+P09-07,Phineus brown skin lunging with sword maroon cape,01_Characters/Oracles_and_Royal_Cast/07_Phineus_brown_skin_lunging_with_sword_maroon_cape.png,374,294,Transparent
+P09-08,same Phineus exactly frozen as gray stone statue,01_Characters/Oracles_and_Royal_Cast/08_same_Phineus_exactly_frozen_as_gray_stone_statue.png,372,294,Transparent
+P09-09,"Hippodamia with dark curls and cream peplos, neutral, standing and holding the edge of her dress",01_Characters/Oracles_and_Royal_Cast/09_Hippodamia_with_dark_curls_and_cream_peplos_neutral_standing_and_holding_the_edge_of_her_dress.png,171,356,Transparent
+P09-10,king of Larissa gray hair olive robe greeting athletes,01_Characters/Oracles_and_Royal_Cast/10_king_of_Larissa_gray_hair_olive_robe_greeting_athletes.png,274,359,Transparent
+P09-11,Megapenthes young short-bearded noble in brick red holding a parchment,01_Characters/Oracles_and_Royal_Cast/11_Megapenthes_young_short_bearded_noble_in_brick_red_holding_a_parchment.png,185,354,Transparent
+P09-12,mature Diomedes-like palace guard with spear,01_Characters/Oracles_and_Royal_Cast/12_mature_Diomedes_like_palace_guard_with_spear.png,231,364,Transparent
+P10-01,Pegasus wings folded standing,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/01_Pegasus_wings_folded_standing.png,313,280,Transparent
+P10-02,Pegasus leaping with wings spread,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/02_Pegasus_leaping_with_wings_spread.png,337,329,Transparent
+P10-03,Pegasus flying in profile,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/03_Pegasus_flying_in_profile.png,362,234,Transparent
+P10-04,Pegasus standing in three-quarter front angle with proud raised head and all hooves visible,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/04_Pegasus_standing_in_three_quarter_front_angle_with_proud_raised_head_and_all_hooves_visible.png,254,316,Transparent
+P10-05,Chrysaor adult dark-haired Greek warrior rising holding golden blade,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/05_Chrysaor_adult_dark_haired_Greek_warrior_rising_holding_golden_blade.png,302,357,Transparent
+P10-06,Chrysaor standing bewildered,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/06_Chrysaor_standing_bewildered.png,273,344,Transparent
+P10-07,Ketos rising open jaws,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/07_Ketos_rising_open_jaws.png,316,362,Transparent
+P10-08,Ketos swimming profile,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/08_Ketos_swimming_profile.png,416,168,Transparent
+P10-09,"Ketos lunging, mouth wide",01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/09_Ketos_lunging_mouth_wide.png,351,269,Transparent
+P10-10,"Ketos slumped defeated, no gore",01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/10_Ketos_slumped_defeated_no_gore.png,366,176,Transparent
+P10-11,chestnut gift horse standing,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/11_chestnut_gift_horse_standing.png,315,297,Transparent
+P10-12,chestnut gift horse trotting,01_Characters/Pegasus_Chrysaor_Ketos_and_Horses/12_chestnut_gift_horse_trotting.png,344,283,Transparent
+P11-01,Wedding guest A brown chiton extending gift reins,01_Characters/Guests_Warriors_and_Athletes/01_Wedding_guest_A_brown_chiton_extending_gift_reins.png,270,342,Transparent
+P11-02,Wedding guest B olive tunic gesturing,01_Characters/Guests_Warriors_and_Athletes/02_Wedding_guest_B_olive_tunic_gesturing.png,277,346,Transparent
+P11-03,Palace friend burgundy tunic pointing angrily,01_Characters/Guests_Warriors_and_Athletes/03_Palace_friend_burgundy_tunic_pointing_angrily.png,327,346,Transparent
+P11-04,Exactly same Palace friend gray stone statue pointing angrily,01_Characters/Guests_Warriors_and_Athletes/04_Exactly_same_Palace_friend_gray_stone_statue_pointing_angrily.png,328,346,Transparent
+P11-05,Palace friend ochre tunic sitting and recoiling,01_Characters/Guests_Warriors_and_Athletes/05_Palace_friend_ochre_tunic_sitting_and_recoiling.png,344,275,Transparent
+P11-06,Exactly same seated friend petrified gray stone statue,01_Characters/Guests_Warriors_and_Athletes/06_Exactly_same_seated_friend_petrified_gray_stone_statue.png,345,275,Transparent
+P11-07,Phineus ally with round shield lunging,01_Characters/Guests_Warriors_and_Athletes/07_Phineus_ally_with_round_shield_lunging.png,371,331,Transparent
+P11-08,Exactly same warrior gray stone statue lunging,01_Characters/Guests_Warriors_and_Athletes/08_Exactly_same_warrior_gray_stone_statue_lunging.png,373,331,Transparent
+P11-09,Funeral games athlete stretching,01_Characters/Guests_Warriors_and_Athletes/09_Funeral_games_athlete_stretching.png,235,338,Transparent
+P11-10,Funeral games athlete holding discus,01_Characters/Guests_Warriors_and_Athletes/10_Funeral_games_athlete_holding_discus.png,335,317,Transparent
+P11-11,Games spectator standing clapping,01_Characters/Guests_Warriors_and_Athletes/11_Games_spectator_standing_clapping.png,212,341,Transparent
+P11-12,Games spectator standing shocked,01_Characters/Guests_Warriors_and_Athletes/12_Games_spectator_standing_shocked.png,178,345,Transparent
+P12-01,"Danaë curled up fully visible beside swaddled infant in an open broad floating chest with room to see their bodies, no splashes",01_Characters/Story_Action_Inserts/01_Danae_curled_up_fully_visible_beside_swaddled_infant_in_an_open_broad_floating_chest_with_room_to_see_their_bodies_no_splashes.png,353,274,Transparent
+P12-02,Dictys with faded teal short tunic and graying beard pulls rope strongly toward his chest,01_Characters/Story_Action_Inserts/02_Dictys_with_faded_teal_short_tunic_and_graying_beard_pulls_rope_strongly_toward_his_chest.png,337,311,Transparent
+P12-03,"Perseus full body in wide stance holding bronze shield, shield surface contains a clear simple Medusa reflection",01_Characters/Story_Action_Inserts/03_Perseus_full_body_in_wide_stance_holding_bronze_shield_shield_surface_contains_a_clear_simple_Medusa_reflection.png,321,321,Transparent
+P12-04,"three grayscale clearly different Gray Sisters together handing off an eyeball, grouped as one sprite",01_Characters/Story_Action_Inserts/04_three_grayscale_clearly_different_Gray_Sisters_together_handing_off_an_eyeball_grouped_as_one_sprite.png,355,331,Transparent
+P12-05,"Green-haired Medusa waking, arms pushing off the floor and whole legs in reclining pose, snakes raised",01_Characters/Story_Action_Inserts/05_Green_haired_Medusa_waking_arms_pushing_off_the_floor_and_whole_legs_in_reclining_pose_snakes_raised.png,363,296,Transparent
+P12-06,"Perseus vanishing in cap, shown as soft graphite contour with solid black contour and pale cool gray inner hatching",01_Characters/Story_Action_Inserts/06_Perseus_vanishing_in_cap_shown_as_soft_graphite_contour_with_solid_black_contour_and_pale_cool_gray_inner_hatching.png,226,335,Transparent
+P12-07,"Perseus offering to rescue with one hand on chest and open expression, standing full-body",01_Characters/Story_Action_Inserts/07_Perseus_offering_to_rescue_with_one_hand_on_chest_and_open_expression_standing_full_body.png,251,344,Transparent
+P12-08,"Athena ivory blue Greek robes and bronzed helmet teal crest, accepting a clearly demarcated small bag with a gentle smile",01_Characters/Story_Action_Inserts/08_Athena_ivory_blue_Greek_robes_and_bronzed_helmet_teal_crest_accepting_a_clearly_demarcated_small_bag_with_a_gentle_smile.png,183,356,Transparent
+P12-09,Acrisius grieving standing hunched with one hand to forehead,01_Characters/Story_Action_Inserts/09_Acrisius_grieving_standing_hunched_with_one_hand_to_forehead.png,212,348,Transparent
+P12-10,"Polydectes surprised open mouth, standing up abruptly from a stool",01_Characters/Story_Action_Inserts/10_Polydectes_surprised_open_mouth_standing_up_abruptly_from_a_stool.png,307,357,Transparent
+P12-11,"Cepheus worried and wringing hands standing, medium brown skin, bronze crown and dusty blue robe",01_Characters/Story_Action_Inserts/11_Cepheus_worried_and_wringing_hands_standing_medium_brown_skin_bronze_crown_and_dusty_blue_robe.png,179,359,Transparent
+P12-12,"Regal Cassiopeia proudly boasting, hand on hip and chin up, whole body, medium brown skin braided black hair crimson robe gold diadem",01_Characters/Story_Action_Inserts/12_Regal_Cassiopeia_proudly_boasting_hand_on_hip_and_chin_up_whole_body_medium_brown_skin_braided_black_hair_crimson_robe_gold_diadem.png,256,359,Transparent
+P13-01,Perseus dives ahead with curved sword held in right hand,01_Characters/Rescue_and_Finale_Poses/01_Perseus_dives_ahead_with_curved_sword_held_in_right_hand.png,364,221,Transparent
+P13-02,Perseus braces in a defensive stance behind a bronze shield,01_Characters/Rescue_and_Finale_Poses/02_Perseus_braces_in_a_defensive_stance_behind_a_bronze_shield.png,273,286,Transparent
+P13-03,Perseus stands and tensions the chain as he frees Andromeda,01_Characters/Rescue_and_Finale_Poses/03_Perseus_stands_and_tensions_the_chain_as_he_frees_Andromeda.png,367,307,Transparent
+P13-04,Andromeda knees bent and forearms together as she is freed,01_Characters/Rescue_and_Finale_Poses/04_Andromeda_knees_bent_and_forearms_together_as_she_is_freed.png,159,317,Transparent
+P13-05,"Andromeda crouching with knees and feet visible, looking up eyes wide",01_Characters/Rescue_and_Finale_Poses/05_Andromeda_crouching_with_knees_and_feet_visible_looking_up_eyes_wide.png,221,308,Transparent
+P13-06,Perseus walks with blue tunic and bag held at side,01_Characters/Rescue_and_Finale_Poses/06_Perseus_walks_with_blue_tunic_and_bag_held_at_side.png,218,333,Transparent
+P13-07,Perseus kneeling at grave with hand to forehead,01_Characters/Rescue_and_Finale_Poses/07_Perseus_kneeling_at_grave_with_hand_to_forehead.png,362,288,Transparent
+P13-08,Acrisius sitting wary with hands on knees,01_Characters/Rescue_and_Finale_Poses/08_Acrisius_sitting_wary_with_hands_on_knees.png,297,312,Transparent
+P13-09,King of Larissa raises hand to start games,01_Characters/Rescue_and_Finale_Poses/09_King_of_Larissa_raises_hand_to_start_games.png,268,365,Transparent
+P13-10,Discus athlete stands watching in surprise,01_Characters/Rescue_and_Finale_Poses/10_Discus_athlete_stands_watching_in_surprise.png,218,349,Transparent
+P13-11,Danae bows toward the crowned Dictys,01_Characters/Rescue_and_Finale_Poses/11_Danae_bows_toward_the_crowned_Dictys.png,383,353,Transparent
+P13-12,Perseus and Andromeda walk side by side,01_Characters/Rescue_and_Finale_Poses/12_Perseus_and_Andromeda_walk_side_by_side.png,272,352,Transparent
+P14-01,Perseus holds Medusa's head high by the snake hair while turning his face fully away,01_Characters/Perseus_Climax_and_Gear_Return/01_Perseus_holds_Medusas_head_high_by_the_snake_hair_while_turning_his_face_fully_away.png,276,337,Transparent
+P14-02,Perseus crouches and holds a closed dark leather bag close with both hands,01_Characters/Perseus_Climax_and_Gear_Return/02_Perseus_crouches_and_holds_a_closed_dark_leather_bag_close_with_both_hands.png,232,301,Transparent
+P14-03,"Full-body Perseus fleeing, followed by exactly TWO whole full-body Gorgons, Euryale and Stheno, both feet visible; no third Gorgon",01_Characters/Perseus_Climax_and_Gear_Return/03_Full_body_Perseus_fleeing_followed_by_exactly_TWO_whole_full_body_Gorgons_Euryale_and_Stheno_both_feet_visible_no_third_Gorgon.png,397,232,Transparent
+P14-04,Perseus with eyes shut holds Medusa's head out at shoulder level,01_Characters/Perseus_Climax_and_Gear_Return/04_Perseus_with_eyes_shut_holds_Medusas_head_out_at_shoulder_level.png,302,324,Transparent
+P14-05,"Perseus returning the curved harpe blade to Hermes, two figures",01_Characters/Perseus_Climax_and_Gear_Return/05_Perseus_returning_the_curved_harpe_blade_to_Hermes_two_figures.png,329,327,Transparent
+P14-06,"Perseus handing the winged sandals back to a teal-clad nymph, two figures",01_Characters/Perseus_Climax_and_Gear_Return/06_Perseus_handing_the_winged_sandals_back_to_a_teal_clad_nymph_two_figures.png,321,316,Transparent
+P14-07,"Polydectes's guests as grouped gray statues, four seated and standing people",01_Characters/Perseus_Climax_and_Gear_Return/07_Polydectess_guests_as_grouped_gray_statues_four_seated_and_standing_people.png,350,321,Transparent
+P14-08,"Acrisius whole body recoils with foot kicked out as a bronze discus bounces from his sandal, no wound",01_Characters/Perseus_Climax_and_Gear_Return/08_Acrisius_whole_body_recoils_with_foot_kicked_out_as_a_bronze_discus_bounces_from_his_sandal_no_wound.png,357,333,Transparent
+P14-09,Perseus lowering a plain clay funerary urn in mourning,01_Characters/Perseus_Climax_and_Gear_Return/09_Perseus_lowering_a_plain_clay_funerary_urn_in_mourning.png,252,301,Transparent
+P14-10,"Acrisius listening to prophecy, full body standing hunched, one palm to open mouth",01_Characters/Perseus_Climax_and_Gear_Return/10_Acrisius_listening_to_prophecy_full_body_standing_hunched_one_palm_to_open_mouth.png,206,359,Transparent
+P14-11,"Medusa head rising half out of a wide-mouthed leather bag, no blood",02_Props/Gorgon_Story_Props/11_Medusa_head_rising_half_out_of_a_wide_mouthed_leather_bag_no_blood.png,247,293,Transparent
+P14-12,"Perseus fully visible standing, face turned sharply away with eyes closed and knees bent, strained expression",01_Characters/Perseus_Climax_and_Gear_Return/12_Perseus_fully_visible_standing_face_turned_sharply_away_with_eyes_closed_and_knees_bent_strained_expression.png,202,347,Transparent
