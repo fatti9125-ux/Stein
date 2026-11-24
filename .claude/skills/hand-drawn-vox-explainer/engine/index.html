@@ -126,7 +126,7 @@ dialog#hist[open]{display:flex;flex-direction:column;gap:10px}
           <option value="img">Character / prop</option><option value="archive">Archive image</option><option value="card">Background card</option>
           <option value="sticker">Yellow sticker</option><option value="stamp">Red stamp</option><option value="text">Text</option>
           <option value="bubble">Speech bubble</option><option value="arrow">Ink arrow</option><option value="loop">Ink circle</option>
-          <option value="hl">Highlighter</option><option value="xmark">Red X</option><option value="counter">Counting number</option><option value="bars">Bar chart</option><option value="icons">Icon grid</option><option value="chapter">Chapter card</option><option value="sfx">Sound effect</option>
+          <option value="hl">Highlighter</option><option value="xmark">Red X</option><option value="counter">Counting number</option><option value="bars">Bar chart</option><option value="icons">Icon grid</option><option value="chapter">Chapter card</option><option value="photo">Feathered photo</option><option value="think">Thought bubble</option><option value="sfx">Sound effect</option>
         </select>
         <button id="btnAdd" type="button">Add at playhead</button>
       </div>
@@ -157,6 +157,7 @@ const src=k=>`assets/${k}.webp`;
 function defs(boil){return `<defs>
 ${[0,1,2].map(i=>`<filter id="rough${i}" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="${i*7+3}"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>`).join('')}
 <filter id="paint"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="2" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/><feComponentTransfer in="g" result="g2"><feFuncA type="table" tableValues="0 0.22"/></feComponentTransfer><feComposite in="g2" in2="SourceGraphic" operator="in" result="tex"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge></filter>
+<filter id="feather" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="16"/></filter><filter id="bw"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope="1.1" intercept="-0.04"/><feFuncG type="linear" slope="1.1" intercept="-0.04"/><feFuncB type="linear" slope="1.1" intercept="-0.04"/></feComponentTransfer></filter>
 <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="4" dy="7" stdDeviation="6" flood-color="#0b3a52" flood-opacity=".25"/></filter>
 <filter id="stone"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope=".85" intercept=".12"/><feFuncG type="linear" slope=".85" intercept=".12"/><feFuncB type="linear" slope=".85" intercept=".14"/></feComponentTransfer></filter>
 <filter id="archive"><feColorMatrix type="saturate" values="0.35"/><feComponentTransfer><feFuncR type="linear" slope="1.08" intercept="-0.03"/><feFuncG type="linear" slope="1.08" intercept="-0.03"/><feFuncB type="linear" slope="1.0" intercept="-0.03"/></feComponentTransfer></filter>
@@ -171,8 +172,8 @@ const flipFor=it=>{const L=LIB[it.a];if(!L||L.k!=='char')return !!it.flip;const 
 const R={
  img(it,t,p){const L=LIB[it.a]||{w:100,h:100};const h=+it.h||300,w=L.w*h/L.h,ax=it.center?h/2:h;
   const breath=it.still?1:1+0.006*Math.sin(Math.floor(t*15/2)*0.9+(+it.x||0));
-  const s=it.noPop?1:back(p/0.28)*0.35+0.65*clamp(p/0.08),op=it.noPop?1:clamp(p/0.06),fl=flipFor(it)?-1:1;
-  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot||0}) scale(${s*fl},${s*breath})" opacity="${op}"><image href="${src(it.a)}" x="${-w/2}" y="${-ax}" width="${w}" height="${h}" ${it.stone?'filter="url(#stone)"':''}/></g>`},
+  const s=it.noPop?1:back(p/0.16)*0.12+0.88*clamp(p/0.03),op=it.noPop?1:clamp(p/0.03),fl=flipFor(it)?-1:1;
+  return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot||0}) scale(${s*fl},${s*breath})" opacity="${op}"><image href="${src(it.a)}" x="${-w/2}" y="${-ax}" width="${w}" height="${h}" ${it.stone?'filter="url(#stone)"':''}/></g>${it.lab?`<text x="${it.x}" y="${+it.y-ax+(it.center?0:0)-18}" text-anchor="middle" class="hand" font-size="${+it.ls||32}" fill="${INK}" opacity="${op}">${esc(it.lab)}</text>`:''}`},
  card(it,t,p,boil,g){if(!g.d){g.d=torn(+it.x,+it.y,+it.w,+it.h,6);g.b=blob(it.x-34,it.y-30,+it.w+68,+it.h+60,12);g.c=`M${+it.x+16},${+it.y+16}h${it.w-32}v${it.h-32}h${-(it.w-32)}Z`}
   const s=it.noPop?1:back(p/0.3)*0.25+0.75,r=(+it.rot||0)+(it.noPop?0:(1-out3(p/0.3))*4),op=it.noPop?1:clamp(p/0.06),cx=+it.x+it.w/2,cy=+it.y+it.h/2;
   return `<g transform="translate(${cx},${cy}) rotate(${r}) scale(${s}) translate(${-cx},${-cy})" opacity="${op}">${it.yellow?`<g transform="rotate(${-(+it.rot||0)*1.6-1.5} ${cx} ${cy})"><path d="${g.b}" fill="${YEL}" filter="url(#paint)"/></g>`:''}<g filter="url(#shadow)"><path d="${g.d}" fill="${PAPER}"/></g><clipPath id="c${it.uid}"><path d="${g.c}"/></clipPath>${it.bg?`<image href="${src(it.bg)}" x="${+it.x+16}" y="${+it.y+16}" width="${it.w-32}" height="${it.h-32}" preserveAspectRatio="xMidYMid slice" clip-path="url(#c${it.uid})"/>`:''}</g>`},
@@ -196,8 +197,16 @@ const R={
   return `<g transform="translate(${tx},${ty}) scale(${s}) translate(${-tx},${-ty})" opacity="${clamp(p/0.05)}"><g filter="url(#rough${boil})"><path d="${g.d}" fill="#fff" stroke="${INK}" stroke-width="5"/><path d="M${x+w*.35},${y+h-3} L${tx},${ty} L${x+w*.5},${y+h-3}" fill="#fff" stroke="${INK}" stroke-width="5" stroke-linejoin="round"/><path d="M${x+w*.35+5},${y+h-6} L${x+w*.5-5},${y+h-6}" stroke="#fff" stroke-width="9"/></g><text x="${x+w/2}" y="${y+h/2+fs*.35}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(it.t)}</text></g>`},
  xmark(it,t,p,boil){const d=out3(p/0.3),s=+it.s||40,x=+it.x,y=+it.y;return `<g filter="url(#rough${boil})" stroke="${RED}" stroke-width="10" stroke-linecap="round"><path d="M${x-s},${y-s}L${x+s},${y+s}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-clamp(d*2)}"/><path d="M${x+s},${y-s}L${x-s},${y+s}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-clamp(d*2-1)}"/></g>`},
  sfx(){return ''},
+ photo(it,t,p,boil){const L=LIB[it.a]||{w:16,h:9};const w=+it.w||520,hh=w*L.h/L.w,x=+it.x-w/2,y=+it.y-hh/2,f=+it.f||Math.min(w,hh)*0.09,id='ph'+(it.uid||0);
+  const op=clamp(p/0.08),gray=it.gray?'filter="url(#bw)"':'';
+  return `<g opacity="${op}"><mask id="${id}"><rect x="${x+f}" y="${y+f}" width="${w-2*f}" height="${hh-2*f}" rx="${it.oval?w/2:f}" ry="${it.oval?hh/2:f}" fill="#fff" filter="url(#feather)"/></mask><image href="${src(it.a)}" x="${x}" y="${y}" width="${w}" height="${hh}" preserveAspectRatio="xMidYMid slice" mask="url(#${id})" ${gray}/>${it.cap?`<text x="${+it.x}" y="${y-14}" text-anchor="middle" class="hand" font-size="${+it.cs||34}" fill="${INK}">${esc(it.cap)}</text>`:''}</g>`},
+ think(it,t,p,boil,g){const x=+it.x,y=+it.y,w=+it.w||420,hh=+it.h||150,fs=+it.size||34,tx=+it.tx,ty=+it.ty;if(!g.d){let d='';const n=Math.max(8,Math.round((w+hh)/55));for(let i=0;i<n;i++){const a=i/n*Math.PI*2,cx=x+w/2+Math.cos(a)*w/2*0.92,cy=y+hh/2+Math.sin(a)*hh/2*0.88,r=Math.min(w,hh)*0.22;d+=`M${cx-r},${cy}a${r},${r} 0 1,0 ${2*r},0a${r},${r} 0 1,0 ${-2*r},0`}g.d=d}
+  const s=back(p/0.2),mx=x+w/2,my=y+hh;const dots=[0.35,0.65].map((q,i)=>`<circle cx="${mx+(tx-mx)*q}" cy="${my+(ty-my)*q}" r="${14-i*5}" fill="#fff" stroke="${INK}" stroke-width="4"/>`).join('');
+  return `<g transform="translate(${tx},${ty}) scale(${s}) translate(${-tx},${-ty})" opacity="${clamp(p/0.05)}"><g filter="url(#rough${boil})"><path d="${g.d}" fill="#fff" stroke="${INK}" stroke-width="5"/><ellipse cx="${x+w/2}" cy="${y+hh/2}" rx="${w/2*0.95}" ry="${hh/2*0.9}" fill="#fff"/>${dots}</g>${it.a?`<image href="${src(it.a)}" x="${x+w/2-hh*0.4}" y="${y+hh*0.1}" width="${hh*0.8}" height="${hh*0.8}"/>`:''}${it.t?`<text x="${x+w/2}" y="${y+hh/2+fs*.35}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(it.t)}</text>`:''}</g>`},
  counter(it,t,p,boil,g){const dur=+it.dur||1.1,q=out3(p/dur),f=+it.from||0,to=+it.to||0,dec=+it.dec||0;const v=f+(to-f)*q;
-  const fin=(it.pre||'')+fmtNum(to,dec)+(it.suf||''),txt=(it.pre||'')+fmtNum(v,dec)+(it.suf||''),fs=+it.size||120,w=Math.max(fin.length*fs*.5+70,fs*1.6);
+  const nf=(x)=>it.nosep?Number(x).toFixed(dec):fmtNum(x,dec);const fin=(it.pre||'')+nf(to)+(it.suf||''),txt=(it.pre||'')+nf(v)+(it.suf||''),fs=+it.size||120,w=Math.max(fin.length*fs*.5+70,fs*1.6);
+  if(it.plain){const s=back(p/0.16)*0.12+0.88*clamp(p/0.03),col=it.color==='red'?RED:it.color==='green'?'#2E7D32':INK;
+   return `<g transform="translate(${it.x},${it.y}) scale(${s})" opacity="${clamp(p/0.03)}">${it.cap?`<text x="0" y="${-fs*.85}" text-anchor="middle" class="hand" font-size="${Math.max(28,Math.round(fs*.3))}" fill="${INK}">${esc(it.cap)}</text>`:''}<text x="0" y="0" text-anchor="middle" class="hand" font-size="${fs}" fill="${col}" stroke="${col}" stroke-width="${fs*0.025}">${esc(txt)}</text></g>`}
   if(!g.d)g.d=blob(-w/2,-fs*.92,w,fs*1.2,10);const s=back(p/0.25)*0.3+0.7*clamp(p/0.06),col=it.color==='red'?'#E36A55':it.color==='green'?'#CFE3B4':YEL;
   return `<g transform="translate(${it.x},${it.y}) rotate(${(it.rot??-2)+[0,.4,-.3][boil]}) scale(${s})" opacity="${clamp(p/0.05)}"><g filter="url(#shadow)"><path d="${g.d}" fill="${col}" filter="url(#paint)"/></g><text x="0" y="${fs*.06}" text-anchor="middle" class="anton" font-size="${fs}" fill="${INK}" letter-spacing="1">${esc(txt)}</text>${it.cap?`<text x="0" y="${fs*.36+30}" text-anchor="middle" class="type" font-size="${Math.max(26,Math.round(fs*.25))}" fill="${INK}" opacity="${clamp((p-0.3)/0.3)}">${esc(it.cap)}</text>`:''}</g>`},
  bars(it,t,p,boil){const rows=parseRows(it.rows),x=+it.x,y=+it.y,W=+it.w||900,rh=+it.rh||80,lw=+it.lw||260,max=+it.max||Math.max(...rows.map(r=>r.v),1),stag=+it.stag||0.5;let s='';
@@ -219,7 +228,7 @@ const R={
 function sceneAt(t){const S=BOARD.scenes;for(let i=0;i<S.length;i++)if(t>=S[i].s&&t<S[i].e)return i;return t<S[0].s?0:S.length-1}
 function anchorOf(it){if(it.k==='card'||it.k==='archive'){const L=LIB[it.a]||{w:4,h:3};const w=+it.w||400,hh=it.k==='card'?+it.h:w*L.h/L.w;return [+it.x+w/2,+it.y+hh/2]}
  if(it.k==='arrow')return [(+it.x+ +it.x2)/2,(+it.y+ +it.y2)/2];if(it.k==='bubble')return [+it.x+ +it.w/2,+it.y+ +it.h/2];if(it.k==='img'&&!it.center)return [+it.x,+it.y-(+it.h||300)/2];return [+it.x||960,+it.y||540]}
-const IN_D=0.38;
+const IN_D=0.3;
 function itemSVG(sc,it,i,tq,boil,opts){
  const outT=(it.out!=null&&it.out!=='')?+it.out:null,started=tq>=it.at-1e-6,gone=outT!=null&&tq>=outT+0.22;
  const forced=opts.sel===i&&(!started||gone)&&it.k!=='sfx';
@@ -235,15 +244,18 @@ function itemSVG(sc,it,i,tq,boil,opts){
   if(outT!=null&&tq>=outT){const q=clamp((tq-outT)/0.22);op=1-q;tf+=`translate(${ax},${ay}) scale(${1-0.25*q}) translate(${-ax},${-ay}) `}
  }
  return `<g data-i="${i}" class="it"${forced?' opacity=".35"':op<1?` opacity="${op.toFixed(2)}"`:''}${tf?` transform="${tf}"`:''}>${s}</g>`}
-function header(sc){const h=sc.h||{};return h.a?`<text x="960" y="62" text-anchor="middle" class="hand" font-size="44" fill="${INK}">${esc(h.a)}</text>${h.b?`<text x="960" y="104" text-anchor="middle" class="hand" font-size="34" fill="${INK}" opacity=".8">${esc(h.b)}</text>`:''}`:''}
-function cam(sc,tq){if(sc.cam===0)return '';const d=Math.max(2,sc.e-sc.s),z=1+(+sc.cam||0.035)*clamp((tq-sc.s)/d);return `translate(960,560) scale(${z.toFixed(4)}) translate(-960,-560)`}
+function header(sc){const h=sc.h||{};let s='',y=48;for(const [k,fs] of [['a',36],['b',30],['c',30]]){if(h[k]){s+=`<text x="960" y="${y}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(h[k])}</text>`;y+=fs+4}}return s}
+function cam(sc,tq){let z=1,cx=960,cy=540;const Z=String(sc.z||'').split(';').map(x=>x.trim()).filter(Boolean).map(x=>x.split(',').map(Number));
+ for(const [t,s,x,y] of Z){if(tq<t)break;const q=inout((tq-t)/0.45);z+=(s-z)*q;cx+=((x||960)-cx)*q;cy+=((y||540)-cy)*q}
+ if(sc.cam)z*=1+(+sc.cam)*clamp((tq-sc.s)/Math.max(2,sc.e-sc.s));
+ if(z===1)return '';return `translate(${cx},${cy}) scale(${z.toFixed(4)}) translate(${-cx},${-cy})`}
 function sceneSVG(si,tq,boil,opts){const sc=BOARD.scenes[si];let b='';sc.items.forEach((it,i)=>{b+=itemSVG(sc,it,i,tq,boil,opts)});return `<g transform="${cam(sc,tq)}">${b}</g>${header(sc)}`}
 function chapterTab(tq){const C=BOARD.chapters||[];let c=null;for(const x of C)if(tq>=x.s)c=x;if(!c||tq<c.s+(+c.d||3))return '';const op=clamp((tq-c.s-(+c.d||3))/0.3);
  return `<g opacity="${op}"><text x="40" y="1050" class="type" font-size="22" fill="${INK}" opacity=".7">${esc(c.n+' · '+c.t)}</text></g>`}
 const TR=0.45;let WIPE=null;
 function frameSVG(t,opts={}){
  const tq=Math.floor(t*15)/15,frame=Math.round(tq*15),boil=Math.floor(frame/3)%3;
- const si=sceneAt(tq),sc=BOARD.scenes[si],inT=tq-sc.s,tr=sc.tr||'slide';let body;
+ const si=sceneAt(tq),sc=BOARD.scenes[si],inT=tq-sc.s,tr=sc.tr||'cut';let body;
  if(si>0&&inT<TR&&tr!=='cut'&&!(opts.sel>=0)){const prev=sceneSVG(si-1,tq,boil,{}),cur=sceneSVG(si,tq,boil,opts),e=inout(inT/TR);
   if(tr==='wipe'){const bx=-2700+5400*e;if(!WIPE){seed=4242;WIPE=torn(-300,-250,2500,1580,46,70)}body=(e<0.5?prev:cur)+`<g transform="translate(${bx},0) rotate(-6 960 540)"><path d="${WIPE}" fill="${YEL}" filter="url(#paint)"/><path d="${WIPE}" fill="none" stroke="${INK}" stroke-width="5" opacity=".55" filter="url(#rough${boil})"/></g>`}
   else if(tr==='up'){body=`<g transform="translate(0,${-1080*e})">${prev}</g><g transform="translate(0,${1080*(1-e)})">${cur}</g>`}
@@ -312,17 +324,17 @@ const DEF={img:{a:'C01-01',x:960,y:1000,h:500},archive:{a:'B01-01',x:1400,y:180,
  bubble:{t:'Hello!',x:700,y:200,w:420,h:110,tx:700,ty:420,size:40},arrow:{x:700,y:400,x2:1000,y2:600,bend:30},loop:{x:960,y:540,rx:120,ry:90,color:RED},
  hl:{x:860,y:560,w:300,h:32},xmark:{x:960,y:540,s:50},sfx:{a:'stamp',vol:0.6},
  counter:{pre:'$',from:0,to:17,dec:0,suf:'',cap:'caption',x:960,y:460,size:130},bars:{title:'Title',rows:'Chicken|47|47M lb|y;Steak|6|6M lb|r',x:420,y:420,w:1100,rh:80,lw:260},
- icons:{n:20,cols:10,sz:84,hi:'19',x:960,y:420},chapter:{n:1,t:'Chapter title',x:960,y:520}};
+ icons:{n:20,cols:10,sz:84,hi:'19',x:960,y:420},chapter:{n:1,t:'Chapter title',x:960,y:520},photo:{a:'B01-01',x:1200,y:480,w:620},think:{t:'…',x:900,y:200,w:380,h:150,tx:700,ty:420}};
 $('btnAdd').onclick=()=>{const k=$('addKind').value,items=curItems();const it={k,...structuredClone(DEF[k]),at:+T.toFixed(2),uid:uidN++};items.push(it);markDirty();select(items.length-1);renderScenePanel()};
 
 /* item panel */
-const FIELDS={img:['a','x','y','h','flip','face','center','still','stone','noPop','rot'],archive:['a','cap','x','y','w','rot'],card:['bg','x','y','w','h','rot','yellow'],
+const FIELDS={img:['a','lab','x','y','h','flip','face','center','still','stone','noPop','rot'],archive:['a','cap','x','y','w','rot'],card:['bg','x','y','w','h','rot','yellow'],
  sticker:['t','x','y','size','rot'],stamp:['t','x','y','size','rot'],text:['t','x','y','size','cls','anchor','italic','typeOn','color'],bubble:['t','x','y','w','h','tx','ty','size'],
  arrow:['x','y','x2','y2','bend','color'],loop:['x','y','rx','ry','color','sw'],hl:['x','y','w','h','rot'],xmark:['x','y','s'],sfx:['a','vol'],
- counter:['pre','from','to','dec','suf','cap','x','y','size','rot','dur','color'],bars:['title','rows','x','y','w','rh','lw','max','stag'],icons:['n','cols','hi','hiAt','x','y','sz','gap','stag','a','b'],chapter:['n','t','x','y','size']};
+ counter:['plain','pre','from','to','dec','suf','cap','x','y','size','rot','dur','color'],bars:['title','rows','x','y','w','rh','lw','max','stag'],icons:['n','cols','hi','hiAt','x','y','sz','gap','stag','a','b'],chapter:['n','t','x','y','size'],photo:['a','cap','x','y','w','gray','oval','f'],think:['t','a','x','y','w','h','tx','ty','size']};
 for(const k in FIELDS)if(k!=='sfx'){FIELDS[k].push('in','mv')}
 const NUM=new Set(['x','y','h','w','rot','size','x2','y2','bend','rx','ry','sw','s','tx','ty','vol','from','to','dec','dur','rh','lw','max','stag','n','cols','sz','gap','hiAt']);
-const BOOL=new Set(['flip','center','still','stone','noPop','yellow','italic','typeOn']);
+const BOOL=new Set(['flip','center','still','stone','noPop','yellow','italic','typeOn','gray','oval','plain']);
 const NAMES={a:'Asset',bg:'Background',t:'Text',cap:'Caption',x:'X',y:'Y',h:'Height',w:'Width',rot:'Rotate°',size:'Size',x2:'End X',y2:'End Y',bend:'Bend',rx:'Radius X',ry:'Radius Y',sw:'Stroke',s:'Size',tx:'Tail X',ty:'Tail Y',vol:'Volume',flip:'Mirror',face:'Faces',center:'Anchor centre',still:'No breathing',stone:'Stone',noPop:'No pop-in',yellow:'Yellow block',italic:'Italic',typeOn:'Type on',color:'Colour',cls:'Font',anchor:'Align',pre:'Prefix',suf:'Suffix',from:'Count from',to:'Count to',dec:'Decimals',dur:'Count time (s)',rows:'Rows (label|value|shown|colour; …)',rh:'Row height',lw:'Label width',max:'Scale max',stag:'Stagger (s)',n:'Count',cols:'Columns',hi:'Highlighted (0-based, comma)',hiAt:'Highlight at (s after appear)',sz:'Icon size',gap:'Gap',b:'Highlight icon',in:'Enters from',mv:'Make-room moves (t,dx,dy,scale; …)'};
 function assetOptions(cur,kind){const groups={char:'Characters',gfx:'Number cards',prop:'Food & props',fx:'Effects',bg:'Backgrounds',archive:'Archive images'};
  if(kind==='sfx')return Object.keys(SFX).map(k=>`<option ${k===cur?'selected':''}>${k}</option>`).join('');
