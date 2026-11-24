@@ -11,7 +11,7 @@ This project follows the workflow in `.claude/skills/hand-drawn-vox-explainer/SK
 | `editor/` | The live editor and renderer, the storyboard, the asset library, the voiceover and the sound effects. |
 | `source/` | The original asset pack, the script and the full-quality sound effects. |
 | `data/` | The recognised words, plus the script aligned to the voiceover. `script_words_fa.json` has the forced-aligned word times. |
-| `pipeline/` | The storyboard builder (`build_board.py` + `fill_gaps.py`), the aligners, and the capture and mix scripts. |
+| `pipeline/` | The storyboard builder `build_board_v3.py` (the current version, in the reference-clips style). The older `build_board.py` + `fill_gaps.py` is the v2, Vox-heavy draft. Also the aligners and the capture and mix scripts. |
 
 ## Rebuild and re-render
 
