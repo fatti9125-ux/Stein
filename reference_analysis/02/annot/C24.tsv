@@ -1,0 +1,56 @@
+first	type	description	evidence	confidence
+31642	hard_cut	C23 end -> roster	observed	high
+31648	camera_zoom	roster zoom into "Gustav Krukenberg"	observed	high
+31706	hard_cut	profile canvas: portrait + SS + French flag + "Charlemagne Division"	observed	high
+31758	appear	"XI SS Panzergrenadier Division Nordland" shield	observed	high
+31801	appear	Berlin map + clash fists + "Battle of Berlin"	observed	high
+31831	subtle	settle	observed	medium
+31834	layout_reset	cut: puppet + Berlin map, "April 26, 1945"	observed	high
+31837	label	"Berlin"	observed	high
+31889	appear	5f: Soviet soldiers	observed	high
+31943	appear	red arrow into Berlin	observed	high
+31964	label	"Neukölln" highlighted	observed	high
+32015	pose_swap	raised finger	observed	high
+32096	appear	building photo (ministry)	observed	high
+32139	layout_reset	cut: puppet + machine-gun team	observed	high
+32176	appear	Soviet soldiers attacking	observed	high
+32197	subtle	settle	observed	medium
+32201	subtle	settle	observed	medium
+32206	appear	clock + "Held soviets for 48 hours"	observed	high
+32245	appear	4f: Soviet tank	observed	high
+32260	label	"Out of 108 tanks"	observed	high
+32315	replace	tank destroyed smoke + "destroyed tanks"	observed	high
+32357	appear	French SS shield	observed	high
+32421	label	"~54 tanks by french SS"	observed	high
+32481	layout_reset	cut: puppet alone, "April 29, 1945"	observed	high
+32520	pose_swap	holds Knight's Cross	observed	high
+32598	enter	second officer + label "Untersturmführer"	observed	high
+32606	pose_swap	awards medal	observed	high
+32610	subtle	settle	observed	medium
+32613	subtle	settle	observed	medium
+32617	label	"Eugène Vaulot"	observed	high
+32621	pose_swap	step back	observed	high
+32662	expression_swap	face	observed	medium
+32665	layout_reset	3f: leader head with ! + puppet	observed	high
+32724	reposition	5f	observed	high
+32732	appear	Berlin map + fist icon	observed	high
+32758	appear	soldier with French flag	observed	high
+32766	appear	French SS shield	observed	high
+32803	appear	Nordland shield	observed	high
+32853	appear	4f: fist on map	observed	high
+32859	appear	helmet head marker on river	observed	high
+32865	label	"Spree River"	observed	high
+32944	appear	Soviet soldiers crossing	observed	high
+32992	layout_reset	cut: puppet pointing + officer lying "Joachim Ziegler"	observed	high
+32996	reposition	3f	observed	high
+33031	appear	skull icon	observed	high
+33074	layout_reset	cut: bedroom (wardrobe, bed, figure hiding)	observed	high
+33156	layout_reset	5f: puppet hands up	observed	high
+33173	appear	Soviet soldier	observed	high
+33205	layout_reset	cut: behind bars	observed	high
+33226	motion_step	bars slide	observed	medium
+33236	label	"Released after 11 years"	observed	high
+33318	layout_reset	cut: old man armchair	observed	high
+33329	replace	slump	observed	high
+33364	label	"October 23, 1980"	observed	high
+33422	label	"92 years old"	observed	high

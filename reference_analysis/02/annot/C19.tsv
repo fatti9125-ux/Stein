@@ -1,0 +1,41 @@
+first	type	description	evidence	confidence
+25230	hard_cut	C18 end -> roster	observed	high
+25236	camera_zoom	roster zoom into "Wilhelm Mohnke"	observed	high
+25294	hard_cut	profile canvas: portrait + SS runes	observed	high
+25331	appear	2f: Europe map "Poland" circle + swastika	observed	high
+25345	label	"France" circle + arrow	observed	high
+25368	label	"Balkans" shaded circle	observed	high
+25388	appear	"Leibstandarte SS Adolf Hitler" shield	observed	high
+25432	layout_reset	cut: puppet, "1943"	observed	high
+25482	pose_swap	points	observed	high
+25512	appear	"SS Panzer Division Hitlerjugend" + tank	observed	high
+25586	appear	France map "Caen" X	observed	high
+25671	appear	bubble "You're gonna have to take over mate" + wounded officer	observed	high
+25772	appear	soldiers group	observed	high
+25787	label	"1944"	observed	high
+25802	appear	"Ardennes" marker on map	observed	high
+25838	layout_reset	cut: puppet, "April 1945"	observed	high
+25878	enter	leader at right	observed	high
+25905	appear	3f: Berlin map	observed	high
+25954	appear	shields around Berlin	observed	high
+26027	layout_reset	3f: puppet hands up	observed	high
+26037	appear	Soviet soldier	observed	high
+26063	appear	other officers hands up	observed	high
+26105	layout_reset	cut: dinner table with officers	observed	high
+26156	appear	Soviet general + label "General Chuikov"	observed	high
+26198	layout_reset	cut: officers handcuffed row	observed	high
+26201	expression_swap	faces	observed	medium
+26206	reposition	3f	observed	high
+26226	appear	NKVD officer	observed	high
+26236	appear	NKVD emblem + label	observed	high
+26289	layout_reset	cut: behind bars + "solitary confinement for 6 years", "1955"	observed	high
+26379	appear	gulag icon + "spent 10 years in soviet prison"	observed	high
+26454	appear	interrogator	observed	high
+26500	appear	thought bubble crime tape	observed	high
+26530	appear	judge	observed	high
+26544	appear	red X over judge (never tried)	observed	high
+26578	layout_reset	cut: old man armchair	observed	high
+26608	replace	slump	observed	high
+26615	appear	Germany map "Hamburg" X	observed	high
+26639	label	"August 6, 2001"	observed	high
+26698	label	"aged 90" + arrow	observed	high

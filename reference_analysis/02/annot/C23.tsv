@@ -1,0 +1,32 @@
+first	type	description	evidence	confidence
+30649	hard_cut	C22 end -> roster	observed	high
+30655	camera_zoom	roster zoom into "Fritz von Scholz"	observed	high
+30713	hard_cut	profile canvas: portrait + SS + stars arrows	observed	high
+30725	appear	commander pointing pictogram	observed	high
+30747	appear	troop formations with SS markers	observed	high
+30780	reposition	formations rearrange	observed	high
+30783	appear	Europe map	observed	high
+30786	appear	SS markers on map	observed	high
+30789	motion_step	markers move (step)	observed	medium
+30831	appear	"XI SS Panzergrenadier Division Nordland" shield	observed	high
+30878	layout_reset	6f: puppet pointing + soldiers + map	observed	high
+30902	label	"Croatia" circle	observed	high
+30926	appear	partisan soldier right	observed	high
+30993	subtle	settle	observed	medium
+31010	label	"Oranienbaum" + red arrow	observed	high
+31079	label	"January 1944"	observed	high
+31139	pose_swap	raised finger	observed	high
+31143	scale_up	3f zoom closer	observed	high
+31183	subtle	settle	observed	medium
+31196	label	"Narva" X	observed	high
+31244	appear	Soviet soldier + tank on map	observed	high
+31307	pose_swap	soldiers aim	observed	high
+31322	subtle	settle	observed	medium
+31326	subtle	settle	observed	medium
+31329	subtle	settle	observed	medium
+31402	label	"Sinimäed Hills" mountains icon	observed	high
+31459	layout_reset	cut: small figure + artillery, "July 27, 1944"	observed	high
+31527	appear	explosion + shell	observed	high
+31551	subtle	shell streak	observed	medium
+31565	replace	figure lying wounded	observed	high
+31591	text_update	"July 28, 1944"	observed	high

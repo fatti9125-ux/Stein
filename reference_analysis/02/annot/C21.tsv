@@ -1,0 +1,23 @@
+first	type	description	evidence	confidence
+28008	hard_cut	C20 end -> roster	observed	high
+28019	camera_zoom	roster zoom into "Herbert Gille"	observed	high
+28077	hard_cut	profile canvas: portrait + SS + stars + Iron Cross	observed	high
+28203	appear	"5th SS Panzer Division Wiking" shield	observed	high
+28266	appear	"IV SS Panzer Corps" + tank	observed	high
+28313	appear	Europe map highlighted	observed	high
+28375	layout_reset	cut: puppet (glasses) alone	observed	high
+28417	appear	Hungary map "Budapest" X	observed	high
+28459	label	"Lake Balaton" circle + arrow	observed	high
+28500	layout_reset	3f: puppet hands up	observed	high
+28517	appear	US soldier	observed	high
+28549	layout_reset	cut: behind bars "1948"	observed	high
+28555	motion_step	5f bars slide	observed	medium
+28624	layout_reset	cut: civilian puppet "1951"	observed	high
+28658	appear	3f: "HIAG" emblem	observed	high
+28733	appear	veterans bubble "Willkommen to the club"	observed	high
+28741	appear	SS + stars arrows icon	observed	high
+28822	layout_reset	cut: old man armchair	observed	high
+28832	pose_swap	clutches chest + heart icon	observed	high
+28863	appear	Germany map	observed	high
+28889	label	"December 26, 1966"	observed	high
+28958	label	"69 years old"	observed	high

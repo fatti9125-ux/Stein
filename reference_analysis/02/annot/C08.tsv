@@ -1,0 +1,52 @@
+first	type	description	evidence	confidence
+11198	hard_cut	C07 end -> roster	observed	high
+11204	camera_zoom	roster zoom into "Artur Phleps"	observed	high
+11262	hard_cut	profile canvas: portrait + Austro-Hungarian flag	observed	high
+11283	appear	SS runes	observed	high
+11296	appear	second flag (Romania/Transylvanian context)	observed	high
+11336	appear	shield + "7th SS Volunteer Mountain Division Prinz Eugen"	observed	high
+11398	appear	Europe map highlighted	observed	high
+11428	appear	"5th SS Panzer Division Wiking" shield	observed	high
+11474	layout_reset	cut: puppet pointing + SS emblem	observed	high
+11477	scale_up	emblem enlarges	observed	high
+11486	reposition	emblem moves right	observed	high
+11490	appear	"V SS Mountain Corps" + mountain troops	observed	high
+11539	partial_reset	puppet alone	observed	high
+11559	appear	Knight's Cross photo	observed	high
+11608	scale_down	medal shrinks	observed	high
+11612	appear	German Cross medal beside it	observed	high
+11659	layout_reset	cut: puppet + soldiers + small map	observed	high
+11704	scale_up	map enlarges	observed	high
+11726	appear	civilian figure pictogram + arrow	observed	high
+11766	label	"Croatia"	observed	high
+11819	label	"Serbia"	observed	high
+11842	label	"Montenegro"	observed	high
+11894	layout_reset	cut: puppet, header "September, 1944"	observed	high
+11962	enter	leader figure pointing	observed	high
+11979	appear	map with figures	observed	high
+12052	appear	"Transylvania" red circle	observed	high
+12072	label	"Banat" second circle	observed	high
+12108	appear	feathered photo of villagers	observed	high
+12127	appear	refugee/evacuation pictogram	observed	high
+12186	appear	Soviet soldiers attacking + symbol	observed	high
+12235	layout_reset	cut: Romanian flag + Soviet soldiers, "1944 Romanian Coup"	observed	high
+12275	appear	two officials busts + label "Ion Antonescu"	observed	high
+12289	text_update	header "August 23, 1944"	observed	high
+12296	appear	red X on map	observed	high
+12327	label	"Himmler" small inset + arrow	observed	high
+12359	expression_swap	faces	observed	medium
+12389	appear	magnifier + Soviet arrows on map	observed	high
+12424	label	"Arad" red circle	observed	high
+12478	subtle	settle	observed	medium
+12482	layout_reset	4f: puppet + Romania map, header "September 21, 1944"	observed	high
+12516	label	"Şimand" X on Romania map	observed	high
+12555	enter	officer torso at left	observed	high
+12599	appear	Soviet symbols + arrows converging on Şimand	observed	high
+12676	layout_reset	cut: puppet hands up + Soviet soldier (capture)	observed	high
+12697	layout_reset	cut: puppet alone	observed	high
+12730	appear	bomber formation + flag	observed	high
+12745	appear	bombs dropping from planes	observed	high
+12818	layout_reset	cut: three small figures running + bubble "Abfahrt Jungs!"	observed	high
+12827	motion_step	run step	observed	medium
+12863	appear	Soviet riflemen at right	observed	high
+12881	replace	figures lying (shot during transfer, non-graphic)	observed	high

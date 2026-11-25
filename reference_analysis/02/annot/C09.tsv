@@ -1,0 +1,33 @@
+first	type	description	evidence	confidence
+12918	hard_cut	C08 end -> roster	observed	high
+12924	camera_zoom	roster zoom into "Fritz Freitag"	observed	high
+12982	hard_cut	profile canvas: portrait left	observed	high
+12993	appear	Ukrainian flag	observed	high
+13003	appear	SS runes	observed	high
+13019	appear	lion crest + "14th Waffen-SS Grenadier Division (1st Galician)"	observed	high
+13117	appear	SS shield + troop formations	observed	high
+13180	layout_reset	cut: puppet pointing at Europe map	observed	high
+13191	appear	clash icons on front	observed	high
+13206	appear	front line dashed	observed	high
+13248	appear	Knight's Cross photo	observed	high
+13301	layout_reset	cut: puppet + soldiers aiming	observed	high
+13366	appear	skull pile (symbolic)	observed	high
+13377	appear	Ukraine map	observed	high
+13401	label	"Huta Pieniacka" X	observed	high
+13429	label	"Pidkamin" X	observed	high
+13462	label	"Palykorovy" X (villages listed one after another)	observed	high
+13520	layout_reset	cut: feathered parade photo behind puppet	observed	high
+13528	expression_swap	face	observed	medium
+13532	subtle	settle	observed	medium
+13567	layout_reset	cut: puppet hands up + British soldier	observed	high
+13610	pose_swap	handcuffed	observed	high
+13619	label	"May 1945"	observed	high
+13662	layout_reset	cut: puppet full-body small	observed	high
+13671	appear	judge at bench	observed	high
+13694	appear	Soviet symbol (extradition threat)	observed	high
+13733	pose_swap	figure holds pistol (non-graphic)	observed	high
+13743	appear	skull icon	observed	high
+13759	text_update	"May 10, 1945"	observed	high
+13764	appear	pistol drops	observed	high
+13767	subtle	settle	observed	medium
+13780	replace	figure lying	observed	high

@@ -1,0 +1,52 @@
+first	type	description	evidence	confidence
+29001	hard_cut	C21 end -> roster	observed	high
+29007	camera_zoom	roster zoom into "Otto Kumm"	observed	high
+29065	hard_cut	profile canvas: portrait + SS + pointing pictogram + "Führer Grenadier Brigade (FGB)"	observed	high
+29094	appear	"Panzer Division "Das Reich"" shield	observed	high
+29160	appear	helmet + burst icon	observed	high
+29199	appear	Soviet soldiers + symbol	observed	high
+29235	label	"January 1942"	observed	high
+29283	layout_reset	cut: puppet alone	observed	high
+29303	pose_swap	points	observed	high
+29323	appear	"Leibstandarte SS Adolf Hitler" shield	observed	high
+29396	label	"February 1945"	observed	high
+29420	subtle	settle	observed	medium
+29423	enter	3f: officer with map	observed	high
+29487	appear	3f troops	observed	high
+29509	appear	feathered photo "Operation Spring Awakening"	observed	high
+29553	subtle	settle	observed	medium
+29576	appear	Austria map "Vienna" X	observed	high
+29610	appear	red X over photo (offensive failed)	observed	high
+29627	layout_reset	cut: puppet hands up + US soldier	observed	high
+29709	layout_reset	cut: behind bars	observed	high
+29773	label	"1947"	observed	high
+29778	motion_step	3f bars slide	observed	medium
+29797	appear	camp icon + arrow "transfered to Dachau Camp"	observed	high
+29863	layout_reset	cut: puppet + Europe map	observed	high
+29882	appear	face marker on map	observed	high
+29895	appear	arrow (planned extradition to Yugoslavia)	observed	high
+29968	layout_reset	cut: wall with window + climbing figure (escape)	observed	high
+29975	motion_step	climb step	observed	medium
+29983	motion_step	climb step	observed	medium
+29991	motion_step	climb step	observed	medium
+29998	motion_step	climb step	observed	medium
+30004	motion_step	climb step	observed	medium
+30010	motion_step	figure gone over wall	observed	medium
+30035	layout_reset	3f: figure free full-body small	observed	high
+30040	pose_swap	looks around	observed	high
+30045	replace	disguise hat + coat	observed	high
+30056	appear	two veterans with armbands	observed	high
+30067	appear	bubble "You can hide with us!"	observed	high
+30110	subtle	settle	observed	medium
+30114	expression_swap	face	observed	medium
+30117	partial_reset	3f: veterans leave	observed	high
+30123	appear	3f: Germany map "Hamburg" X	observed	high
+30152	layout_reset	cut: civilian puppet	observed	high
+30206	expression_swap	face	observed	medium
+30209	appear	"HIAG" + veterans bubble "Ah wunderbar! you too Otto!", "1952"	observed	high
+30313	layout_reset	cut: puppet with book + business icons	observed	high
+30376	appear	Germany map "Offenburg" X	observed	high
+30396	layout_reset	cut: old man armchair	observed	high
+30437	replace	slump + "March 23, 2004"	observed	high
+30497	label	"Aged 94"	observed	high
+30545	appear	ghost veterans bubble "You survived us all..."	observed	high

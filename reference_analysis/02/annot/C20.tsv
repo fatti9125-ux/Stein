@@ -1,0 +1,34 @@
+first	type	description	evidence	confidence
+26735	hard_cut	C19 end -> roster	observed	high
+26741	camera_zoom	roster zoom into "Jürgen Wagner"	observed	high
+26799	hard_cut	profile canvas: portrait + SS runes	observed	high
+26807	label	"SS Regiment Germania"	observed	high
+26850	subtle	settle	observed	medium
+26861	appear	"Wiking Division" shield	observed	high
+26909	appear	Europe map "Balkans"	observed	high
+26970	appear	Soviet symbol + red arrows (Barbarossa)	observed	high
+27020	layout_reset	cut: puppet + Europe map	observed	high
+27058	appear	skull marker "Alibunar massacre"	observed	high
+27121	label	"April 1941"	observed	high
+27182	layout_reset	cut: puppet, "October 1943"	observed	high
+27228	pose_swap	points + soldiers	observed	high
+27307	appear	"SS Volunteer Grenadier Division Nederland" shield	observed	high
+27354	appear	"4th SS Polizei Division" shield	observed	high
+27417	appear	troops grow	observed	high
+27421	reposition	3f	observed	high
+27426	pose_swap	soldiers aim	observed	high
+27516	appear	Soviet soldiers on map	observed	high
+27559	layout_reset	5f: puppet hands up	observed	high
+27569	appear	US soldier	observed	high
+27605	appear	Germany map "Tangermünde" X	observed	high
+27622	label	"May 1945"	observed	high
+27696	subtle	map settle	observed	medium
+27700	reposition	4f compact	observed	high
+27723	appear	face marker + arrow to Yugoslavia (extradition)	observed	high
+27755	layout_reset	cut: courtroom (Yugoslav)	observed	high
+27770	pose_swap	judge points	observed	high
+27791	appear	skull + crime icon	observed	high
+27833	layout_reset	cut: firing squad + figure (non-graphic)	observed	high
+27870	label	"June 27, 1947"	observed	high
+27930	replace	figure lying	observed	high
+27953	label	"45 years old"	observed	high

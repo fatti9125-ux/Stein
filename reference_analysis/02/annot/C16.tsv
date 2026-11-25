@@ -1,0 +1,36 @@
+first	type	description	evidence	confidence
+21338	hard_cut	C15 end -> roster	observed	high
+21343	camera_zoom	roster zoom into "Felix Steiner"	observed	high
+21401	hard_cut	profile canvas: portrait + SS runes	observed	high
+21454	appear	troops + tank + arrows icon	observed	high
+21517	enter	official (glasses) bust	observed	high
+21545	pose_swap	raised finger speaking	observed	high
+21578	appear	"5th SS Panzer Division Wiking" shield	observed	high
+21630	appear	troop formations	observed	high
+21689	layout_reset	cut: puppet, "April 1945"	observed	high
+21715	enter	leader at right	observed	high
+21745	pose_swap	leader points	observed	high
+21780	appear	map behind (Berlin)	observed	high
+21789	appear	red arrows encircling + "Halbe Pocket" circle	observed	high
+21905	pose_swap	puppet hand on chin	observed	high
+21919	appear	small troop group	observed	high
+21978	appear	second troop group	observed	high
+22036	layout_reset	cut: puppet + leader, bubble "Mein Führer, it simply is not possible..."	observed	high
+22116	appear	leader bubble "That was AN ORDER, Steiner! How dare you?!"	observed	high
+22161	layout_reset	cut: puppet hands up	observed	high
+22164	subtle	settle	observed	medium
+22168	appear	US soldier	observed	high
+22196	appear	Austria map	observed	high
+22218	layout_reset	cut: behind bars, "1948"	observed	high
+22261	motion_step	bars slide	observed	medium
+22265	motion_step	bars slide	observed	medium
+22297	appear	CIA seal + handshake	observed	high
+22348	pose_swap	open palm	observed	high
+22359	label	"Gesellschaft für Wehrkunde (Society for Defense Studies)."	observed	high
+22409	layout_reset	cut: old man armchair	observed	high
+22421	pose_swap	clutches chest	observed	high
+22431	appear	heart warning	observed	high
+22450	replace	slump X-eyes	observed	high
+22453	appear	Germany map "Munich" X	observed	high
+22478	label	"May 12, 1966"	observed	high
+22535	label	"69 years old"	observed	high

@@ -1,0 +1,50 @@
+first	type	description	evidence	confidence
+18891	hard_cut	C13 end -> roster	observed	high
+18897	camera_zoom	roster zoom into "Paul Hausser"	observed	high
+18955	hard_cut	profile canvas: portrait + Waffen-SS + stars arrows	observed	high
+19033	appear	feathered portrait "Josef Dietrich" (comparison)	observed	high
+19066	layout_reset	cut: puppet alone	observed	high
+19074	pose_swap	open palm	observed	high
+19078	appear	SS runes	observed	high
+19114	pose_swap	points	observed	high
+19131	appear	soldiers	observed	high
+19161	appear	"Panzer Division "Das Reich"" shield	observed	high
+19190	appear	"II SS Panzer Division" + tank	observed	high
+19239	appear	Europe map	observed	high
+19265	label	"Kharkov" X	observed	high
+19280	label	"Kursk" X	observed	high
+19296	label	"Normandy" X	observed	high
+19326	layout_reset	cut: puppet, "1944"	observed	high
+19379	pose_swap	wounded (small red mark), hand to face	observed	high
+19420	appear	planes + tanks + soldiers + label ""Falaise Encirclement""	observed	high
+19464	appear	France map "Normandy" highlighted	observed	high
+19540	layout_reset	cut: puppet alone	observed	high
+19576	appear	feathered portrait "Albert Kesselring"	observed	high
+19618	expression_swap	face	observed	medium
+19623	layout_reset	cut: puppet hands up	observed	high
+19626	subtle	settle	observed	medium
+19641	appear	US soldier	observed	high
+19668	appear	Austria map "Salzburg" X	observed	high
+19712	layout_reset	cut: courtroom (witness/defendant)	observed	high
+19762	pose_swap	handcuffs	observed	high
+19767	appear	thought bubble SS + soldier	observed	high
+19843	appear	crossed swords crime tape	observed	high
+19878	appear	red X over crime icon (denial)	observed	high
+19916	subtle	settle	observed	medium
+19945	layout_reset	cut: figure full-body, "1948"	observed	high
+19962	motion_step	figure step	observed	medium
+20013	appear	official handshake + seal (release)	observed	high
+20069	layout_reset	cut: puppet brown civilian jacket, "1950s"	observed	high
+20100	subtle	settle	observed	medium
+20112	pose_swap	open palm	observed	high
+20131	appear	"HIAG" cross emblem	observed	high
+20156	appear	veterans group + bubble "Well done, Paul!"	observed	high
+20255	pose_swap	holds book	observed	high
+20263	appear	SS runes + arrow to book	observed	high
+20292	expression_swap	face	observed	medium
+20295	appear	green check	observed	high
+20321	layout_reset	cut: old man in armchair	observed	high
+20328	replace	slumps X-eyes	observed	high
+20337	text_update	"December 21, 1972"	observed	high
+20349	appear	Germany map	observed	high
+20354	label	"Ludwigsburg" X	observed	high

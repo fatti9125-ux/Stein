@@ -1,0 +1,33 @@
+first	type	description	evidence	confidence
+16926	hard_cut	C11 end -> roster	observed	high
+16932	camera_zoom	roster zoom into "Franz Augsberger"	observed	high
+16990	hard_cut	profile canvas: portrait + SS + Austrian flag + pictogram	observed	high
+17031	appear	"6th Mountain Division Nord" shield	observed	high
+17128	appear	"20th Waffen SS Grenadier Division (1st Estonian)" shield	observed	high
+17196	label	"1944"	observed	high
+17230	reposition	shield enlarges	observed	high
+17233	layout_reset	cut: puppet pointing at Europe map	observed	high
+17236	subtle	settle	observed	medium
+17252	appear	swastika on map	observed	high
+17258	motion_step	swastika shifts (retreat step)	observed	medium
+17263	motion_step	step	observed	medium
+17267	motion_step	step	observed	medium
+17300	enter	Soviet soldier at edge	observed	high
+17311	appear	Soviet symbol on map	observed	high
+17314	motion_step	symbol advances	observed	medium
+17342	layout_reset	cut: puppet, "March, 1945"	observed	high
+17398	enter	general (glasses) + label "Ferdinand Schörner"	observed	high
+17434	pose_swap	general holds medal	observed	high
+17512	partial_reset	general leaves	observed	high
+17600	appear	clash fists icon	observed	high
+17618	text_update	"March 19, 1945"	observed	high
+17621	scale_down	icon shrinks	observed	high
+17624	appear	Poland/Silesia map behind icon	observed	high
+17695	pose_swap	puppet points	observed	high
+17710	appear	soldiers group	observed	high
+17739	appear	"Oppeln" circle + tank + soldier on map	observed	high
+17790	layout_reset	cut: small figure + artillery gun	observed	high
+17823	appear	explosion	observed	high
+17847	appear	shell streak	observed	high
+17861	replace	figure down smoking (killed by shell)	observed	high
+17912	label	"39 years old" + arrow	observed	high

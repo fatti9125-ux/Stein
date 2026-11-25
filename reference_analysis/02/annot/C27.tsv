@@ -1,0 +1,36 @@
+first	type	description	evidence	confidence
+36380	hard_cut	C26 end -> roster	observed	high
+36386	camera_zoom	roster zoom into "Wilhelm Bittrich" (last tile)	observed	high
+36444	hard_cut	profile canvas: portrait + SS + pictogram + troops	observed	high
+36508	appear	cavalry + "8th SS Cavalry Division Florian Geyer" shield	observed	high
+36539	appear	"9th SS Panzer Division Hohenstaufen" shield	observed	high
+36575	label	"July 1944"	observed	high
+36613	appear	troops + arrow + "II SS Panzer Division" tank	observed	high
+36662	layout_reset	cut: puppet pointing at Europe map, "October 1944"	observed	high
+36685	label	"Normandy" X	observed	high
+36737	label	"Arnhem" X + arrow	observed	high
+36752	appear	feathered photo "Operation Market Garden"	observed	high
+36795	appear	second photo "Battle of the Bulge"	observed	high
+36832	label	"Hungary"	observed	high
+36873	layout_reset	cut: puppet handcuffed	observed	high
+36935	appear	France map + face marker + arrow (extradited)	observed	high
+36948	appear	judge	observed	high
+36958	label	"sentenced to 5 years"	observed	high
+36962	subtle	settle	observed	medium
+36965	pose_swap	prisoner uniform	observed	high
+36968	appear	bars	observed	high
+37012	layout_reset	cut: civilian + judge, "1953"	observed	high
+37016	expression_swap	face	observed	medium
+37021	reposition	3f	observed	high
+37068	appear	gallows icon (charges; non-graphic pictogram)	observed	high
+37090	appear	looting pictogram	observed	high
+37108	appear	burning house icon	observed	high
+37141	label	"+5 years" + cell	observed	high
+37186	layout_reset	cut: behind bars	observed	high
+37194	motion_step	6f bars slide	observed	medium
+37224	layout_reset	cut: old man armchair	observed	high
+37263	replace	slump	observed	high
+37270	appear	Germany map "Bavaria" circle	observed	high
+37299	label	"April 19, 1979"	observed	high
+37369	label	"Aged 85"	observed	high
+37412	layout_reset	end card: farmer presenter bubble "Watch These" (end screen space)	observed	high

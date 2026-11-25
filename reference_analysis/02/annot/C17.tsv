@@ -1,0 +1,32 @@
+first	type	description	evidence	confidence
+22591	hard_cut	C16 end -> roster	observed	high
+22596	camera_zoom	roster zoom into "Hellmuth Becker"	observed	high
+22654	hard_cut	profile canvas: portrait + skull emblem/tank + "3rd SS Panzer Division Totenkopf"	observed	high
+22722	label	"December 1944"	observed	high
+22781	layout_reset	cut: puppet pointing at Europe map	observed	high
+22843	appear	Hungary circle + clash icon	observed	high
+22880	appear	Soviet soldier on map edge	observed	high
+22954	layout_reset	cut: drunk puppet (bottle, dizzy marks)	observed	high
+23061	appear	bubble "Soldier! our priority now is to find the nearest brothel" + soldier	observed	high
+23081	appear	brothel building icon	observed	high
+23158	subtle	settle	observed	medium
+23162	layout_reset	cut: puppet + own troops saluting	observed	high
+23166	expression_swap	face	observed	medium
+23223	appear	Soviet soldiers arrive	observed	high
+23265	layout_reset	cut: puppet + Soviet judge	observed	high
+23311	pose_swap	judge raises finger	observed	high
+23338	label	"25 years"	observed	high
+23376	appear	gulag camp icon	observed	high
+23403	appear	prisoner labouring icon	observed	high
+23406	appear	crime tape icon	observed	high
+23449	layout_reset	cut: prisoner puppet + camp	observed	high
+23498	pose_swap	prisoner holds object	observed	high
+23512	appear	thought bubble bomb + explosion (sabotage accusation)	observed	high
+23538	enter	3f: Soviet officer	observed	high
+23544	appear	bubble "Helmut, I don't know man, you've been seeming sus lately"	observed	high
+23555	expression_swap	face	observed	medium
+23599	layout_reset	cut: courtroom with Soviet judge	observed	high
+23652	layout_reset	cut: firing squad + figure (non-graphic)	observed	high
+23670	label	"February 28, 1953"	observed	high
+23743	replace	figure lying	observed	high
+23761	label	"Killed at 50 years old"	observed	high

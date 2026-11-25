@@ -1,0 +1,54 @@
+first	type	description	evidence	confidence
+13818	hard_cut	C09 end -> roster	observed	high
+13825	camera_zoom	roster zoom into "Josef Dietrich"	observed	high
+13883	hard_cut	profile canvas: portrait + "Generaloberst Waffen-SS" + SS emblem	observed	high
+13961	appear	officer + stars + up arrows (promotion)	observed	high
+14008	appear	commander + troops pictogram	observed	high
+14062	appear	shield + "Leibstandarte SS Adolf Hitler"	observed	high
+14126	appear	tank + "I SS Panzer Division"	observed	high
+14187	text_update	"V SS Panzer Division"	observed	high
+14205	text_update	"VI SS Panzer Division"	observed	high
+14254	layout_reset	cut: puppet alone	observed	high
+14277	enter	leader at right	observed	high
+14283	appear	curved arrow	observed	high
+14292	appear	car + driver icon	observed	high
+14311	appear	bodyguards pictogram	observed	high
+14348	partial_reset	leader thumbs up	observed	high
+14430	enter	Himmler figure	observed	high
+14439	expression_swap	face	observed	medium
+14444	reposition	group	observed	high
+14448	label	"Himmler"	observed	high
+14499	subtle	settle	observed	medium
+14502	layout_reset	cut: puppet alone	observed	high
+14505	expression_swap	face	observed	medium
+14519	appear	stars + up arrows	observed	high
+14530	enter	5f: general enters right	observed	high
+14555	label	"Gerd von Rundstedt"	observed	high
+14648	appear	2f: thought bubble "his only "merit" is being Hitler's buddy..."	observed	high
+14754	partial_reset	3f: general leaves	observed	high
+14761	enter	US soldier hand enters	observed	high
+14765	enter	US soldier	observed	high
+14770	subtle	settle	observed	medium
+14774	pose_swap	arrest	observed	high
+14829	layout_reset	cut: courtroom chair + judge	observed	high
+14851	pose_swap	judge raises finger	observed	high
+14855	label	"sentenced to 25 years" + cell	observed	high
+14884	appear	crossed swords + "CRIME SCENE" tape (Malmedy)	observed	high
+14912	layout_reset	cut: prisoner behind bars + "Released after 10 years", "1955"	observed	high
+14922	motion_step	bars slide	observed	medium
+14967	layout_reset	cut: puppet "1956"	observed	high
+14979	pose_swap	handcuffed	observed	high
+15007	appear	judge again (second trial)	observed	high
+15042	appear	feathered photo "Night of the Long Knives" + judge bubble "Back to jail!"	observed	high
+15126	layout_reset	cut: behind bars, "1959"	observed	high
+15138	motion_step	bars slide	observed	medium
+15167	appear	heart-warning icon	observed	high
+15201	layout_reset	cut: old man in armchair + Germany map, "1962"	observed	high
+15205	pose_swap	clutches chest	observed	high
+15215	label	"Ludwigsburg" X	observed	high
+15234	replace	X-eyes slump	observed	high
+15262	label	"1966"	observed	high
+15300	label	3f: "73 years old"	observed	high
+15328	layout_reset	cut: funeral crowd + grave	observed	high
+15336	label	"6.000 people"	observed	high
+15397	appear	SS runes + arrow (veterans)	observed	high

@@ -1,0 +1,27 @@
+first	type	description	evidence	confidence
+35220	hard_cut	C25 end -> roster	observed	high
+35226	camera_zoom	roster zoom into "Georg Keppler"	observed	high
+35284	hard_cut	profile canvas: portrait + SS + stars arrows	observed	high
+35309	appear	pointing pictogram	observed	high
+35379	appear	SS runes scattered	observed	high
+35469	appear	"Panzer Division "Das Reich"" shield	observed	high
+35487	appear	"Totenkopf" skull	observed	high
+35506	appear	"6th Mountain Division Nord" shield (row of 3 emblems)	observed	high
+35575	layout_reset	cut: puppet (glasses), "October 1944"	observed	high
+35633	pose_swap	points + soldiers	observed	high
+35637	appear	"I SS Panzer Division" tank	observed	high
+35719	appear	Europe map	observed	high
+35753	partial_reset	soldiers leave	observed	high
+35818	appear	3f: "III SS Panzer Division" + tank, raised finger	observed	high
+35878	layout_reset	cut: puppet, "April 1945"	observed	high
+35918	appear	SS round emblem	observed	high
+35951	label	"XVIII SS Army Corps"	observed	high
+36014	layout_reset	cut: hands up + US soldier	observed	high
+36061	label	"May 2, 1945"	observed	high
+36114	layout_reset	cut: behind bars	observed	high
+36150	motion_step	3f bars slide, "1948"	observed	medium
+36206	layout_reset	cut: old man armchair	observed	high
+36222	appear	Germany map "Hamburg" X	observed	high
+36249	replace	slump	observed	high
+36271	label	"June 16, 1966"	observed	high
+36309	label	"aged 72"	observed	high

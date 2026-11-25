@@ -1,0 +1,36 @@
+first	type	description	evidence	confidence
+23820	hard_cut	C17 end -> roster	observed	high
+23826	camera_zoom	roster zoom into "Theodor Wisch"	observed	high
+23884	hard_cut	profile canvas: portrait + tank "I SS Panzer Division" + pictogram	observed	high
+23911	appear	"Leibstandarte Adolf Hitler" shield	observed	high
+23986	label	"April 1943"	observed	high
+24038	layout_reset	cut: puppet pointing at Europe map	observed	high
+24065	appear	tank + arrow on map	observed	high
+24099	label	"Kursk" X	observed	high
+24137	appear	shield on map	observed	high
+24141	subtle	settle	observed	medium
+24145	label	"Ukraine" circle	observed	high
+24190	appear	UK/US flags + Allied soldier + "Normandy" X + tank arrow	observed	high
+24261	appear	small figure on map	observed	high
+24313	appear	arrow to skulls	observed	high
+24323	label	"Lago Maggiore" (massacre site)	observed	high
+24394	layout_reset	3f: puppet alone	observed	high
+24467	appear	3f: feathered photo "Operation Cobra Offensive"	observed	high
+24517	label	"August 1944"	observed	high
+24556	layout_reset	cut: small figure lying	observed	high
+24621	appear	warship firing	observed	high
+24653	appear	France map "Falaise Pocket"	observed	high
+24713	layout_reset	cut: hospital bed	observed	high
+24735	appear	visitor bubble "It's just a flesh wound Theo!"	observed	high
+24795	layout_reset	cut: puppet + British soldier	observed	high
+24818	pose_swap	handcuffed, "1945"	observed	high
+24878	layout_reset	cut: behind bars "1945 ->"	observed	high
+24904	motion_step	2f bars slide	observed	medium
+24912	motion_step	bars slide	observed	medium
+24916	motion_step	3f bars gone	observed	medium
+24924	label	"1948"	observed	high
+24983	layout_reset	cut: old man armchair	observed	high
+25011	pose_swap	clutches chest	observed	high
+25039	replace	slump	observed	high
+25056	label	"January 11, 1995"	observed	high
+25138	label	"Aged 87" + hearts	observed	high

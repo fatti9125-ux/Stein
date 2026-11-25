@@ -1,0 +1,33 @@
+first	type	description	evidence	confidence
+17960	hard_cut	C12 end -> roster	observed	high
+17966	camera_zoom	roster zoom into "Fritz Witt"	observed	high
+18024	hard_cut	profile canvas: portrait + SS + soldier pictogram	observed	high
+18050	appear	"Leibstandarte SS Adolf Hitler" shield	observed	high
+18090	appear	feathered photo "Battle of Greece"	observed	high
+18133	appear	commander pointing pictogram	observed	high
+18157	appear	"SS Division Hitlerjugend" shield	observed	high
+18203	label	"1943"	observed	high
+18230	layout_reset	cut: puppet + training youths running	observed	high
+18285	appear	Belgium map	observed	high
+18309	motion_step	youths become soldiers	observed	medium
+18315	subtle	settle	observed	medium
+18322	subtle	settle	observed	medium
+18327	scale_down	map shrinks	observed	high
+18333	scale_down	map shrinks more	observed	high
+18336	layout_reset	cut: puppet + Europe map with marker	observed	high
+18339	camera_zoom	4f map zoom	observed	high
+18351	appear	marker arrow to "France"	observed	high
+18367	text_update	"1943" -> "March, 1944"	observed	high
+18433	appear	Allied soldier + UK/US flags	observed	high
+18471	layout_reset	cut: puppet + feathered photo "Normandy landings"	observed	high
+18474	reposition	3f compact	observed	high
+18521	label	"June 6, 1944"	observed	high
+18573	pose_swap	puppet points	observed	high
+18610	appear	soldiers	observed	high
+18676	subtle	settle	observed	medium
+18681	layout_reset	cut: full-body small figure pointing, "June 14, 1944"	observed	high
+18684	subtle	settle	observed	medium
+18733	appear	warship	observed	high
+18796	appear	explosion + shell	observed	high
+18844	replace	figure down (killed by naval shelling)	observed	high
+18849	appear	France map "Venoix" X	observed	high

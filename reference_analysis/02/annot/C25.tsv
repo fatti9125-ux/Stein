@@ -1,0 +1,56 @@
+first	type	description	evidence	confidence
+33473	hard_cut	C24 end -> roster	observed	high
+33479	camera_zoom	roster zoom into "Kurt Meyer"	observed	high
+33537	hard_cut	profile canvas: portrait + SS + pointing pictogram	observed	high
+33582	appear	Europe map	observed	high
+33591	label	"France" circle	observed	high
+33604	label	"Balkans" shaded circle	observed	high
+33622	label	"Operation Barbarossa" + arrows	observed	high
+33664	label	"Kharkov" X	observed	high
+33695	label	"Normandy" X	observed	high
+33724	layout_reset	cut: puppet, "1944"	observed	high
+33741	pose_swap	points + soldiers	observed	high
+33785	appear	"SS Division Hitlerjugend" shield	observed	high
+33831	appear	Europe map	observed	high
+33837	subtle	settle	observed	medium
+33840	layout_reset	4f: compact	observed	high
+33902	appear	shield + soldier marker on France	observed	high
+33935	label	"Caen" X	observed	high
+33981	appear	Allied planes + soldier + flags	observed	high
+34003	appear	Allied artillery	observed	high
+34083	appear	Allied tank	observed	high
+34086	subtle	settle	observed	medium
+34090	subtle	settle	observed	medium
+34132	layout_reset	cut: puppet, "September 1944"	observed	high
+34182	enter	farmer with pitchfork edge	observed	high
+34185	enter	farmer (Belgian resistance)	observed	high
+34188	subtle	settle	observed	medium
+34192	expression_swap	face	observed	medium
+34254	pose_swap	puppet tied/captured	observed	high
+34258	appear	British soldier	observed	high
+34267	subtle	settle	observed	medium
+34270	subtle	settle	observed	medium
+34305	layout_reset	cut: courtroom with skull icon	observed	high
+34352	appear	prison icon	observed	high
+34417	layout_reset	cut: behind bars, "1954"	observed	high
+34436	motion_step	bars slide	observed	medium
+34440	motion_step	bars gone	observed	medium
+34480	appear	judge + crime icon	observed	high
+34523	pose_swap	judge shrug	observed	high
+34632	appear	soldier shooting POW icon + shield (Ardenne Abbey massacre context)	observed	high
+34692	appear	feathered photo "Ardenne Abbey"	observed	high
+34747	layout_reset	cut: civilian puppet	observed	high
+34756	pose_swap	open palm	observed	high
+34775	appear	"HIAG" emblem	observed	high
+34807	pose_swap	thumb point	observed	high
+34817	appear	bubble "You know, the "SS" guys were actually pretty cool"	observed	high
+34826	appear	veterans group	observed	high
+34875	appear	health warning icon	observed	high
+34889	expression_swap	face	observed	medium
+34907	appear	bandaged soldier + "more than 30 war wounds"	observed	high
+34967	layout_reset	cut: old man armchair with party hat (birthday)	observed	high
+34981	pose_swap	clutches chest + heart	observed	high
+35006	replace	slump	observed	high
+35051	label	"December 23, 1961"	observed	high
+35107	layout_reset	cut: funeral crowd + grave	observed	high
+35123	label	"15.000 people"	observed	high

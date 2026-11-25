@@ -1,0 +1,44 @@
+first	type	description	evidence	confidence
+9727	hard_cut	C06 end -> roster	observed	high
+9733	camera_zoom	roster zoom into "Hermann Priess"	observed	high
+9791	hard_cut	profile canvas: portrait + division emblem/tank + label	observed	high
+9870	label	"1943"	observed	high
+9898	appear	predecessor head X-eyes inset (took over after death)	observed	high
+9941	layout_reset	cut: puppet pointing + emblem + Europe map highlighted	observed	high
+9959	label	"Kursk" X on map	observed	high
+9987	appear	front line dashed on map	observed	high
+9999	appear	clash icons on map	observed	high
+10037	layout_reset	cut: puppet, header "October 1944"	observed	high
+10103	appear	"I SS Panzer Corps" emblem + tank	observed	high
+10152	pose_swap	puppet points	observed	high
+10156	appear	Ardennes map with US flags + blue/red arrows	observed	high
+10169	appear	feathered photo "Battle of The Bulge"	observed	high
+10228	layout_reset	cut: puppet alone	observed	high
+10242	label	"1945"	observed	high
+10246	enter	leader arm/figure enters left	observed	high
+10261	appear	soldiers group	observed	high
+10300	appear	Hungary map behind soldiers	observed	high
+10303	subtle	settle	observed	medium
+10307	subtle	settle	observed	medium
+10330	appear	bubble "You will lead Operation Southwind"	observed	high
+10407	appear	Soviet symbol + red arrow on map	observed	high
+10453	replace	symbol arrow fades (stepped)	observed	high
+10510	layout_reset	cut: puppet pointing + soldiers + map	observed	high
+10556	appear	feathered photo "Operation Spring Awakening"	observed	high
+10586	appear	swastika + black arrows on map (offensive)	observed	high
+10679	appear	Knight's Cross medal photo	observed	high
+10740	layout_reset	cut: puppet hands up + US soldier (surrender), "May, 1945"	observed	high
+10770	pose_swap	handcuffed	observed	high
+10826	layout_reset	cut: courtroom: defendant chair + judge at bench	observed	high
+10849	subtle	judge settle	observed	medium
+10855	appear	skull + crossed swords icon	observed	high
+10914	appear	feathered photo "Malmedy Massacre"	observed	high
+10970	layout_reset	cut: prisoner behind bars + "20 years sentence"	observed	high
+11012	reposition	4f: bars slide away (released)	observed	high
+11020	motion_step	bars move	observed	medium
+11023	motion_step	bars move	observed	medium
+11026	motion_step	bars gone	observed	medium
+11050	layout_reset	cut: old man in armchair ("1954" released)	observed	high
+11061	pose_swap	old man slumps, X-eyes (natural death)	observed	high
+11082	text_update	header "February 2, 1985"	observed	high
+11123	label	"Dead at 83 years old" + arrow	observed	high

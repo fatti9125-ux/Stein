@@ -1,0 +1,47 @@
+first	type	description	evidence	confidence
+15481	hard_cut	C10 end -> roster	observed	high
+15487	camera_zoom	roster zoom into "August Schmidhuber"	observed	high
+15545	hard_cut	profile canvas: portrait + "Waffen-SS" emblem + pointing pictogram	observed	high
+15571	appear	"7th SS Volunteer Mountain Division Prinz Eugen" shield	observed	high
+15599	appear	"21st SS Mountain Division Skanderbeg (1st Albanian)" shield	observed	high
+15626	appear	Balkans map with red circle	observed	high
+15689	layout_reset	cut: puppet (glasses) alone	observed	high
+15704	pose_swap	points	observed	high
+15718	appear	boot crushing resistance icon	observed	high
+15783	appear	violence pictogram	observed	high
+15853	partial_reset	icons cleared, emblem	observed	high
+15896	appear	skull pile (symbolic)	observed	high
+15976	appear	soldier arresting civilian	observed	high
+16014	appear	menorah icon + arrow (deportation of Jews; non-graphic)	observed	high
+16023	appear	Europe map	observed	high
+16074	reposition	compact	observed	high
+16077	appear	crossed swords + crime tape	observed	high
+16108	expression_swap	face	observed	medium
+16116	label	"Split" X	observed	high
+16127	label	"Dubrovnik" X + circle	observed	high
+16153	layout_reset	cut: puppet alone	observed	high
+16168	appear	swastika icon	observed	high
+16180	appear	3f: Albania map	observed	high
+16186	motion_step	swastika moves over map (step)	observed	medium
+16191	motion_step	step	observed	medium
+16196	motion_step	step	observed	medium
+16200	label	"Albania"	observed	high
+16204	motion_step	swastika exits	observed	medium
+16231	pose_swap	points	observed	high
+16287	appear	"Prinz Eugen" shield	observed	high
+16319	appear	soldiers group	observed	high
+16342	appear	partisan soldier with Yugoslav flag	observed	high
+16360	appear	second partisan with red beret	observed	high
+16441	pose_swap	soldiers aim	observed	high
+16444	layout_reset	cut: puppet + soldiers	observed	high
+16455	reposition	3f soldiers compact	observed	high
+16479	appear	Yugoslavia map	observed	high
+16529	label	"May, 1945"	observed	high
+16587	layout_reset	cut: puppet + US soldier arrest	observed	high
+16616	expression_swap	soldier face	observed	medium
+16621	enter	5f: Yugoslav officer enters (handover)	observed	high
+16656	layout_reset	cut: courtroom	observed	high
+16691	appear	skull pile	observed	high
+16718	appear	arrest/deportation icons	observed	high
+16795	layout_reset	cut: hanged silhouette small (execution implied, non-graphic), "February 19, 1947"	observed	high
+16808	appear	Serbia map "Belgrade"	observed	high

@@ -19,18 +19,23 @@
   ]
  },
  "video_02": {
-  "coverage": "in_progress",
-  "chapters_total": 27,
-  "chapters_done": [
-   "C01",
-   "C02",
-   "C03",
-   "C04",
-   "C05",
-   "C06"
-  ],
-  "last_verified_frame": 9726,
-  "next_frame": 9727
+  "coverage": "complete_for_supported_methods",
+  "chapters_done": "C01-C27",
+  "frames_total": 37602,
+  "last_verified_frame": 37601,
+  "next_frame": null,
+  "events": 1155,
+  "status_counts": {
+   "identical_hold_verified": 13165,
+   "near_identical_hold_measured": 22742,
+   "visual_verified": 1198,
+   "event_interior_measured": 442,
+   "measured_codec_refresh": 55
+  },
+  "open_uncertainties": [
+   "event interiors measured not individually viewed",
+   "audio identities unverified (no playback)"
+  ]
  },
  "excerpts": {
   "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",
@@ -41,6 +46,12 @@
   "files": [
    "01/audio_cues.csv",
    "01/audio_notes.md"
+  ]
+ },
+ "audio_02": {
+  "coverage": "measured_unverified",
+  "files": [
+   "02/audio_cues.csv"
   ]
  }
 }

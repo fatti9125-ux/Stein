@@ -1,0 +1,22 @@
+first	type	description	evidence	confidence
+20512	hard_cut	C14 end -> roster	observed	high
+20519	camera_zoom	roster zoom into "Werner Ostendorff"	observed	high
+20577	hard_cut	profile canvas: portrait + SS division emblem	observed	high
+20588	appear	"Götz von Berlichingen" fist shield	observed	high
+20640	appear	Europe map with swastika marker	observed	high
+20685	appear	"Panzer Division "Das Reich"" shield	observed	high
+20774	layout_reset	cut: puppet alone	observed	high
+20792	pose_swap	wounded (small red mark), holds arm	observed	high
+20820	appear	2f: France map "Carentan" X	observed	high
+20847	label	"June, 1944"	observed	high
+20896	layout_reset	cut: puppet alone	observed	high
+20947	enter	officer (glasses) enters right	observed	high
+20985	appear	troops formation	observed	high
+20990	appear	bubble "You got this, right?" + "Army Group Oberrhein"	observed	high
+21060	layout_reset	cut: full-body small figure	observed	high
+21097	replace	figure lying (wounded)	observed	high
+21119	appear	shell + fire icon + arrow	observed	high
+21157	appear	Europe map with Hungary circle	observed	high
+21202	appear	hospital bed with patient	observed	high
+21223	label	"Austria" circle + arrow	observed	high
+21256	label	"May 1, 1945"	observed	high
