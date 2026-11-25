@@ -1,11 +1,14 @@
 {
  "video_01": {
-  "coverage": "unreviewed",
-  "reason": "file not supplied"
+  "coverage": "in_progress",
+  "stage": "frame index + change scan",
+  "last_verified_frame": null,
+  "next_frame": 0,
+  "open_uncertainties": []
  },
  "video_02": {
   "coverage": "unreviewed",
-  "reason": "full file not supplied; excerpts only"
+  "reason": "queued after video 01"
  },
  "excerpts": {
   "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",

@@ -6,14 +6,28 @@
    "basename": "History’s Strangest War Tactics Explained(1).mp4",
    "expected_duration": "21:26.488",
    "expected_frames": 38592,
-   "status": "MISSING: not in workspace, uploads or Google Drive"
+   "status": "SUBSTITUTED by user choice (2026-11-25)",
+   "substitute": {
+    "file": "Every Historical Glitch We Can't Explain.mp4",
+    "drive_id": "1RQKJ4DIsG4Fv789OtwoGufrrrU14ZSvz",
+    "duration_s": 1490.615102,
+    "decoded_video_frames": 44715,
+    "first_video_pts_s": 0.033333,
+    "video": "h264 1280x720 30fps",
+    "audio": "aac 44.1kHz stereo, starts 0.000 s",
+    "note": "Different title/length from the manifest entry; analysed as reference 01 at the user's instruction. Frame IDs are global and zero-based in display order; F000000 has source PTS 0.033333 s."
+   }
   },
   {
    "order": "02",
    "basename": "How Every Feared Waffen-SS General Died(1).mp4",
    "expected_duration": "20:53.516",
    "expected_frames": 37602,
-   "status": "MISSING: only 30 s excerpts available (see excerpts_available)"
+   "status": "CONFIRMED: matches manifest (1253.516145 s container, 37602 decoded frames, first video PTS 0.033333 s)",
+   "file": "How Every Feared Waffen-SS General Died.mp4",
+   "drive_id": "1aheMr9gWDbnnujSOM77sNyFmI0rRv7QX",
+   "video": "h264 1280x720 30fps",
+   "audio": "aac 44.1kHz stereo, starts 0.000 s"
   }
  ],
  "excerpts_available": [
