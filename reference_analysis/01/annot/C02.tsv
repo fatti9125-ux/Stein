@@ -1,0 +1,94 @@
+first	type	description	evidence	confidence
+2300	hard_cut	Last C01 composition -> index grid (24 tiles, 6x4) in 1 frame; grid holds 6 frames (F2300-F2306)	observed	high
+2307	camera_zoom	Grid zooms/pans into tile 2 "Miracle of the Sun" over 15 frames (F2307-F2321) as one group; settles on enlarged tile (feathered B&W crowd photo + title below, neighbour tile visible at right edge); title card holds F2322-F2363 (42 frames, 1.4 s)	observed	high
+2364	hard_cut	Title card -> chapter canvas: photo re-placed smaller at left (x≈.04-.29), title removed; 2-line header "Miracle of The Sun" / "October 13" top-centre	observed	high
+2392	text_update	Date line extends in place "October 13" -> "October 13, 1917" (same baseline, re-centred) — 28 frames after header appears	observed	high
+2438	appear	Black crowd silhouette group + label "70,000 people" placed overlapping photo bottom-right	observed	high
+2487	appear	Portugal map (cream, grey Spain at right edge, rotated label "Portugal") placed at right (x≈.71-.95)	observed	high
+2497	appear	Red X + label "Fatima" placed on the map	observed	high
+2589	appear	Orange-yellow sun icon placed between crowd and map, top	observed	high
+2633	layout_reset	Hard reset: header drops date line; group of 3 peasant figures (hats, coats) at bottom-left cropped by bottom edge, flock of sheep partially visible right of them	observed	high
+2673	appear	Large thought bubble (tail down to middle peasant) containing praying Virgin Mary figure, top-left above peasants	observed	high
+2710	appear	Inside bubble: orange cross + "!" and yellow star burst at Mary's extended hand (Mary pose swap: praying -> hand extended)	observed	high
+2768	appear	Grey rain cloud bank across top-right + diagonal blue rain streaks over whole right canvas; peasant pose swap (hands together, looking up)	observed	high
+2828	cloud_motion	Cloud bank starts to part: left/right cloud groups shift apart (step 1)	observed	high
+2832	cloud_motion	Clouds part further; sun edge appears in gap; rain streaks removed; peasant mouths open (step 2)	observed	high
+2835	cloud_motion	Sun fully visible between parted clouds (step 3)	observed	high
+2839	cloud_motion	Clouds push further to edges; sun rays appear (step 4)	observed	high
+2842	cloud_motion	Clouds almost off-frame; sun with rays holds centre-right (step 5). Steps at F2828/2832/2835/2839/2842 = held-pose steps every 3-4 frames (stepped, not tweened)	observed	high
+2878	subtle_change	Peasant mouth/hand flicker (right peasant thumb up -> lowered)	observed	medium
+2893	replace	Sun with rays replaced by "spinning sun" ring (thick yellow ring with swept black flame strokes) at same position; peasants all open-mouthed	observed	high
+2916	cycle_swap	Spinning-sun cycle: ring drawing alternates between 2 variants (rotated stroke pattern), swaps every 4-6 frames (≈5-7 swaps/s) F2916-F3014; reads as rotation by drawing replacement, not a transform	observed	high
+2922	cycle_swap	(spin cycle, see 2916)	observed	high
+2926	cycle_swap+pose	(spin cycle) + right peasant pose swap to pointing at sun with thumb	observed	high
+2931	cycle_swap	(spin cycle)	observed	high
+2937	cycle_swap	(spin cycle)	observed	high
+2943	cycle_swap	(spin cycle)	observed	high
+2948	cycle_swap	(spin cycle)	observed	high
+2954	cycle_swap	(spin cycle)	observed	high
+2959	cycle_swap	(spin cycle)	observed	high
+2964	cycle_swap	(spin cycle)	observed	high
+2970	cycle_swap	(spin cycle)	observed	high
+2976	cycle_swap+pose	(spin cycle) + right peasant pose swap: pointing -> both hands to face, shocked	observed	high
+2982	cycle_swap	(spin cycle)	observed	high
+2986	cycle_swap	(spin cycle)	observed	high
+2991	cycle_swap	(spin cycle)	observed	high
+2997	cycle_swap	(spin cycle)	observed	high
+3003	cycle_swap	(spin cycle; this event wasn't in the intervals list because the bbox spans peasants too)	observed	high
+3008	cycle_swap	(spin cycle)	observed	high
+3014	cycle_swap	(spin cycle, last swap; cycle ran F2916-F3014 ≈ 3.3 s)	observed	high
+3019	layout_reset	Hard reset: single peasant (bucket hat, brown coat) re-placed waist-up bottom-left, large (≈2x previous scale), pointing up-right with mouth open; header holds	observed	high
+3039	appear	Yellow 4-point sparkle star placed upper-centre	observed	high
+3064	appear	Red/rust sparkle star placed lower-right of first	observed	high
+3068	appear	Blue sparkle star placed upper-left	observed	high
+3072	appear	Red sparkle star placed upper-right — sparkles arrive every 4 frames (F3064/3068/3072/3076), staggered scatter	observed	high
+3076	appear	Grey-green sparkle star placed left-centre (5 sparkles total)	observed	high
+3108	cycle_swap	Sparkle group re-drawn (small positional jitter/size change) — begins twinkle/boil swaps	observed	medium
+3115	boil_cycle	Sparkle group boil: whole group re-drawn every 6-8 frames (F3108,3115,3123,3129,3135,3143,3153,3160,3166) — small position/rotation jitter per sparkle; reads as twinkle via drawing replacement	observed	high
+3123	boil_cycle	(sparkle boil)	observed	high
+3129	boil_cycle	(sparkle boil)	observed	high
+3135	boil_cycle	(sparkle boil)	observed	high
+3143	boil_cycle	(sparkle boil)	observed	high
+3153	boil_cycle	(sparkle boil)	observed	high
+3160	boil_cycle	(sparkle boil)	observed	high
+3166	boil_cycle	(sparkle boil)	observed	high
+3172	appear	Large spinning sun with orange core placed at right (x≈.6-.89), overlapping one sparkle	observed	high
+3208	position_jumps	MEASURED sun "zig-zag": held-position jumps, no tweening. Sun centre (x,y norm, frames held): (.777,.333) F3172-3207 → (.884,.441) F3208-3214 [7f] → (.722,.524) F3215-3223 [9f] → (.825,.572,+15% size) F3224-3230 [7f] → (.601,.652,+28%) F3231-3234 [4f] → (.721,.620) F3235-3238 [4f] → (.859,.704) F3239-3243 [5f] → (.772,.704) F3244-3248 [5f] → (.573,.727) F3249-3252 [4f] → (.862,.741) F3253-3259 [7f] → (.807,.437) F3260-3261 [2f] → (.779,.336) F3262-3263 → (.777,.332) F3264+ home. Descends toward ground while zig-zagging, holds shorten 9→4 frames (accelerating), then snaps back up in 2 steps.	measured	high
+3215	position_jumps	(sun zig-zag, see 3208)	measured	high
+3224	position_jumps	(sun zig-zag + grows)	measured	high
+3231	position_jumps+pose	(sun zig-zag) + peasant pose swap: pointing up -> arm stretched horizontally pointing right	observed	high
+3235	position_jumps	(sun zig-zag; event merged 3235-3239)	measured	high
+3244	position_jumps	(sun zig-zag)	measured	high
+3249	position_jumps	(sun zig-zag; lowest-left point, overlaps peasant's finger)	measured	high
+3253	position_jumps	(sun zig-zag)	measured	high
+3259	position_jumps+pose	F3260-3264 sun returns up in 2 steps to home; peasant pose swap back to pointing up (F3260)	measured	high
+3313	appear	Two small white panicking figures (one hands to head, one pointing up) + speech bubble "Holy crap! The end is coming!" placed bottom-right corner, cropped	observed	high
+3405	partial_reset	3-frame span: sparkles + panicking figures cleared; peasant pose swap to looking down at pocket watch/compass in hand; sun holds	observed	high
+3434	appear	Black 2-line label "lasted around 10 minutes" placed between peasant and sun	observed	high
+3497	layout_reset	Hard reset: sun/label cleared; peasant re-placed centre-bottom, arms spread out, wet (blue drip strokes), looking down; cropped at waist	observed	high
+3554	scene_change	Peasant re-staged full-body standing on brown ground vignette strip (bottom); scale smaller to fit feet; arms out wet	observed	high
+3606	pose_swap	Peasant pose: arms out wet -> arms out with white "shake"/dry lines (clothes dried) — action marks	observed	high
+3633	enter	White narrator figure enters bottom-right corner (F3633 partial arm, F3636 more, F3640 full upper body hand on chin) — 3 discrete steps over 7 frames (stepped slide-in)	observed	high
+3636	enter	(narrator slide-in step 2)	observed	high
+3640	enter	(narrator slide-in step 3, settled)	observed	high
+3650	pose_swap	Peasant: arms out drying -> palms up shrug, puzzled	observed	high
+3679	pose_swap+reposition	3-frame span: peasant swaps to hand-on-chin thinking; narrator re-drawn larger and closer (shoulders up, open mouth, palm out)	observed	high
+3692	appear	Speech bubble from narrator containing eye-with-light-rays diagram (retina icon)	observed	high
+3727	appear	Three blue snowflake icons (ice crystals) placed under bubble left of narrator	observed	high
+3743	appear	Dust/particle cloud outline icon placed left of snowflakes	observed	high
+3793	appear	Feathered photo (sunset sky with sun glare over road) placed next to peasant's head (archive/photo insert); ground strip recoloured sandy (photo bottom)	observed	medium
+3797	replace	Photo replaced by an illustrated landscape vignette (field with glowing sun pillars) at same place, larger	observed	high
+3921	reposition+enter	Hard cut composition change: peasant + landscape + icons + narrator scaled down ~0.75 and shifted right; doctor (glasses, grey coat, clipboard) enters left, open palm	observed	high
+3933	appear	Blue head with red brain icon placed at doctor's palm	observed	high
+3974	pose_swap	Doctor: open palm -> raised index finger (point of explanation)	observed	high
+3978	appear	Crowd silhouettes with small thought bubble of Virgin Mary above, placed above brain head (stacked column)	observed	high
+4022	appear	Black stick figure hands-on-head (distress lines) + red "!" marks scattered over crowd, placed left of the column	observed	high
+4080	layout_reset	Hard cut: everything cleared; narrator alone, hand on chin, centre-right (x≈.43-.72), header holds	observed	high
+4083	expression_swap	Narrator eye/brow small change (eyes shift) — 3 frames after the cut	observed	medium
+4116	appear	Inset group: 3 peasants on a small ground patch with sun above, placed top-left (callback of earlier scene at ~0.6 scale)	observed	high
+4146	pose_swap	Narrator: thinking -> pointing up-left at inset + shrug, open frown mouth	observed	high
+4167	appear	Small yellow arrow from sun toward peasants (light ray)	observed	high
+4195	appear	Eye icon with retina flare + yellow arrow placed above peasants (from peasants up to eye)	observed	high
+4300	pose_swap+replace	3-frame span: narrator pose swap to both palms up looking up-left (F4300); sun replaced by spinning-sun drawing (F4302)	observed	high
+4309	replace	Spinning sun replaced by triple overlapping spinning suns (afterimage/multiple-image effect drawn as 3 copies)	observed	high
+4332	appear	Coloured sparkle stars scattered around the triple sun (red, blue, dark)	observed	high

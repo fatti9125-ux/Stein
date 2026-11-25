@@ -3,11 +3,12 @@
   "coverage": "in_progress",
   "stage": "per-chapter event review",
   "chapters_done": [
-   "C01"
+   "C01",
+   "C02"
   ],
-  "last_verified_frame": 2299,
-  "next_frame": 2300,
-  "next_chapter": "C02 Miracle of the Sun (F002300 grid cut; canvas F002364)",
+  "last_verified_frame": 4383,
+  "next_frame": 4384,
+  "next_chapter": "C03 Laughter Epidemic (grid cut F004384; canvas F004448)",
   "method": "full per-frame scan (md5 exact + 640x360 diff>24) -> events (threshold 0.0004 of frame) -> visual review of before/first/last/after crops per event + per-frame strips for multi-frame events + tight-diff crops for low-intensity events",
   "open_uncertainties": [
    "frame-level inspection of event interiors not stripped (15 frames in C01) marked event_interior_measured",
