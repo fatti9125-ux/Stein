@@ -1,0 +1,14 @@
+{
+ "video_01": {
+  "coverage": "unreviewed",
+  "reason": "file not supplied"
+ },
+ "video_02": {
+  "coverage": "unreviewed",
+  "reason": "full file not supplied; excerpts only"
+ },
+ "excerpts": {
+  "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",
+  "evidence": ".claude/skills/hand-drawn-vox-explainer/references/sheet1-5.jpg"
+ }
+}

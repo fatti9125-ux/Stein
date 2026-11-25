@@ -1,0 +1,101 @@
+{
+ "created": "2026-11-25",
+ "required_references": [
+  {
+   "order": "01",
+   "basename": "History’s Strangest War Tactics Explained(1).mp4",
+   "expected_duration": "21:26.488",
+   "expected_frames": 38592,
+   "status": "MISSING: not in workspace, uploads or Google Drive"
+  },
+  {
+   "order": "02",
+   "basename": "How Every Feared Waffen-SS General Died(1).mp4",
+   "expected_duration": "20:53.516",
+   "expected_frames": 37602,
+   "status": "MISSING: only 30 s excerpts available (see excerpts_available)"
+  }
+ ],
+ "excerpts_available": [
+  {
+   "file": "103f2270-02_Character_Reactions_and_Props.mp4",
+   "md5": "93b0078a5b162fc26e3df4ccdcd7bda6",
+   "duration_s": 30.0,
+   "width": 1280,
+   "height": 720,
+   "fps": "30/1",
+   "decoded_video_frames": 900,
+   "first_video_pts_s": 0.0,
+   "audio_streams": 1,
+   "audio_channels": 2,
+   "duplicates": [
+    "2e491a49-02_Character_Reactions_and_Props.mp4",
+    "c43c8b1a-02_Character_Reactions_and_Props.mp4"
+   ]
+  },
+  {
+   "file": "18c83d5e-04_Maps_Archives_and_Action.mp4",
+   "md5": "009bcf4da3f0b6f4e6cd75ad3e86e7c8",
+   "duration_s": 30.0,
+   "width": 1280,
+   "height": 720,
+   "fps": "30/1",
+   "decoded_video_frames": 900,
+   "first_video_pts_s": 0.0,
+   "audio_streams": 1,
+   "audio_channels": 2,
+   "duplicates": [
+    "6020394d-04_Maps_Archives_and_Action.mp4",
+    "ee2b0b63-04_Maps_Archives_and_Action.mp4"
+   ]
+  },
+  {
+   "file": "253de4f5-03_Courtroom_Cuts_and_Crowds.mp4",
+   "md5": "2b2ce3c91019263547bc46534903e8df",
+   "duration_s": 30.0,
+   "width": 1280,
+   "height": 720,
+   "fps": "30/1",
+   "decoded_video_frames": 900,
+   "first_video_pts_s": 0.0,
+   "audio_streams": 1,
+   "audio_channels": 2,
+   "duplicates": [
+    "25c727b2-03_Courtroom_Cuts_and_Crowds.mp4",
+    "5509bde5-03_Courtroom_Cuts_and_Crowds.mp4"
+   ]
+  },
+  {
+   "file": "270de59c-01_Photos_Icons_and_Scene_Build.mp4",
+   "md5": "ba72c68c8afefc90fbda01d246519850",
+   "duration_s": 30.0,
+   "width": 1280,
+   "height": 720,
+   "fps": "30/1",
+   "decoded_video_frames": 900,
+   "first_video_pts_s": 0.0,
+   "audio_streams": 1,
+   "audio_channels": 2,
+   "duplicates": [
+    "eddd1a68-01_Photos_Icons_and_Scene_Build.mp4"
+   ]
+  },
+  {
+   "file": "28ffdde9-05_Battle_Layers_and_Callouts.mp4",
+   "md5": "118ebc60089737f4675b9ffbf465b6fd",
+   "duration_s": 30.0,
+   "width": 1280,
+   "height": 720,
+   "fps": "30/1",
+   "decoded_video_frames": 900,
+   "first_video_pts_s": 0.0,
+   "audio_streams": 1,
+   "audio_channels": 2,
+   "duplicates": [
+    "3555c566-05_Battle_Layers_and_Callouts.mp4",
+    "86da9ae7-05_Battle_Layers_and_Callouts.mp4"
+   ]
+  }
+ ],
+ "note": "The five excerpts show Kaminski, Fegelein, Dietrich, Witt and Krukenberg, consistent with reference 02; their offsets inside reference 02 cannot be verified without the full file."
+}
