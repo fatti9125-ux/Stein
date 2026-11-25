@@ -9,6 +9,58 @@ The user writes the script, records the voiceover and supplies a hand-drawn asse
 
 `SKILL_DIR` is this folder. `references/sheet1–5.jpg` show the five reference clips at two frames per second. **Look at them before storyboarding.** `engine/index.html` is both the editor and the renderer, so the preview is exactly what gets rendered.
 
+## Measured reference rules (read `references/Explainer_Motion_and_Style_Guide.md` first)
+These rules come from a frame-by-frame analysis of two full reference videos: 82,317 frames, 2,606 events (`reference_analysis/` in the repo). **They override anything below that conflicts with them.**
+
+**Appearance**
+- **Things appear whole in a single frame.** 79 % of all reference events are one-frame placements or swaps. In the engine, `img` and plain counters render at full size from their first frame.
+- **No fades, pops, slides or counting-up for ordinary elements.** The only smooth motions are:
+  - character entrances (3–5 frames, eased out);
+  - make-room compaction (3–8 frames);
+  - camera zooms (index 14 frames, map zooms).
+
+**Characters**
+- **Characters change by pose swaps:** replacement drawings at the same anchor, 89 + 66 in the references.
+- To fill a quiet stretch, swap the anchor's pose (`FAM` in `examples/buffet_build_board_v4_reference_style.py`). If the character has no alternate drawing, use a gentle camera punch-in of 1.07× toward the newest element.
+
+**Pacing**
+- New beats arrive with a median gap of about 1.35 s.
+- Compositions reset every 5–9 s (median), keeping one carry-over: the anchor, the header, or a key symbol.
+- **Nothing holds still for more than ~3–4 s.**
+
+**Chapter structure**
+- **Every chapter opens with the index grid:**
+  1. Hard cut to a grid of the chapter tiles; it holds 6 frames.
+  2. It zooms into the selected tile in 14 frames (exponential, eased out).
+  3. The title card holds about 1.4 s.
+  4. Hard cut to the canvas.
+- In the engine this is a scene with `index:{tiles:[{bg,t}],sel,cols}`.
+
+**Stepped motion**
+- Moves happen as discrete hops every 3–9 frames: map markers, bars sliding, climbing, the sun zig-zag.
+- Spins and twinkles are 2 drawings alternating every 4–6 frames.
+
+**Accents**
+- A red brush X lands about 0.3 s after the item it rules out.
+- Red ellipses mark places on maps.
+- Green checks and up-arrows mean success.
+- Dates fill in or update in place in the header.
+
+**Sound**
+- **No picture-synced sound effects.** In both references, voice-pause transients line up with visual events at chance level (13.4 % vs 12.8 %, and 15.5 % vs 15.5 %).
+- Use narration plus a quiet music bed about 26 dB down, with at most one signature hit per chapter.
+
+**Violence**
+- Show it symbolically: skull icons, X-eyes, a figure lying down, small red marks. Never graphic.
+
+To analyse a new reference video, use `scripts/reference_analysis/`:
+1. `scan_full.py` for a per-frame md5 and diff scan.
+2. `segment.py` to group changes into events.
+3. `compact.py` / `strip.py` / `tightdiff.py` to build review sheets.
+4. `measure_zoom.py` to measure camera transforms with ORB.
+5. `audio_feat.py` + `sfx_cand.py` for audio, with the chance-level test.
+6. `build_csv.py` to write `frames.csv` and `events.csv`.
+
 ## The look (read straight off the reference clips)
 
 **Background**
@@ -41,7 +93,7 @@ The user writes the script, records the voiceover and supplies a hand-drawn asse
 - Red means bad (losses, debt, "banned") and green means good. That is the only colour coding.
 - **Callouts:** a red X crosses out what's wrong, and a red ink circle rings what matters. White speech bubbles and cloud thought bubbles (sometimes with an icon inside) carry quotes and thoughts.
 
-**Motion (keep it simple, like the clips)**
+**Motion (keep it simple, like the clips; see the measured rules above)**
 - Things **appear on their word** with a tiny settle. No big pops, no slides.
 - **Hard cuts** between beats, usually every 5–12 s.
 - Use an occasional **zoom punch** (`z`) to reframe on a face or detail.

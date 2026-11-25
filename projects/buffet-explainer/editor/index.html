@@ -172,7 +172,7 @@ const flipFor=it=>{const L=LIB[it.a];if(!L||L.k!=='char')return !!it.flip;const 
 const R={
  img(it,t,p){const L=LIB[it.a]||{w:100,h:100};const h=+it.h||300,w=L.w*h/L.h,ax=it.center?h/2:h;
   const breath=it.still?1:1+0.006*Math.sin(Math.floor(t*15/2)*0.9+(+it.x||0));
-  const s=it.noPop?1:back(p/0.16)*0.12+0.88*clamp(p/0.03),op=it.noPop?1:clamp(p/0.03),fl=flipFor(it)?-1:1;
+  const s=1,op=1,fl=flipFor(it)?-1:1;
   return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot||0}) scale(${s*fl},${s*breath})" opacity="${op}"><image href="${src(it.a)}" x="${-w/2}" y="${-ax}" width="${w}" height="${h}" ${it.stone?'filter="url(#stone)"':''}/></g>${it.lab?`<text x="${it.x}" y="${+it.y-ax+(it.center?0:0)-18}" text-anchor="middle" class="hand" font-size="${+it.ls||32}" fill="${INK}" opacity="${op}">${esc(it.lab)}</text>`:''}`},
  card(it,t,p,boil,g){if(!g.d){g.d=torn(+it.x,+it.y,+it.w,+it.h,6);g.b=blob(it.x-34,it.y-30,+it.w+68,+it.h+60,12);g.c=`M${+it.x+16},${+it.y+16}h${it.w-32}v${it.h-32}h${-(it.w-32)}Z`}
   const s=it.noPop?1:back(p/0.3)*0.25+0.75,r=(+it.rot||0)+(it.noPop?0:(1-out3(p/0.3))*4),op=it.noPop?1:clamp(p/0.06),cx=+it.x+it.w/2,cy=+it.y+it.h/2;
@@ -203,15 +203,15 @@ const R={
  think(it,t,p,boil,g){const x=+it.x,y=+it.y,w=+it.w||420,hh=+it.h||150,fs=+it.size||34,tx=+it.tx,ty=+it.ty;if(!g.d){let d='';const n=Math.max(8,Math.round((w+hh)/55));for(let i=0;i<n;i++){const a=i/n*Math.PI*2,cx=x+w/2+Math.cos(a)*w/2*0.92,cy=y+hh/2+Math.sin(a)*hh/2*0.88,r=Math.min(w,hh)*0.22;d+=`M${cx-r},${cy}a${r},${r} 0 1,0 ${2*r},0a${r},${r} 0 1,0 ${-2*r},0`}g.d=d}
   const s=back(p/0.2),mx=x+w/2,my=y+hh;const dots=[0.35,0.65].map((q,i)=>`<circle cx="${mx+(tx-mx)*q}" cy="${my+(ty-my)*q}" r="${14-i*5}" fill="#fff" stroke="${INK}" stroke-width="4"/>`).join('');
   return `<g transform="translate(${tx},${ty}) scale(${s}) translate(${-tx},${-ty})" opacity="${clamp(p/0.05)}"><g filter="url(#rough${boil})"><path d="${g.d}" fill="#fff" stroke="${INK}" stroke-width="5"/><ellipse cx="${x+w/2}" cy="${y+hh/2}" rx="${w/2*0.95}" ry="${hh/2*0.9}" fill="#fff"/>${dots}</g>${it.a?`<image href="${src(it.a)}" x="${x+w/2-hh*0.4}" y="${y+hh*0.1}" width="${hh*0.8}" height="${hh*0.8}"/>`:''}${it.t?`<text x="${x+w/2}" y="${y+hh/2+fs*.35}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(it.t)}</text>`:''}</g>`},
- counter(it,t,p,boil,g){const dur=+it.dur||1.1,q=out3(p/dur),f=+it.from||0,to=+it.to||0,dec=+it.dec||0;const v=f+(to-f)*q;
+ counter(it,t,p,boil,g){const dur=it.plain?(+it.dur||0.0001):(+it.dur||1.1),q=out3(p/dur),f=+it.from||0,to=+it.to||0,dec=+it.dec||0;const v=f+(to-f)*q;
   const nf=(x)=>it.nosep?Number(x).toFixed(dec):fmtNum(x,dec);const fin=(it.pre||'')+nf(to)+(it.suf||''),txt=(it.pre||'')+nf(v)+(it.suf||''),fs=+it.size||120,w=Math.max(fin.length*fs*.5+70,fs*1.6);
-  if(it.plain){const s=back(p/0.16)*0.12+0.88*clamp(p/0.03),col=it.color==='red'?RED:it.color==='green'?'#2E7D32':INK;
+  if(it.plain){const s=1,col=it.color==='red'?RED:it.color==='green'?'#2E7D32':INK;
    return `<g transform="translate(${it.x},${it.y}) scale(${s})" opacity="${clamp(p/0.03)}">${it.cap?`<text x="0" y="${-fs*.85}" text-anchor="middle" class="hand" font-size="${Math.max(28,Math.round(fs*.3))}" fill="${INK}">${esc(it.cap)}</text>`:''}<text x="0" y="0" text-anchor="middle" class="hand" font-size="${fs}" fill="${col}" stroke="${col}" stroke-width="${fs*0.025}">${esc(txt)}</text></g>`}
   if(!g.d)g.d=blob(-w/2,-fs*.92,w,fs*1.2,10);const s=back(p/0.25)*0.3+0.7*clamp(p/0.06),col=it.color==='red'?'#E36A55':it.color==='green'?'#CFE3B4':YEL;
   return `<g transform="translate(${it.x},${it.y}) rotate(${(it.rot??-2)+[0,.4,-.3][boil]}) scale(${s})" opacity="${clamp(p/0.05)}"><g filter="url(#shadow)"><path d="${g.d}" fill="${col}" filter="url(#paint)"/></g><text x="0" y="${fs*.06}" text-anchor="middle" class="anton" font-size="${fs}" fill="${INK}" letter-spacing="1">${esc(txt)}</text>${it.cap?`<text x="0" y="${fs*.36+30}" text-anchor="middle" class="type" font-size="${Math.max(26,Math.round(fs*.25))}" fill="${INK}" opacity="${clamp((p-0.3)/0.3)}">${esc(it.cap)}</text>`:''}</g>`},
  bars(it,t,p,boil){const rows=parseRows(it.rows),x=+it.x,y=+it.y,W=+it.w||900,rh=+it.rh||80,lw=+it.lw||260,max=+it.max||Math.max(...rows.map(r=>r.v),1),stag=+it.stag||0.5;let s='';
   if(it.title)s+=`<text x="${x}" y="${y-36}" class="serif" font-size="${+it.ts||46}" fill="${INK}" opacity="${clamp(p/0.15)}">${esc(it.title)}</text>`;
-  rows.forEach((r,i)=>{const st=i*stag;if(p<st)return;const q=out3((p-st)/0.9),yy=y+i*(rh+26),bw=Math.max(6,(W-lw)*(r.v/max)*q),col=r.c==='r'?'#E36A55':r.c==='g'?'#9CC47E':r.c==='b'?'#7FB6D6':YEL;
+  rows.forEach((r,i)=>{const st=i*stag;if(p<st)return;const q=1,yy=y+i*(rh+26),bw=Math.max(6,(W-lw)*(r.v/max)*q),col=r.c==='r'?'#E36A55':r.c==='g'?'#9CC47E':r.c==='b'?'#7FB6D6':YEL;
    s+=`<text x="${x+lw-18}" y="${yy+rh*.66}" text-anchor="end" class="hand" font-size="${Math.round(rh*.5)}" fill="${INK}" opacity="${clamp((p-st)/0.15)}">${esc(r.l)}</text>`;
    s+=`<g filter="url(#rough${boil})"><rect x="${x+lw}" y="${yy}" width="${bw}" height="${rh}" fill="${col}" stroke="${INK}" stroke-width="4"/></g>`;
    s+=`<text x="${x+lw+bw+16}" y="${yy+rh*.68}" class="anton" font-size="${Math.round(rh*.55)}" fill="${INK}" opacity="${clamp((p-st-0.3)/0.3)}">${esc(r.t!=null?r.t:fmtNum(r.v*q,0))}</text>`});
@@ -249,7 +249,15 @@ function cam(sc,tq){let z=1,cx=960,cy=540;const Z=String(sc.z||'').split(';').ma
  for(const [t,s,x,y] of Z){if(tq<t)break;const q=inout((tq-t)/0.45);z+=(s-z)*q;cx+=((x||960)-cx)*q;cy+=((y||540)-cy)*q}
  if(sc.cam)z*=1+(+sc.cam)*clamp((tq-sc.s)/Math.max(2,sc.e-sc.s));
  if(z===1)return '';return `translate(${cx},${cy}) scale(${z.toFixed(4)}) translate(${-cx},${-cy})`}
-function sceneSVG(si,tq,boil,opts){const sc=BOARD.scenes[si];let b='';sc.items.forEach((it,i)=>{b+=itemSVG(sc,it,i,tq,boil,opts)});return `<g transform="${cam(sc,tq)}">${b}</g>${header(sc)}`}
+function indexSVG(sc,tq){const X=sc.index,T=X.tiles,n=T.length,cols=X.cols||4,rows=Math.ceil(n/cols),tw=430,th=242,gx=24,gy=70;
+ const W0=cols*tw+(cols-1)*gx,H0=rows*(th+gy),x0=(1920-W0)/2,y0=(1080-H0)/2+10;let g='';
+ T.forEach((t,i)=>{const x=x0+(i%cols)*(tw+gx),y=y0+Math.floor(i/cols)*(th+gy),id='ix'+i;
+  g+=`<mask id="${id}"><rect x="${x+14}" y="${y+14}" width="${tw-28}" height="${th-28}" rx="18" fill="#fff" filter="url(#feather)"/></mask><image href="${src(t.bg)}" x="${x}" y="${y}" width="${tw}" height="${th}" preserveAspectRatio="xMidYMid slice" mask="url(#${id})"/><text x="${x+tw/2}" y="${y+th+40}" text-anchor="middle" class="hand" font-size="34" fill="${INK}">${esc(t.t)}</text>`});
+ const k=X.sel,tx=x0+(k%cols)*(tw+gx)+tw/2,ty=y0+Math.floor(k/cols)*(th+gy)+th/2+22,zs=Math.min(1920/(tw*1.08),1080/((th+60)*1.15));
+ const el=tq-sc.s,F=Math.floor(el*30),hold=6,zf=14;let s=1,cx=960,cy=540;
+ if(F>=hold){const q=clamp((F-hold)/zf),qe=q<0.72?q/0.72*0.86:0.86+0.14*out3((q-0.72)/0.28);s=Math.exp(Math.log(zs)*qe);cx=960+(tx-960)*qe;cy=540+(ty-540)*qe}
+ return `<g transform="translate(960,540) scale(${s.toFixed(4)}) translate(${-cx},${-cy})">${g}</g>`}
+function sceneSVG(si,tq,boil,opts){if(BOARD.scenes[si].index)return indexSVG(BOARD.scenes[si],tq);const sc=BOARD.scenes[si];let b='';sc.items.forEach((it,i)=>{b+=itemSVG(sc,it,i,tq,boil,opts)});return `<g transform="${cam(sc,tq)}">${b}</g>${header(sc)}`}
 function chapterTab(tq){const C=BOARD.chapters||[];let c=null;for(const x of C)if(tq>=x.s)c=x;if(!c||tq<c.s+(+c.d||3))return '';const op=clamp((tq-c.s-(+c.d||3))/0.3);
  return `<g opacity="${op}"><text x="40" y="1050" class="type" font-size="22" fill="${INK}" opacity=".7">${esc(c.n+' · '+c.t)}</text></g>`}
 const TR=0.45;let WIPE=null;

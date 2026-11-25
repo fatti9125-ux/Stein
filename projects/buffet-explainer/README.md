@@ -17,7 +17,7 @@ This project follows the workflow in `.claude/skills/hand-drawn-vox-explainer/SK
 
 Run these from `pipeline/`, with the data files and `editor/` alongside:
 
-1. `python3 build_board_v3.py`
+1. `python3 build_board_v4.py` (current: reference-analysis style; v3 is the previous clip-style version)
 2. `python3 mix_full.py`
 3. `node capture_lo.js frames 15 0 844` (preview) or `node editor_capture.js frames 15 0 844` (1080p)
 4. Encode with ffmpeg, as described in the skill file.
