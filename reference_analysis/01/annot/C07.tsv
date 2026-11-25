@@ -1,0 +1,75 @@
+first	type	description	evidence	confidence
+12676	hard_cut	C06 end -> index grid	observed	high
+12683	camera_zoom	grid zoom into tile "Lincoln-Kennedy Coincidences" (two B&W portraits)	observed	high
+12746	hard_cut	canvas: two portraits split far left / far right, header "Lincoln-Kennedy"	observed	high
+12793	appear	list icon beside right portrait	observed	high
+12797	appear	list icon beside left portrait	observed	high
+12801	reposition	lists settle	observed	high
+12804	cycle_swap	list icons redraw (more lines)	observed	high
+12887	appear	US flag centre-bottom	observed	high
+12910	label	"Abraham Lincoln" over left portrait	observed	high
+12939	label	"John F. Kennedy" over right portrait	observed	high
+12986	layout_reset	portraits replaced by cartoon torsos (Lincoln top hat left, JFK right) facing each other	observed	high
+13002	pose_swap	Lincoln holds up ID/pass card	observed	high
+13025	pose_swap	JFK holds up ID card	observed	high
+13044	label	"Congress members" centre	observed	high
+13053	label	"1846" left	observed	high
+13066	label	"1946" right (parallel dates mirrored)	observed	high
+13123	row_swap	cards removed; "Elected President" row + rosettes appear	observed	high
+13172	appear	"U.S. PREZ" rosette on lapel	observed	high
+13177	label	"1960" right	observed	high
+13218	appear	3f: thought bubble with civil-rights placard icon between them	observed	high
+13287	appear	framed wedding photos at each	observed	high
+13315	label	"30s" under photos	observed	high
+13353	label	"20s" ages added	observed	high
+13381	layout_reset	rows cleared; both characters get red crosshair on head (assassinated)	observed	high
+13417	appear	calendar icon centre	observed	high
+13463	camera_zoom_out	3f: both characters shrink/compact upward	observed	high
+13478	label	"Good Friday" near Lincoln	observed	high
+13501	label	"April 14, 1865"	observed	high
+13576	pose_swap	JFK X-eyes with crosshair	observed	high
+13607	label	"November 22 1963"	observed	high
+13673	camera_zoom_out	6f: whole scene shrinks to small heads top (make room)	observed	high
+13698	appear	down arrows under each head	observed	high
+13706	appear	feathered B&W portraits of successors under arrows	observed	high
+13721	appear	US map with red South between them	observed	high
+13747	label	"Johnson" labels	observed	high
+13783	text_update	"Andrew Johnson"	observed	high
+13805	text_update	"Lyndon B. Johnson"	observed	high
+13884	appear	calendar icon	observed	high
+13903	label	"Born 1808"	observed	high
+13941	label	"Born 1908"	observed	high
+13993	partial_reset	3f: successors/map cleared, small heads stay top	observed	high
+13999	reposition	3f: heads move down (make room)	observed	high
+14009	appear	feathered portraits of assassins (Booth left, Oswald right)	observed	high
+14031	label	"John Wilkes Booth"	observed	high
+14067	label	"Lee Harvey Oswald"	observed	high
+14146	appear	arrows + "3 names" label between	observed	high
+14200	label	"15 letters in their full name"	observed	high
+14275	appear	professor at lectern bottom-right	observed	high
+14397	layout_reset	hard cut: Lincoln and JFK torsos again	observed	high
+14441	expression_swap	faces swap	observed	medium
+14446	appear	skull icon + "Ford" label centre	observed	high
+14474	partial_reset	JFK removed, Lincoln shrinks	observed	high
+14478	scale_down	Lincoln scales down (step)	observed	high
+14481	scale_down	Lincoln scales down (step)	observed	high
+14484	appear	theatre box illustration (Lincoln in booth, flags) replaces Lincoln figure	observed	high
+14487	subtle	settle	observed	medium
+14491	label	"Ford's Theatre Washington D.C."	observed	high
+14521	enter	JFK torso right	observed	high
+14543	scale_down	3f: JFK shrinks	observed	high
+14548	scale_down	3f: JFK shrinks more	observed	high
+14553	appear	2f: black convertible car with JFK in it + label "Ford Lincoln Continental convertible"	observed	high
+14629	layout_reset	hard cut: feathered Booth portrait centre-left small	observed	high
+14632	scale_up	portrait enlarges	observed	high
+14655	appear	US map at right	observed	high
+14659	appear	arrow to "Maryland" (red)	observed	high
+14693	appear	feathered B&W photo of Oswald	observed	high
+14711	appear	Louisiana highlighted red	observed	high
+14715	appear	arrow to "Louisiana"	observed	high
+14758	appear	whole South shaded light red (Confederacy)	observed	high
+14790	layout_reset	hard cut: portraits + list icons small top-left, professor right	observed	high
+14869	appear	2f: brain + gears icon (pattern-seeking)	observed	high
+14972	enter	narrator grey shirt enters	observed	high
+15131	appear	bubble "You gotta admit, these 100 years thing is weird" + calendar	observed	high
+15203	appear	professor bubble "Yea some of it, its pretty bonkers"	observed	high

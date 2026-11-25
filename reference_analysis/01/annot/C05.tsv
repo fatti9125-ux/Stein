@@ -1,0 +1,76 @@
+first	type	description	evidence	confidence
+7917	hard_cut	C04 end -> index grid	observed	high
+7924	camera_zoom	grid zoom into tile "Sir Victor Goddard" (feathered B&W RAF portrait), title card hold	observed	high
+7982	hard_cut	canvas: portrait left, header "Sir Victor Goddard"	observed	high
+8004	appear	officer-with-rank-stars/arrows icon over portrait edge (promotion)	observed	high
+8026	appear	RAF crest + label "Royal Air Force"	observed	high
+8096	appear	ghost icon with red ? marks in bubble beside portrait	observed	high
+8177	layout_reset	hard cut: Goddard torso (brown RAF uniform) alone left; date "1919" in header	observed	high
+8220	expression_swap	Goddard face small change	observed	high
+8226	appear	row of 4 squadron officers placed right of Goddard (group photo staging)	observed	high
+8260	enter	6f: photographer (white, camera, back view) slides in from left; "click" text	observed	high
+8323	flash_accent	camera flash burst drawn at camera	observed	high
+8326	pose_swap+reposition	3f: photographer turns to front holding camera, larger, at left	observed	high
+8336	pose_swap	photographer holds up developed photo	observed	high
+8349	expression_swap	officers' faces swap to surprised	observed	high
+8357	expression_swap	photographer frown/surprise	observed	high
+8405	appear	thought bubble "Freddy Jackson" + head with cap + red !	observed	high
+8460	appear	black plane pictogram + arrow into bubble area	observed	high
+8466	appear	wrench crossed with plane (mechanic) icon	observed	high
+8488	expression_swap	Jackson face -> X-eyes (dead)	observed	high
+8572	layout_reset	hard cut: coffin + framed portrait (funeral) bottom-left	observed	high
+8668	appear	group photo (illustrated, framed) placed behind coffin with faint ghost face at back	observed	high
+8695	reposition+enter	3f: photo+coffin shrink/shift left; man in cap with green emblem enters bottom-right	observed	high
+8742	appear	speech bubble "That is DEFINITELY the mechanic's ghost"	observed	high
+8784	appear	red ! accent	observed	high
+8867	layout_reset	hard cut: Goddard bust left, header date "1935"	observed	high
+8873	subtle	header date settles	observed	medium
+8910	pose_swap+appear	Goddard in flying helmet/goggles; grey biplane + arrow	observed	high
+8919	appear	feathered aerial photo (airfield)	observed	high
+8938	label	"Drem Airfield" label	observed	high
+8976	appear	Scotland map with red X + arrow from photo	observed	high
+9006	layout_reset	hard cut: pilot bust left, header no date	observed	high
+9019	appear	green grass tuft icon	observed	high
+9036	appear	ruined hangar icon	observed	high
+9066	appear	black cow silhouette (field with cows)	observed	high
+9145	layout_reset	hard cut: small plane alone centre-left	observed	high
+9148	motion_step	plane moves right (stepped)	observed	medium
+9157	motion_step	plane moves right (stepped)	observed	medium
+9168	scene_change	storm cloud with rain envelops plane	observed	high
+9234	tint_overlay	frame tinted sandy/yellow (inside cloud) plane faint	observed	high
+9240	reveal	tint recedes right revealing plane	observed	high
+9246	cycle_swap	cloud interior boil (outline blobs redrawn)	observed	high
+9249	motion_step	plane emerges from cloud edge, stepped move right	observed	medium
+9311	layout_reset	hard cut: pilot bust left (goggles), clean canvas	observed	high
+9323	appear	feathered aerial airfield photo right	observed	high
+9345	accent	white sparkle/shine strokes on photo (airfield suddenly visible)	observed	high
+9422	appear	mechanic (blue overalls, wrench) small figure above photo	observed	high
+9482	appear	yellow biplane (Miles Magister style)	observed	high
+9487	appear	second yellow biplane	observed	high
+9492	appear	third yellow biplane	observed	high
+9498	appear	fourth yellow biplane (stagger 5 frames each)	observed	high
+9586	label	orange plane highlighted + label "Miles Magister"	observed	high
+9655	pose_swap	pilot hand to head, worried	observed	high
+9666	appear	speech bubble "We don't have those..."	observed	high
+9739	layout_reset	hard cut: calendar icon + "Years later..." label centre	observed	high
+9767	appear	feathered airfield photo under calendar	observed	high
+9795	subtle	photo re-composite	observed	medium
+9798	reposition	calendar/photo shift	observed	high
+9803	reposition	3f: calendar removed, photo re-centred	observed	high
+9844	appear	yellow biplane over photo + header label	observed	high
+9894	appear	mechanic figure at right	observed	high
+9965	appear	pilot bust with speech bubble containing red arrow	observed	high
+10033	enter	narrator white figure enters right, group compacts left	observed	high
+10036	subtle	bubble arrow change	observed	medium
+10039	reposition	pilot+mechanic+plane regroup	observed	high
+10042	expression_swap	pilot face swap	observed	medium
+10094	appear	melting clock icon + speech bubble "It's like he time traveled..."	observed	high
+10109	enter	thinking white figure enters left edge	observed	high
+10112	reposition	thinking figure settles	observed	high
+10115	reposition	3f: figures adjust	observed	high
+10140	appear	brain icon between figures	observed	high
+10190	appear	weather-icons tile (cloud/sun/snow/drop)	observed	high
+10208	appear	black head silhouette with spiral (dizzy/hallucination)	observed	high
+10269	layout_reset	hard cut: Goddard torso alone centre	observed	high
+10340	pose_swap	Goddard holds book	observed	high
+10370	label	book title "Flight Towards Reality" in quotes	observed	high

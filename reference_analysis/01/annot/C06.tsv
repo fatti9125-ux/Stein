@@ -1,0 +1,67 @@
+first	type	description	evidence	confidence
+10430	hard_cut	C05 end -> index grid	observed	high
+10437	camera_zoom	grid zoom into tile "Gil Pérez Incident" (painting), title card hold	observed	high
+10503	hard_cut	canvas: painting left, header "Gil Pérez Incident"/"October 24"	observed	high
+10560	text_update	date -> "October 24, 1593"	observed	high
+10610	appear	Spanish soldier (beret, halberd) torso + Burgundy-cross flag	observed	high
+10687	reposition	painting removed; soldier+flag stay	observed	high
+10706	appear	Philippines map with red X + label	observed	high
+10710	subtle	map settle	observed	medium
+10733	label	"Manila palace" label (engraving appears with it)	observed	high
+10760	appear	Governor figure (moustache, cape with cross)	observed	high
+10782	label	"Governor Gómez Pérez Dasmariñas"	observed	high
+10829	pose_swap	Governor stabbed (X-eye, small red mark), hand reaches in — non-graphic	observed	high
+10850	enter	attacker (red bandana) at right edge	observed	high
+10853	subtle	attacker settle	observed	medium
+10920	expression_swap	faces swap	observed	medium
+10925	layout_reset	hard cut: single soldier (Gil Pérez) small centre	observed	high
+10945	appear	row of 3 more soldiers beside him (squad)	observed	high
+10967	expression_swap	soldiers' faces swap	observed	medium
+10989	appear	thought bubble chain with governor portrait (news of death)	observed	high
+11052	pose_swap	Gil Pérez hand to head, dizzy marks	observed	high
+11111	partial_reset	other soldiers removed, Gil Pérez alone	observed	high
+11115	appear	tan wall/building edge behind him	observed	high
+11144	pose_swap	leaning on wall, eyes half closed	observed	high
+11178	expression_swap	eyes closed (falls asleep)	observed	medium
+11181	reposition	3f: wall removed, he wakes, hand to head	observed	high
+11222	appear	feathered engraving of a plaza placed right	observed	high
+11229	label	"Plaza Mayor"	observed	high
+11257	label	"(the Zócalo)" second line	observed	high
+11298	appear	3f: Mexico map with X "Mexico City" slides in right	observed	high
+11336	subtle	map settle	observed	medium
+11340	camera_zoom_out	map scales down into world map (zoom-out reveal), starts	observed	high
+11344	camera_zoom_out	zoom-out step	observed	high
+11348	camera_zoom_out	zoom-out step	observed	high
+11351	appear	world map: red X Manila, red X Mexico, black arrow + "9,000 miles away"	observed	high
+11358	camera_hold	world map settles (zoom-out took ~132 f with holds)	observed	high
+11489	layout_reset	hard cut: Gil Pérez between two guards (helmets), right man in red	observed	high
+11563	expression_swap	Gil Pérez worried face	observed	medium
+11581	appear	speech bubble with governor-dead image (he explains)	observed	high
+11661	appear	second bubble from guard "If that was true, how would you know of it?"	observed	high
+11666	pose_swap	guard points	observed	high
+11669	subtle	bubble settle	observed	medium
+11736	scene_change	Gil Pérez behind prison bars (bars foreground layer), guards right	observed	high
+11753	appear	guard speech bubble with deserter icon (running man + badge)	observed	high
+11795	appear	kneeling figure added in bubble	observed	high
+11808	appear	red devil head in bubble (witchcraft accusation)	observed	high
+11847	camera_pan	4f: prisoner+bars move out left, guard remains (pan/reposition)	observed	high
+11854	enter	6f: ship bow slides in from right with sailor	observed	high
+11863	motion_step	ship stepped move	observed	medium
+11866	motion_step	ship stepped move	observed	medium
+11869	motion_step	ship settles	observed	medium
+11882	appear	sailor holds up scroll/letter	observed	high
+11915	appear	bubble with governor-stabbed image (news confirmed)	observed	high
+12002	layout_reset	cut: prisoner behind bars + two guards talking, bubble "Now it's really is our Pérez?"	observed	high
+12038	appear	second bubble "He was with us on the day it happened, you must release him"	observed	high
+12160	pose_swap	guards gesture	observed	high
+12191	layout_reset	2f cut: narrator white figure left, Gil Pérez head small right	observed	high
+12244	appear	teleport-portal icon (figure stepping between portals)	observed	high
+12271	appear	UFO with alien icon	observed	high
+12324	enter	narrator/professor with book right	observed	high
+12374	appear	bard with lute + book with music notes (legend icon)	observed	high
+12453	pose_swap	professor raised finger speaking	observed	high
+12456	enter	man in brown long coat at right edge	observed	high
+12459	text_update	header date appears "1908"	observed	high
+12499	label	name "Thomas Allibone Janvier" above brown-coat man	observed	high
+12573	pose_swap	Janvier gestures speaking	observed	high
+12612	appear	speech bubble "Every mexican in Mexico City knows about it"	observed	high
