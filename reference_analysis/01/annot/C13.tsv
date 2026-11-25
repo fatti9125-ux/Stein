@@ -1,0 +1,53 @@
+first	type	description	evidence	confidence
+26100	hard_cut	C12 end -> index grid	observed	high
+26106	camera_zoom	zoom into tile "Lost Roman Legion" (relief statue)	observed	high
+26164	hard_cut	canvas: relief photo left, header + "Legio IX Hispana" 2-line subtitle	observed	high
+26231	appear	scroll with quill icon	observed	high
+26247	appear	red X over scroll	observed	high
+26283	label	"120 AD" above scroll	observed	high
+26325	enter	narrator thinking at right	observed	high
+26366	layout_reset	cut: Europe map, small helmet marker in Italy	observed	high
+26382	appear	red arrow from Italy to Britain, legion helmet moves to Britain	observed	high
+26400	label	"43 A.D."	observed	high
+26471	appear	3f: Claudius bust + soldiers group on map	observed	high
+26553	appear	legionaries attacking icons spread over Britain	observed	high
+26572	appear	feathered painting (Boudica revolt)	observed	high
+26583	label	"Boudican Revolt"	observed	high
+26629	text_update	"43 A.D." -> "60-61 A.D."	observed	high
+26673	layout_reset	3f: painting/soldiers cleared, map recentres	observed	high
+26678	camera_zoom	zoom in to Britain (map step)	observed	high
+26681	camera_zoom	map enlarges (step)	observed	high
+26708	appear	legionary character pointing sword (left)	observed	high
+26746	appear	stone tablets icon + "108 A.D."	observed	high
+26815	appear	red arrow to "Eboracum" on map	observed	high
+26845	label	"(York)"	observed	high
+26881	partial_reset	tablets/arrow cleared	observed	high
+26977	appear	second legionary (red crest, Legio VI) enters	observed	high
+26989	label	"Legio VI Victrix"	observed	high
+27067	pose_swap	Legio VI soldier points sword	observed	high
+27098	appear	red X over tablets	observed	high
+27124	partial_reset	map cleared, IX soldier alone	observed	high
+27195	appear	feathered photo of Colonna Maffei column with blue glow	observed	high
+27200	appear	soldier bubble "They carved pictures of everyone but us!!"	observed	high
+27221	label	"Colonna Maffei"	observed	high
+27282	enter	5f: professor enters right, bubble	observed	high
+27344	layout_reset	4f: cleared	observed	high
+27350	scale_down	soldier shrinks	observed	high
+27376	appear	Northern British tribe warrior attacking + label	observed	high
+27491	label	"~108 A.D."	observed	high
+27538	appear	map of Britain right, "Derbyshire" red circle	observed	high
+27580	pose_swap	professor points	observed	high
+27625	appear	skull/artefact icons + red X	observed	high
+27663	layout_reset	4f: Mediterranean map	observed	high
+27684	appear	legion helmet head marker on Italy	observed	high
+27773	appear	red arrow from Italy east to Judea, helmet marker at end	observed	high
+27810	expression_swap	helmet marker face X-eyes (destroyed)	observed	medium
+27843	appear	feathered painting + label "Bar Kokhba revolt"	observed	high
+27884	appear	second painting "Roman-Parthian war"	observed	high
+27938	pose_swap	professor points	observed	high
+27942	layout_reset	3f: Europe map + professor left	observed	high
+27986	appear	blue river "Rhine" + red arrow	observed	high
+28006	appear	"Danube" river + red arrow	observed	high
+28050	subtle	settle	observed	medium
+28053	expression_swap	helmet marker X-eyes	observed	medium
+28090	appear	enemy warriors at river ends	observed	high

@@ -1,0 +1,51 @@
+first	type	description	evidence	confidence
+30050	hard_cut	C14 end -> index grid	observed	high
+30056	camera_zoom	zoom into tile "The Jim Twins" (B&W photo)	observed	high
+30102	hard_cut	canvas: photo centre, header "Jim Twins"	observed	high
+30133	label	"Jim Springer" / "Jim Lewis" labels	observed	high
+30181	layout_reset	cut: two baby icons (separated twins)	observed	high
+30188	reposition	babies move apart	observed	high
+30192	scale_down	3f: babies shrink to bottom	observed	high
+30244	appear	arrows up from babies	observed	high
+30264	appear	adoptive couple icons above arrows	observed	high
+30320	layout_reset	3f: twins as adult torsos at far left/right edges	observed	high
+30325	reposition	twins slide in toward centre (step)	observed	high
+30329	reposition	step	observed	high
+30332	expression_swap	both surprised with ! marks	observed	medium
+30343	appear	USA map with red circle "Ohio" between them	observed	high
+30355	label	"1979"	observed	high
+30393	label	"Aged 39" with arrows to both	observed	high
+30449	partial_reset	map removed	observed	high
+30452	subtle	settle	observed	medium
+30500	appear	"=" sign between twins	observed	high
+30558	appear	father+son icons each side	observed	high
+30577	label	"James Allen" names	observed	high
+30618	appear	dog icons each side	observed	high
+30651	label	"Toy" dog names	observed	high
+30673	pose_swap	twins hold documents	observed	high
+30712	appear	ID papers with red/green marks	observed	high
+30755	partial_reset	cleared; twins hold tools (carpentry)	observed	high
+30832	appear	wedding frames each side	observed	high
+30847	label	"Linda" + arrows	observed	high
+30863	appear	broken frames (divorce)	observed	high
+30884	subtle	settle	observed	medium
+30920	label	"Betty" second marriage	observed	high
+30932	partial_reset	3f: compact downward	observed	high
+30980	subtle	settle	observed	medium
+30984	subtle	settle	observed	medium
+30988	appear	3f: cigarettes icon	observed	high
+31006	appear	beer mug icon	observed	high
+31020	appear	car outline icon	observed	high
+31069	appear	second car (same model)	observed	high
+31073	subtle	3f settle	observed	medium
+31124	appear	USA map with Florida (same vacation beach)	observed	high
+31142	appear	beach/vacation icon on Florida	observed	high
+31225	layout_reset	cut: twins' heads only, top	observed	high
+31228	scale_up	heads enlarge (step)	observed	high
+31231	scale_up	heads enlarge (step)	observed	high
+31240	enter	3f: narrator enters bottom-right	observed	high
+31246	expression_swap	narrator face	observed	medium
+31263	pose_swap	narrator speaks, open palm	observed	high
+31277	appear	speech bubble with DNA icon	observed	high
+31322	appear	hand+genes icon in bubble	observed	high
+31347	appear	environment icons added in bubble	observed	high

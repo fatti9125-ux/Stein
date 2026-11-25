@@ -1,0 +1,58 @@
+first	type	description	evidence	confidence
+37208	hard_cut	C19 end -> index grid	observed	high
+37214	camera_zoom	zoom into tile "Primarda Family" (lightning silhouette art)	observed	high
+37260	layout_reset	canvas: narrator (moustache, Italian book) right only — no archive image	observed	high
+37353	appear	small man in top hat (full body)	observed	high
+37374	label	"Rola Primarda" + pose swap wave	observed	high
+37437	appear	lightning strikes man (yellow burst + skeleton x-ray, cartoon)	observed	high
+37440	subtle	settle	observed	medium
+37469	replace	man lies on ground smoking with skull (non-graphic cartoon)	observed	high
+37491	appear	house + grass vignette behind	observed	high
+37518	appear	Italy map with "Taranto" circle	observed	high
+37561	label	"1899" header date	observed	high
+37590	layout_reset	cut: son (cap) small full-body	observed	high
+37697	label	"1929"	observed	high
+37706	appear	lightning strike x-ray (repeat gag)	observed	high
+37709	subtle	settle	observed	medium
+37720	replace	son on ground, skull + smoke	observed	high
+37770	pose_swap	narrator shrug	observed	high
+37776	appear	house vignette	observed	high
+37823	layout_reset	cut: grandson (red jacket) small	observed	high
+37851	label	"1949"	observed	high
+37907	label	"October 8"	observed	high
+37996	appear	lightning x-ray (third repeat)	observed	high
+37999	subtle	settle	observed	medium
+38011	replace	grandson down, skull + smoke	observed	high
+38024	appear	narrator hands on face bubble "Mamma mia! again!!"	observed	high
+38052	appear	probability icon	observed	high
+38066	appear	storm cloud lightning icon	observed	high
+38114	label	"80 years"	observed	high
+38175	label	"1 in" + arrow	observed	high
+38192	label	"15,300"	observed	high
+38233	pose_swap	narrator hand on face	observed	high
+38244	subtle	settle	observed	medium
+38248	reposition	icons compact	observed	high
+38259	appear	three heads row (family)	observed	high
+38317	appear	skull under head	observed	high
+38326	appear	2f skulls under all	observed	high
+38333	subtle	skull nudge	observed	medium
+38354	appear	house icon	observed	high
+38419	pose_swap	narrator shrug	observed	high
+38500	layout_reset	5f: heads with lightning on them + narrator	observed	high
+38550	appear	newspaper icon	observed	high
+38567	appear	book icon + narrator holds Italian book	observed	high
+38613	enter	4f: professor enters right (make room, narrator shifts left)	observed	high
+38620	subtle	settle	observed	medium
+38623	expression_swap	narrator face	observed	medium
+38676	pose_swap	professor shrug	observed	high
+38699	expression_swap	narrator eyes	observed	medium
+38709	pose_swap	professor points	observed	high
+38712	label	"Rola" in quotes	observed	high
+38757	label	"Primarda" in quotes	observed	high
+38793	appear	bubble "These aren't even real italian names..."	observed	high
+38863	subtle	settle	observed	medium
+38868	appear	newspaper icon (sources)	observed	high
+38893	appear	folder icon	observed	high
+38920	appear	book icon	observed	high
+38988	appear	red X over book, folder, newspaper (no sources)	observed	high
+39086	appear	narrator bubble "Anyway, it's still a good story!"	observed	high

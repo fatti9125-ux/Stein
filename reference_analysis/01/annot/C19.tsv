@@ -1,0 +1,27 @@
+first	type	description	evidence	confidence
+36079	hard_cut	C18 end -> index grid	observed	high
+36086	camera_zoom	zoom into tile "Mark Twain's Death" (B&W portrait)	observed	high
+36131	hard_cut	canvas: portrait left + US flag + book icon, header	observed	high
+36234	text_update	"November 30" -> "November 30, 1835"	observed	high
+36308	appear	feathered comet photo right	observed	high
+36317	label	"Halley's Comet"	observed	high
+36381	layout_reset	cut: cartoon Twain torso left + illustrated comet right	observed	high
+36401	pose_swap	Twain hand on chin	observed	high
+36466	expression_swap	face	observed	medium
+36469	appear	calendar icon left	observed	high
+36511	pose_swap	Twain raised finger	observed	high
+36558	label	"1909" header date	observed	high
+36586	appear	speech bubble "I came in with the comet, and I expect to go out with it"	observed	high
+36709	layout_reset	cut: Twain seated in armchair (small, full body)	observed	high
+36728	appear	heart with warning icon + pain lines	observed	high
+36756	appear	US map with "Connecticut" circle	observed	high
+36789	text_update	header "April 21"	observed	high
+36796	pose_swap	Twain slumps, X-eyes (death, non-graphic)	observed	high
+36877	label	"1 day before"	observed	high
+36882	appear	comet illustration	observed	high
+36917	appear	sun icon	observed	high
+36964	appear	eye icon (comet visible)	observed	high
+37026	subtle	settle	observed	medium
+37030	scale_down	3f: Twain group shrinks	observed	high
+37052	appear	calendar + "Returns every ~76 years"	observed	high
+37128	label	"expected in 2061"	observed	high

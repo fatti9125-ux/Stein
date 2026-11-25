@@ -1,0 +1,71 @@
+first	type	description	evidence	confidence
+28155	hard_cut	C13 end -> index grid	observed	high
+28161	camera_zoom	zoom into tile "Greenland's Vanished Vikings" (longship painting)	observed	high
+28219	hard_cut	canvas: painting left, header	observed	high
+28260	appear	Greenland map right	observed	high
+28264	scale_up	painting enlarges (step)	observed	high
+28268	scale_up	painting enlarges (step)	observed	high
+28284	label	"985 A.D."	observed	high
+28346	appear	engraving of Erik the Red + label	observed	high
+28386	pose_swap	Erik points	observed	high
+28397	appear	Iceland map	observed	high
+28446	layout_reset	cut: viking settler torso, "for ~500 years" label	observed	high
+28484	appear	farm icon	observed	high
+28502	appear	viking hut icon	observed	high
+28520	appear	livestock icon	observed	high
+28559	subtle	settle	observed	medium
+28587	appear	sun icon	observed	high
+28611	pose_swap	viking holds walrus tusk; walrus icon	observed	high
+28648	partial_reset	icons cleared	observed	high
+28662	enter	trader enters right exchanging goods	observed	high
+28676	appear	Scandinavia map trade route arrows	observed	high
+28728	appear	Greenland map	observed	high
+28732	layout_reset	cut: small viking head + Greenland map	observed	high
+28735	camera_zoom	map enlarges (step)	observed	high
+28738	camera_zoom	map enlarges (step)	observed	high
+28754	appear	"3.000 people" crowd	observed	high
+28770	appear	viking head marker on map	observed	high
+28777	motion_step	marker moves	observed	medium
+28782	motion_step	marker moves	observed	medium
+28786	motion_step	marker moves	observed	medium
+28793	appear	2f: "600 sites" house icon	observed	high
+28853	layout_reset	4f: compact left, professor right	observed	high
+28891	appear	scroll + arrow	observed	high
+28939	appear	"1408" wedding couple icon	observed	high
+28993	appear	skull/artefact icons	observed	high
+29031	subtle	settle	observed	medium
+29051	appear	hut icon	observed	high
+29065	subtle	settle	observed	medium
+29072	appear	"1450" hut faded with ?	observed	high
+29147	layout_reset	6f: map + viking + professor	observed	high
+29189	appear	orange down arrow (decline)	observed	high
+29243	appear	snowflake thermometer (cold) + viking shivers	observed	high
+29250	appear	dead tree / drought icon	observed	high
+29266	appear	farm icon	observed	high
+29275	subtle	settle	observed	medium
+29299	appear	livestock icon	observed	high
+29347	appear	red X over farm + livestock	observed	high
+29377	appear	walrus icon	observed	high
+29399	appear	hand selling coin (trade) icon	observed	high
+29438	appear	red down arrows on trade icons	observed	high
+29488	appear	thought bubble with elephant	observed	high
+29494	appear	elephant tusk/ivory icon (competition)	observed	high
+29571	enter	Inuit figure enters right + green up arrow	observed	high
+29615	appear	small Inuit heads spread on map	observed	high
+29689	subtle	settle	observed	medium
+29705	appear	fists clash icon (conflict)	observed	high
+29780	layout_reset	cut: Greenland map with viking marker, professor	observed	high
+29809	appear	viking heads multiply on map (3)	observed	high
+29814	motion_step	heads spread south (step)	observed	medium
+29824	motion_step	step	observed	medium
+29831	motion_step	heads leave (step)	observed	medium
+29838	replace	heads replaced by small longships	observed	high
+29849	motion_step	ships move	observed	medium
+29856	motion_step	ships move south	observed	medium
+29887	appear	farm icon	observed	high
+29905	appear	trade (coin + apple) icon	observed	high
+29924	appear	red down arrows on farm/trade	observed	high
+29959	pose_swap	professor thinking	observed	high
+29974	appear	viking head inset	observed	high
+29999	pose_swap	professor shrug	observed	high
+30013	appear	big red ? (mystery remains)	observed	high

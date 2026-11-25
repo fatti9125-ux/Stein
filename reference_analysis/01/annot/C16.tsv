@@ -1,0 +1,49 @@
+first	type	description	evidence	confidence
+31426	hard_cut	C15 end -> index grid	observed	high
+31432	camera_zoom	zoom into tile "Goethe's Doppelgänger" (oil portrait)	observed	high
+31477	hard_cut	canvas: portrait left, header	observed	high
+31501	label	"1770s"	observed	high
+31543	label	"Johann Wolfgang von Goethe"	observed	high
+31548	appear	book + quill icon	observed	high
+31611	layout_reset	cut: Goethe riding horse (full body, small) left	observed	high
+31632	appear	France map with X "Drusenheim"	observed	high
+31678	expression_swap	Goethe close face sad	observed	medium
+31728	appear	thought bubble with feathered portrait of woman	observed	high
+31772	label	"Frederica Brion"	observed	high
+31798	layout_reset	cut: rider alone	observed	high
+31812	scale_up	rider enlarges (step)	observed	high
+31818	motion_step	horse bob (stepped idle)	observed	medium
+31823	motion_step	horse bob	observed	medium
+31867	expression_swap	Goethe face + motion lines	observed	medium
+31873	pose_swap	Goethe turns head (sees something)	observed	high
+31876	appear	second rider (grey coat with gold trim) small in distance	observed	high
+31931	appear	two faces inset (Goethe young vs older self)	observed	high
+32053	appear	red circle around the distant rider	observed	high
+32115	partial_reset	insets/circle removed	observed	high
+32120	motion_step	distant rider approaches (step)	observed	medium
+32125	motion_step	step	observed	medium
+32131	motion_step	step	observed	medium
+32136	motion_step	2f step (riders pass)	observed	medium
+32147	motion_step	second rider moves	observed	medium
+32161	motion_step	step	observed	medium
+32167	replace	second rider becomes dashed outline (vanishes)	observed	high
+32242	layout_reset	cut: Goethe bust + two face insets	observed	high
+32266	expression_swap	Goethe sad eyes	observed	medium
+32269	expression_swap	eyes	observed	medium
+32279	pose_swap	3f: hand on chest	observed	high
+32334	appear	thought bubble broken heart	observed	high
+32352	replace	broken heart patched with bandage	observed	high
+32386	layout_reset	cut: rider + "8 years later..."	observed	high
+32482	appear	France map with "Alsace" red circle	observed	high
+32528	appear	Frederica portrait bubble	observed	high
+32615	pose_swap	Goethe in grey coat with gold trim (same as doppelgänger)	observed	high
+32675	subtle	settle	observed	medium
+32722	appear	two faces + red arrow (match)	observed	high
+32797	layout_reset	cut: face insets top + professor right	observed	high
+32812	appear	brain/psychology clipboard icon	observed	high
+32878	pose_swap	professor open palm	observed	high
+32914	appear	"heautoscopy" label + body-double icons	observed	high
+32992	appear	Goethe facing his double + red !	observed	high
+33094	appear	stress/headache icon + arrow	observed	high
+33110	appear	exhausted person icon (low battery)	observed	high
+33139	appear	anxiety icons (fear, worried head)	observed	high

@@ -1,0 +1,50 @@
+first	type	description	evidence	confidence
+34459	hard_cut	C17 end -> index grid	observed	high
+34466	camera_zoom	zoom into tile "Curse of Tippecanoe" (oil portrait)	observed	high
+34511	layout_reset	canvas skips portrait-left step: patriotic gunman (US-flag outfit, sunglasses, rifle) right	observed	high
+34582	enter	Harrison torso left	observed	high
+34594	appear	president-at-podium icon	observed	high
+34633	appear	calendar icon	observed	high
+34642	label	"elected in years ending in "0""	observed	high
+34681	appear	skull icon over podium (died in office)	observed	high
+34762	partial_reset	3f: cleared, Harrison alone	observed	high
+34767	scale_up	3f: Harrison enlarges	observed	high
+34789	label	"1811" header date	observed	high
+34795	layout_reset	cut: Harrison pointing sword + feathered battle painting	observed	high
+34813	label	"Battle of Tippecanoe"	observed	high
+34843	label	"William Henry Harrison"	observed	high
+34955	appear	Shawnee tribe flag	observed	high
+34972	appear	feathered portrait of Tecumseh	observed	high
+34980	label	"Tecumseh"	observed	high
+35006	appear	second portrait	observed	high
+35020	label	"Tenskwatawa"	observed	high
+35069	layout_reset	cut: Harrison left with sword, Tenskwatawa character right	observed	high
+35074	expression_swap	face	observed	medium
+35077	subtle	settle	observed	medium
+35118	pose_swap	Tenskwatawa points, curse bubble with skull	observed	high
+35194	appear	rows of president podium icons	observed	high
+35243	appear	"0" + calendar	observed	high
+35288	subtle	settle	observed	medium
+35313	label	"1840"	observed	high
+35337	text_update	"1840 - 1960"	observed	high
+35365	layout_reset	cut: B&W Harrison portrait small left	observed	high
+35368	label	3f: "William Henry Harrison"	observed	high
+35402	appear	Lincoln portrait + label (row builds left->right)	observed	high
+35431	appear	Garfield	observed	high
+35469	appear	McKinley	observed	high
+35501	appear	Harding	observed	high
+35530	appear	F.D. Roosevelt	observed	high
+35567	appear	J.F. Kennedy (7th)	observed	high
+35662	reposition	5f: row shrinks + Reagan portrait right	observed	high
+35691	appear	calendar "1980"	observed	high
+35729	replace	Reagan portrait -> cartoon Reagan thumbs up	observed	high
+35748	appear	newspaper clipping "Reagan O.K. — bullet is removed from lung"	observed	high
+35785	label	"1981"	observed	high
+35839	layout_reset	cut: feathered Bush portrait small + narrator thinking	observed	high
+35857	label	"2000"	observed	high
+35876	appear	feathered Biden portrait	observed	high
+35886	label	"2020"	observed	high
+35911	appear	green check icons (both survived)	observed	high
+35961	enter	professor enters right	observed	high
+35975	appear	row of 7 portraits + skull under	observed	high
+35988	appear	thought bubble "pretty sure it's just coincidence"	observed	high

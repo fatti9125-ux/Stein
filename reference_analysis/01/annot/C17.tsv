@@ -1,0 +1,53 @@
+first	type	description	evidence	confidence
+33208	hard_cut	C16 end -> index grid	observed	high
+33214	camera_zoom	zoom into tile "Vela Incident" (satellite photo)	observed	high
+33260	hard_cut	canvas: satellite photo left, header + "September 22"	observed	high
+33302	text_update	date -> "September 22, 1979"	observed	high
+33355	appear	US flag	observed	high
+33387	appear	satellite dish signal icon	observed	high
+33431	appear	eye icon (detection)	observed	high
+33483	appear	globe Indian Ocean with "Prince Edward Islands" circle	observed	high
+33551	layout_reset	3f: cleared to tiny yellow sparkle (double flash)	observed	high
+33556	flash_cycle	sparkle grows (flash cycle: size swaps every 3-5 f, two pulses)	observed	high
+33559	flash_cycle	sparkle	observed	high
+33574	flash_cycle	sparkle shrink	observed	high
+33578	flash_cycle	sparkle	observed	high
+33583	flash_cycle	sparkle rotate	observed	high
+33586	flash_cycle	sparkle off	observed	high
+33591	flash_cycle	sparkle on (2nd pulse)	observed	high
+33594	flash_cycle	sparkle	observed	high
+33597	flash_cycle	sparkle	observed	high
+33646	enter	5f: narrator slides in bottom-right	observed	high
+33654	flash_cycle	sparkle	observed	high
+33657	flash_cycle	4f sparkle shrinks to corner	observed	high
+33663	reposition	4f narrator settles	observed	high
+33682	flash_cycle	sparkle	observed	high
+33686	flash_cycle	sparkle	observed	high
+33690	flash_cycle	sparkle	observed	high
+33693	flash_cycle	sparkle off	observed	high
+33697	pose_swap	2f: narrator open palm speaking	observed	high
+33702	flash_cycle	sparkle	observed	high
+33705	flash_cycle	sparkle	observed	high
+33731	appear	nuclear bomb + mushroom cloud icon	observed	high
+33753	flash_cycle	sparkle	observed	high
+33757	flash_cycle	sparkle	observed	high
+33762	flash_cycle	sparkle	observed	high
+33765	flash_cycle	sparkle off	observed	high
+33780	enter	officer (sunglasses, Soviet cap) enters left	observed	high
+33848	appear	satellite + lightning (malfunction) icon	observed	high
+33881	appear	meteor icon	observed	high
+33915	accent	meteor hits satellite burst	observed	high
+33954	reposition	3f: icons compact	observed	high
+33959	subtle	settle	observed	medium
+33987	enter	4f: agent in navy suit enters right (make room)	observed	high
+33993	subtle	bomb icon nudge	observed	medium
+34032	pose_swap	narrator + agent gestures	observed	high
+34065	appear	Israel flag	observed	high
+34076	appear	South Africa flag	observed	high
+34142	pose_swap	narrator shrug	observed	high
+34163	appear	bubble "and we have no debris?"	observed	high
+34238	pose_swap	agent shrugs	observed	high
+34307	appear	officer bubble "Well, we ain't responsible either, folks"	observed	high
+34351	layout_reset	3f: folder with US flag + narrator thinking	observed	high
+34357	expression_swap	narrator eyes	observed	medium
+34408	appear	red "CLASSIFIED" stamp over folder	observed	high

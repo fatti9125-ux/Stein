@@ -1,0 +1,79 @@
+first	type	description	evidence	confidence
+23018	hard_cut	C11 end -> index grid	observed	high
+23025	camera_zoom	zoom into tile "Valentich Disappearance" (B&W portrait)	observed	high
+23083	hard_cut	canvas: portrait left, header + "October 21"	observed	high
+23117	text_update	date -> "October 21, 1978"	observed	high
+23173	label	"20 years old" + curved arrow	observed	high
+23192	appear	Australian flag	observed	high
+23286	appear	map of Bass Strait right	observed	high
+23327	appear	Cessna 182L plane photo-icon + label	observed	high
+23443	label	"Australia" + Melbourne X	observed	high
+23468	label	"King Island" X	observed	high
+23507	layout_reset	cut: pilot bust left (goggles), small plane right, clock "45 into the flight"	observed	high
+23514	motion_step	plane moves	observed	medium
+23517	motion_step	plane bob (stepped idle)	observed	medium
+23520	motion_step	plane bob	observed	medium
+23524	motion_step	plane bob	observed	medium
+23570	pose_swap	pilot holds radio, signal lines	observed	high
+23595	appear	radio operator (headset) bust right	observed	high
+23639	appear	2f: map background slides under (map vignette appears behind plane)	observed	high
+23705	expression_swap	pilot worried eyes	observed	medium
+23727	appear	black UFO silhouette with red ?	observed	high
+23744	appear	dimension "1.000 feet" above plane	observed	high
+23793	subtle	settle	observed	medium
+23796	partial_reset	cut: map removed; UFO+plane+pilot+operator remain	observed	high
+23800	appear	lights under UFO (yellow beams)	observed	high
+23874	replace	silhouette UFO replaced by illustrated metallic craft with lights	observed	high
+23920	appear	green beam from craft	observed	high
+23967	expression_swap	pilot shocked	observed	medium
+24015	subtle	settle	observed	medium
+24062	appear	bubble "It is hovering"	observed	high
+24092	text_update	bubble -> "It is hovering and it's not an aircraft"	observed	high
+24163	replace	pilot becomes black silhouette (lost contact)	observed	high
+24171	appear	scratch lines + "17 seconds of scraping sounds"	observed	high
+24257	layout_reset	cut: map + searchers (narrator with magnifier, operator)	observed	high
+24289	appear	blue search circle on map	observed	high
+24320	label	"2,600 km²"	observed	high
+24412	appear	pilot head + plane on map	observed	high
+24427	appear	red X over pilot	observed	high
+24455	appear	red X over plane (nothing found)	observed	high
+24503	enter	UFO-enthusiast enters left	observed	high
+24554	expression_swap	face	observed	medium
+24559	appear	UFO craft + arrow to green target on pilot (abduction theory)	observed	high
+24586	appear	green tractor beam over plane	observed	high
+24677	appear	thought bubble UFO	observed	high
+24704	appear	bubble "He had his own interest in UFOs you know?"	observed	high
+24787	layout_reset	cut: pilot head small + narrator shrug	observed	high
+24790	scale_up	5f: pilot head enlarges	observed	high
+24870	expression_swap	pilot confused	observed	medium
+24878	appear	yellow up/down arrows + red ? (disorientation)	observed	high
+24923	appear	night sky with moon patch	observed	high
+24934	appear	lake/sea vignette bottom-left	observed	high
+24977	appear	plane icon	observed	high
+24984	rotate	plane rotates nose-up (vertigo, step)	observed	high
+24988	rotate	3f: plane tilts back	observed	high
+24993	motion_step	plane inverted	observed	medium
+25212	appear	bubble "There's something above me!" + ? !	observed	high
+25264	layout_reset	4f: cleared, tiny plane + narrator	observed	high
+25270	accent	splash/crash marks at plane	observed	high
+25282	appear	aviator (scarf, long coat) thinking	observed	high
+25336	pose_swap	aviator open palm	observed	high
+25354	appear	downward red arrows on globe (descending)	observed	high
+25377	appear	fuel can icon	observed	high
+25392	appear	fuel line to globe	observed	high
+25438	appear	red X over fuel line	observed	high
+25517	enter	3f: professor enters	observed	high
+25557	appear	pilot with radio inset	observed	high
+25606	appear	control tower + airport icon	observed	high
+25660	appear	landing plane icon	observed	high
+25668	subtle	settle	observed	medium
+25694	appear	professor bubble "Maybe he never intended to land..."	observed	high
+25735	replace	pilot inset becomes black silhouette with ?	observed	high
+25808	enter	5f: father figure enters right	observed	high
+25826	expression_swap	father angry	observed	medium
+25871	appear	bubble "Frederick was well adjusted..."	observed	high
+25943	layout_reset	cut: portrait + judge at bench, header	observed	high
+25955	text_update	"1982"	observed	high
+26008	pose_swap	judge points	observed	high
+26016	appear	red "MISSING" stamp over portrait	observed	high
+26064	appear	skull icon (presumed dead)	observed	high
