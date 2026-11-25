@@ -1,0 +1,53 @@
+first	type	description	evidence	confidence
+21371	hard_cut	C10 end -> index grid	observed	high
+21377	camera_zoom	zoom into tile "Tsutomu Yamaguchi" (sepia portrait)	observed	high
+21435	hard_cut	canvas: portrait left, header + "August 1945"	observed	high
+21486	label	"29 years old" + curved arrow to portrait	observed	high
+21513	appear	Japan flag top-left	observed	high
+21533	appear	engineer (hard hat + gear/wrench) icon	observed	high
+21609	appear	Japan map right	observed	high
+21635	appear	business traveller + plane icon (work trip)	observed	high
+21669	appear	US flag + atomic bomb icon	observed	high
+21703	appear	red circle "Hiroshima" on map + mushroom cloud icon placed on it	observed	high
+21717	layout_reset	hard cut: Yamaguchi torso (suit, briefcase) left + small mushroom cloud	observed	high
+21721	scale_up	mushroom cloud enlarges	observed	high
+21724	scale_up	mushroom cloud enlarges more (stepped growth)	observed	high
+21728	appear	thought bubble "8:15 a.m."	observed	high
+21763	text_update	header date -> "August 6 1945"	observed	high
+21791	pose_swap	Yamaguchi checks watch, briefcase	observed	high
+21795	scale_down	5f: Yamaguchi shrinks to tiny figure (distance)	observed	high
+21820	appear	dimension line "1.9 miles"	observed	high
+21887	appear	blast arc ring (shockwave) from cloud	observed	high
+21894	motion_step	arcs expand (step)	observed	medium
+21899	motion_step	arcs expand	observed	medium
+21904	accent	heat/red marks on figure	observed	high
+21963	layout_reset	hard cut: Yamaguchi bust with burns (small marks), header date removed	observed	high
+21976	appear	thought bubble with house icon	observed	high
+22015	appear	feathered B&W photo of ruins	observed	high
+22057	layout_reset	cut: bandaged Yamaguchi + Japan map right	observed	high
+22077	appear	his face icon on Hiroshima + arrow	observed	high
+22089	label	"Nagasaki"	observed	high
+22129	motion_step	face icon moves along route (step)	observed	medium
+22134	motion_step	step	observed	medium
+22137	motion_step	step	observed	medium
+22140	motion_step	face reaches Nagasaki	observed	medium
+22143	text_update	header date "August 9 1945"	observed	high
+22200	subtle	settle	observed	medium
+22238	enter	boss figure enters left	observed	high
+22300	appear	5f: mushroom cloud appears right (second bomb)	observed	high
+22399	layout_reset	cut: tiny figure + arcs + cloud (callback composition), header August 9	observed	high
+22480	appear	radiation symbol + arrow down to heat lines	observed	high
+22506	appear	mushroom cloud icon	observed	high
+22511	appear	second mushroom cloud icon	observed	high
+22553	appear	shelter/structure drawn around the figure	observed	high
+22605	appear	shield icons (protection)	observed	high
+22669	layout_reset	cut: bandaged Yamaguchi alone, header no date	observed	high
+22680	expression_swap	face	observed	medium
+22683	replace	bandaged figure replaced by older Yamaguchi (cream jacket) — time skip	observed	high
+22689	appear	green check icon	observed	high
+22728	label	"Lived until 93"	observed	high
+22752	layout_reset	cut: hospital bed with patient	observed	high
+22774	appear	stomach with cancer cells icon	observed	high
+22800	text_update	header date "2010"	observed	high
+22836	enter	narrator in suit enters left	observed	high
+22923	appear	speech bubble "he's the only one who survived both blasts"	observed	high

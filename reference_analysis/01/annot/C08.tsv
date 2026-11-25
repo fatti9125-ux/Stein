@@ -1,0 +1,58 @@
+first	type	description	evidence	confidence
+15290	hard_cut	C07 end -> index grid	observed	high
+15297	camera_zoom	zoom into tile "The Battle of Nuremberg" (woodcut)	observed	high
+15355	hard_cut	canvas: woodcut left, header + "April 14"	observed	high
+15399	text_update	date -> "April 14, 1561"	observed	high
+15457	appear	Germany map with X "Nuremberg" right	observed	high
+15545	accent	woodcut close-up: black spear/streak marks + explosion drawn over it	observed	high
+15619	layout_reset	hard cut: sparse abstract shapes start (tiny dots, X)	observed	high
+15637	appear	blue spear/tube shape + dots	observed	high
+15665	appear	grey crescents + more shapes (sky objects build)	observed	high
+15733	scale_up	3f: red orb grows	observed	high
+15749	scale_up	3f: blue cylinder grows	observed	high
+15781	scale_up	cross grows	observed	high
+15784	scale_up	cross grows more	observed	high
+15796	scale_up	3f: grey crescent grows	observed	high
+15846	cycle_swap	shape group jitter swaps (boil) every ~4 frames F15846-F15875	observed	high
+15850	cycle_swap	boil	observed	high
+15854	cycle_swap	boil	observed	high
+15858	cycle_swap	boil	observed	high
+15863	cycle_swap	boil	observed	high
+15867	cycle_swap	boil	observed	high
+15871	cycle_swap	boil	observed	high
+15875	cycle_swap	boil	observed	high
+15919	appear	yellow laser arrows between shapes + "pew!" text	observed	high
+15965	appear	clock-with-arrow icon + "Lasted around 1 hour"	observed	high
+15989	partial_reset	label/clock removed	observed	high
+15993	subtle	2f settle	observed	medium
+15997	camera_shift	8f: shape group shifts left, red orb pushed right	observed	high
+16007	motion_step	orb moves	observed	medium
+16011	motion_step	orb moves	observed	medium
+16015	motion_step	zoom on X/cylinder	observed	medium
+16019	motion_step	crop step	observed	medium
+16023	motion_step	shapes leave frame	observed	medium
+16027	motion_step	red orb falls (step)	observed	medium
+16033	appear	orb lands on brown ground patch	observed	high
+16079	appear	grey smoke column from crashed orb	observed	high
+16158	appear	black spear/streak in sky	observed	high
+16263	subtle	settle	observed	medium
+16266	enter	3f: bearded man (Hans Glaser, fur collar) enters right	observed	high
+16281	label	"Hans Glaser"	observed	high
+16314	pose_swap	Glaser holds quill/woodblock tool (artist)	observed	high
+16346	layout_reset	5f: sky objects cleared; Glaser re-placed left holding printed sheet	observed	high
+16367	appear	archive broadsheet (1561 woodcut print) placed right	observed	high
+16436	appear	Glaser speech bubble "'Tis a warning from the Almighty himself!"	observed	high
+16500	enter	5f: two townsmen enter (make room, broadsheet shrinks up-right)	observed	high
+16513	pose_swap	townsmen react	observed	high
+16563	layout_reset	5f: people cleared; broadsheet small top; professor right	observed	high
+16628	appear	2f: globe-with-sparks icon + professor open palm	observed	high
+16703	appear	feathered photo of sun dogs (parhelion)	observed	high
+16723	appear	feathered photo halo (blurred sun)	observed	high
+16742	appear	feathered photo light pillars at night	observed	high
+16781	appear	snowflake icons (ice crystals)	observed	high
+16883	reposition	photos + icons compact left/down (make room)	observed	high
+16956	subtle	settle	observed	medium
+16959	appear	small figure kneeling + red ! icon	observed	high
+16964	enter	narrator in cap enters left, hand on chin	observed	high
+17076	appear	thought bubble UFO icon	observed	high
+17134	appear	cloud bubble with birds/meteors drawing (alternative explanation)	observed	high

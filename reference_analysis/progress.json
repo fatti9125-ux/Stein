@@ -9,11 +9,15 @@
    "C04",
    "C05",
    "C06",
-   "C07"
+   "C07",
+   "C08",
+   "C09",
+   "C10",
+   "C11"
   ],
-  "last_verified_frame": 15289,
-  "next_frame": 15290,
-  "next_chapter": "C08",
+  "last_verified_frame": 23017,
+  "next_frame": 23018,
+  "next_chapter": "C12",
   "method": "full per-frame scan (md5 exact + 640x360 diff>24) -> events (threshold 0.0004 of frame) -> visual review of before/first/last/after crops per event + per-frame strips for multi-frame events + tight-diff crops for low-intensity events",
   "open_uncertainties": [
    "frame-level inspection of event interiors not stripped (15 frames in C01) marked event_interior_measured",

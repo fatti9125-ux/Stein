@@ -1,0 +1,79 @@
+first	type	description	evidence	confidence
+18879	hard_cut	C09 end -> index grid	observed	high
+18885	camera_zoom	zoom into tile "MV Joyita" (ship photo)	observed	high
+18943	hard_cut	canvas: feathered ship photo left, header + "October 3"	observed	high
+18974	text_update	date -> "October 3, 1955"	observed	high
+19024	appear	dimension line under ship "69-foot"	observed	high
+19045	appear	US flag above ship	observed	high
+19117	appear	Pacific globe map right with "Apia" marker	observed	high
+19173	appear	red circle markers on map	observed	high
+19176	label	"Tokelau Islands" + arrow from Apia	observed	high
+19216	appear	crowd icon + "25 people"	observed	high
+19261	label	"4 tons of cargo" icon	observed	high
+19337	appear	clock + "48 hour trip"	observed	high
+19398	replace	5f: ship photo turns to black silhouette with red alarm lines (gone missing)	observed	high
+19429	layout_reset	cut: calendar + "5 weeks later", globe stays	observed	high
+19454	reposition	calendar shifts	observed	high
+19457	appear	feathered photo of ship found listing	observed	high
+19461	subtle	settle	observed	medium
+19490	appear	"600 miles off course" + measure line on map	observed	high
+19537	label	"Fiji" + red circle	observed	high
+19559	appear	flooding warning triangle icon	observed	high
+19633	appear	crowd icon with red X + ? (no people)	observed	high
+19662	reposition	compact	observed	high
+19665	partial_reset	map removed, ship + crowd remain	observed	high
+19668	appear	rowing-boat icon	observed	high
+19677	appear	inflatable raft icon	observed	high
+19687	appear	red X over boat and raft (lifeboats missing)	observed	high
+19716	enter	narrator shrug at right	observed	high
+19784	expression_swap	face	observed	medium
+19788	pose_swap	narrator holds radio, signal lines	observed	high
+19834	appear	bubble "international distress frequency"	observed	high
+19908	subtle	settle	observed	medium
+19959	appear	radio set icon	observed	high
+19970	appear	radio tower icon + cable	observed	high
+20019	appear	red X over radio+tower (faulty radio)	observed	high
+20043	appear	clock "10:25" (stopped clock)	observed	high
+20107	subtle	settle	observed	medium
+20110	partial_reset	2f: icons cleared; ship + narrator	observed	high
+20115	enter	3f: narrator re-placed small	observed	high
+20135	accent	yellow highlight on ship detail (photo annotation)	observed	high
+20162	appear	medical supplies icons (bandages, gloves, bottle)	observed	high
+20211	appear	bloody bandages icon	observed	high
+20286	appear	thought bubble with warning triangle over narrator	observed	high
+20323	pose_swap	3f: narrator thinking; logbook icon replaces bubble	observed	high
+20342	appear	compass + map icon	observed	high
+20379	appear	cargo crates icon	observed	high
+20402	appear	red X over crates, logbook, compass (all missing)	observed	high
+20431	layout_reset	3f: icons cleared; ship photo + narrator with magnifier	observed	high
+20470	appear	corroded pipe leaking icon	observed	high
+20526	accent	water gush added to pipe	observed	high
+20554	appear	engine icon	observed	high
+20558	motion_step	water rises over engine (step)	observed	medium
+20562	motion_step	water rises (step)	observed	medium
+20565	motion_step	3f: water rises, engine submerged	observed	medium
+20601	appear	bilge pump icon	observed	high
+20614	appear	red X over pump	observed	high
+20656	scale_up	ship photo enlarges	observed	high
+20660	replace	photo replaced by illustrated ship on water	observed	high
+20666	subtle	settle	observed	medium
+20686	appear	bubble "WE'RE SINKING! SAVE YOURSELVES"	observed	high
+20780	appear	cork floats icon + label "cork-lined"	observed	high
+20803	subtle	settle	observed	medium
+20813	appear	floating-with-check icon (hull floats)	observed	high
+20859	appear	people in water around ship	observed	high
+20927	appear	red ? marks around swimmers	observed	high
+20973	layout_reset	hard cut: raft with people + narrator	observed	high
+20983	appear	skull icon	observed	high
+21003	appear	sunburn person icon	observed	high
+21016	appear	dehydration head icon	observed	high
+21027	appear	starving man icon	observed	high
+21050	appear	drowning hand icon	observed	high
+21066	appear	storm icon	observed	high
+21083	enter	3f: second narrator enters left	observed	high
+21089	pose_swap	gesture	observed	high
+21123	appear	pirate with cutlass icon	observed	high
+21157	appear	hand with bottle / poison icon	observed	high
+21207	appear	bubble "There was some sort of violence!" + injured figure icon	observed	high
+21270	layout_reset	hard cut: ship photo + narrator thinking with raft bubble	observed	high
+21305	appear	thought bubble with skeleton on raft	observed	high

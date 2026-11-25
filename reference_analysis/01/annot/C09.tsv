@@ -1,0 +1,57 @@
+first	type	description	evidence	confidence
+17194	hard_cut	C08 end -> index grid	observed	high
+17200	camera_zoom	zoom into tile "Kinross Incident" (pilot portrait + plane)	observed	high
+17258	hard_cut	canvas: B&W pilot portrait left, header + "November 23"	observed	high
+17294	text_update	date -> "November 23, 1953"	observed	high
+17351	appear	2f: radar scope + signal icon right of portrait	observed	high
+17408	appear	North America map with red arrow to "Lake Superior"	observed	high
+17528	label	"Felix Moncla" above portrait	observed	high
+17557	appear	second portrait (co-pilot) bottom-left	observed	high
+17560	label	"Robert L. Wilson"	observed	high
+17610	appear	feathered aerial photo + X "Kinross Air Force Base" on map	observed	high
+17712	subtle	settle	observed	medium
+17715	layout_reset	2f cut: pilot bust left (goggles), jet plane + Lake Superior map inset	observed	high
+17719	scale_up	map grows (step)	observed	high
+17723	scale_up	map grows (step)	observed	high
+17727	scale_up	map grows (step) — stepped zoom into lake over ~8 frames	observed	high
+17730	motion_step	jet moves over map	observed	medium
+17733	motion_step	jet moves	observed	medium
+17762	appear	radar operator with headset (bust)	observed	high
+17768	appear	radar scope placed on map	observed	high
+17791	appear	red blip on radar	observed	high
+17797	appear	black arrow/flight path from radar blip north	observed	high
+17819	subtle	flicker	observed	medium
+17865	subtle	flicker	observed	medium
+17879	appear	red ? next to blip	observed	high
+17927	replace	blip becomes red dot (merge)	observed	high
+17955	replace	pilot bust becomes black silhouette (gone)	observed	high
+17959	accent	radar blips scatter	observed	high
+18031	layout_reset	4f: cleared; USAF officer (sunglasses, cap) small right	observed	high
+18037	scale_up	officer enlarges	observed	high
+18068	appear	pilot head inset left + officer points	observed	high
+18097	appear	radar icon	observed	high
+18115	appear	C-47 transport plane over them	observed	high
+18144	appear	Canadian flag	observed	high
+18181	label	"C-47"	observed	high
+18271	pose_swap	officer explains, bubble with crash-into-water icon	observed	high
+18311	appear	second bubble (figures)	observed	high
+18357	enter	3f: Canadian officer enters left (make room)	observed	high
+18362	pose_swap	Canadian points	observed	high
+18365	appear	bubble "That's not correct, eh?"	observed	high
+18437	appear	red X over Canadian flag/plane	observed	high
+18500	layout_reset	hard cut: two officers handshake, bubble "We gotta REALLY look for that plane, eh?"	observed	high
+18542	appear	underwater wreck icon (plane on lake bed)	observed	high
+18549	appear	red X over wreck icon	observed	high
+18555	appear	oil slick drop icon	observed	high
+18563	appear	red X over oil slick	observed	high
+18571	appear	plane debris + water drops outline icon	observed	high
+18576	appear	red X over debris (no evidence found x3)	observed	high
+18602	partial_reset	3f: bubble removed, magnifier added, officers salute	observed	high
+18649	subtle	settle	observed	medium
+18653	enter	3f: UFO-enthusiast (glasses, "I want to believe" shirt) enters left	observed	high
+18660	expression_swap	eyes	observed	medium
+18663	expression_swap	eyes	observed	medium
+18669	appear	thought bubble UFO icon	observed	high
+18734	appear	speech bubble plane colliding with UFO, pose swap pointing	observed	high
+18738	accent	collision burst	observed	high
+18784	replace	bubble now plane abducted in tractor beam	observed	high
