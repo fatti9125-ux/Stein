@@ -5,11 +5,12 @@
   "chapters_done": [
    "C01",
    "C02",
-   "C03"
+   "C03",
+   "C04"
   ],
-  "last_verified_frame": 6289,
-  "next_frame": 6290,
-  "next_chapter": "C04 Umberto's Doppelg\u00e4nger (grid cut F006290; canvas F006354)",
+  "last_verified_frame": 7916,
+  "next_frame": 7917,
+  "next_chapter": "C05 Sir Victor Goddard (grid cut F007917; canvas F007982)",
   "method": "full per-frame scan (md5 exact + 640x360 diff>24) -> events (threshold 0.0004 of frame) -> visual review of before/first/last/after crops per event + per-frame strips for multi-frame events + tight-diff crops for low-intensity events",
   "open_uncertainties": [
    "frame-level inspection of event interiors not stripped (15 frames in C01) marked event_interior_measured",

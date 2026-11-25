@@ -1,0 +1,46 @@
+first	type	description	evidence	confidence
+6290	hard_cut	C03 last state -> index grid; holds 6 frames	observed	high
+6296	camera_zoom	Grid zooms into tile 4 "Umberto's Doppelgänger" (sepia portrait) over 15 frames; title card holds F6311-F6353	observed	high
+6354	hard_cut	Canvas: sepia feathered portrait re-placed left (x≈.0-.34); header "Umberto's Doppelgänger"/"July 29"	observed	high
+6386	text_update	Date extends "July 29" -> "July 29, 1900" (32 frames after header)	observed	high
+6426	label	Name label "King Umberto I of Italy" (2 lines) placed above-left of portrait	observed	high
+6464	appear	Kingdom-of-Italy flag (tricolour with Savoy shield) placed right of portrait, overlapping its edge	observed	high
+6502	text_update+appear	Date changes "July 29, 1900" -> "July, 1900" (generalised); coloured restaurant-front icon placed below flag	observed	high
+6525	appear	Italy map with red X + label "Monza" and black curved arrow from restaurant to Monza, placed right (x≈.59-.97)	observed	high
+6589	layout_reset	Hard cut: header drops date; two torso characters facing each other: King (moustache, navy uniform) left, chef (moustache, toque, apron, same face) right, both cropped at waist	observed	high
+6660	expression_swap	King: eyes/brows swap to raised-brow look (face-only replacement)	observed	high
+6664	pose_swap	5-frame span: King swaps to hand-to-moustache + open palm gesture toward chef (speaking/asking)	observed	high
+6715	expression_swap	Chef: eyebrow raise / eyes swap (listening reaction)	observed	high
+6765	pose_swap	3-frame span: King back to neutral, hands down; chef neutral	observed	high
+6772	appear	Large black "=" sign placed between the two (comparison)	observed	high
+6817	scale_change	"=" sign shrinks to small size in place (makes room for rows above/below)	observed	high
+6820	appear	Two ID-card icons with green checks, each labelled "Umberto", placed above "=" on each side	observed	high
+6856	appear	Two calendar icons with second "=" placed in a row under the ID row	observed	high
+6930	appear	Two town icons placed under the calendars (3rd row) — comparison table builds row by row, 1 row every ~1.2-2.5 s	observed	high
+6963	appear	Two framed wedding-photo icons placed as 4th comparison row	observed	high
+6975	subtle_change	Tiny whole-frame flicker (no visible content change at sheet scale)	measured	low
+7019	appear	Two crawling-baby icons (with arrows above) placed as 5th row, bottom	observed	high
+7075	layout_change	6-frame span: comparison table + "=" removed; chef pose swap (points at self, open palm right) and chef + restaurant icon move left toward centre; King shifts left partly off-frame	observed	high
+7121	appear	Calendar icon placed between King and chef (above)	observed	high
+7135	pose_swap	King: neutral -> raised index finger	observed	high
+7165	appear	Crown + Italy flag icons placed left of King's head (and King's raised hand moves left)	observed	high
+7185	subtle_change	Small whole-frame change; no visible content change at sheet scale	measured	low
+7193	layout_reset	Hard cut: King alone, re-placed centre-left at larger scale, hand on chin thinking	observed	high
+7196	expression_swap	3-frame span: King's eyes shift to look up-right (toward where the bubble will appear)	observed	high
+7214	appear	Thought bubble (with trailing dots) containing chef head placed upper-right of King	observed	high
+7248	pose_swap	King: thinking -> writing on paper/envelope with quill	observed	high
+7301	pose_swap	King: holding sealed envelope with red wax, smiling (invitation)	observed	high
+7335	layout_reset	Hard cut: chef alone centre, neutral; header regains date "July 29" (time jump marker)	observed	high
+7377	pose_swap	Chef holds/cleans a revolver at chest (non-graphic)	observed	high
+7395	subtle_change	Small flicker around chef (no visible content change)	measured	low
+7426	pose_swap	Chef re-drawn leaning back, X-eyes, muzzle flash at gun, small red mark on apron (shot; non-graphic, small)	observed	high
+7450	appear	Hand-with-gun + muzzle burst + yellow warning triangle icon placed left (accident callout)	observed	high
+7513	scene_change	Header drops date; gun icon removed; King re-enters left (hand on face, shocked), shot chef shifts right	observed	high
+7516	scale_down	Shot chef shrinks in place (step 1) — recedes into distance	observed	high
+7519	scale_down	Chef shrinks further (step 2) and lifts — fading memory effect via stepped scale	observed	high
+7570	pose_swap+bubble	3-frame span: chef removed; King re-placed centre neutral sad; thought bubble "Damn, I'll miss my clone buddy..." appears F7572	observed	high
+7625	scene_change	King re-drawn leaning back (shot, small red marks, X-eyes) left; assassin (black suit, revolver, muzzle flash) enters right facing him — non-graphic	observed	high
+7700	label	Name label "Gaetano Bresci" above the assassin	observed	high
+7750	layout_reset	Hard cut: King and chef heads (busts) side by side top-centre-left; professor with book bottom-right	observed	high
+7794	pose_swap	Professor: reading -> index finger up speaking	observed	high
+7813	appear	Speech bubble "This Doppelgänger was just a myth" from professor	observed	high
