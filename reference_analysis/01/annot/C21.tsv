@@ -1,0 +1,86 @@
+first	type	description	evidence	confidence
+39196	hard_cut	C20 end -> index grid	observed	high
+39203	camera_zoom	zoom into tile "Dancing Plague" (engraving)	observed	high
+39231	subtle	title card settle	observed	medium
+39248	hard_cut	canvas: engraving left, header + "July 1518"	observed	high
+39309	appear	woman (headscarf, apron) torso	observed	high
+39327	label	"Frau Troffea"	observed	high
+39366	pose_swap	woman starts dancing pose	observed	high
+39411	subtle	settle	observed	medium
+39455	appear	France map with "Strasbourg" X	observed	high
+39530	appear	Holy Roman Empire eagle shield	observed	high
+39584	layout_reset	cut: dancing woman full body small centre	observed	high
+39588	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39598	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39601	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39609	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39612	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39621	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39634	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39638	pose_swap	woman collapses on floor asleep (zzz)	observed	high
+39673	pose_swap	woman back up dancing	observed	high
+39681	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39684	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39692	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39702	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39705	scale_down	woman shrinks (zoom out)	observed	high
+39708	appear	white dancing crowd figures around her	observed	high
+39714	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39717	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39724	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39727	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39739	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39742	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39749	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39752	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39760	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39763	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39771	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39774	dance_cycle	dance pose swap (2-3 alternating drawings every ~3-6 frames = dance cycle); also collapses asleep and resumes, crowd joins at F39708	observed	high
+39782	appear	large dancing crowd (~400 figures)	observed	high
+39845	label	"around 400 people"	observed	high
+39849	scale_down	7f: crowd shrinks to bottom band (make room)	observed	high
+39875	appear	exhausted person icon	observed	high
+39894	appear	bleeding foot icon	observed	high
+39918	appear	heart warning icon	observed	high
+39941	appear	brain/stroke icon	observed	high
+39981	appear	chronicler with notebook	observed	high
+40012	appear	bubble "up to 15 deaths a day"	observed	high
+40082	layout_reset	cut: dancers + two officials (physician, councilman)	observed	high
+40100	expression_swap	official face	observed	medium
+40134	pose_swap	official raises finger	observed	high
+40147	appear	bubble "They are suffering from "hot blood""	observed	high
+40205	text_update	bubble -> "They should do even more dancing!"	observed	high
+40274	pose_swap	second official gestures	observed	high
+40278	appear	stage/platform with musicians behind dancers	observed	high
+40383	appear	3f: dancers collapsing + bubble "They are still getting sick..."	observed	high
+40437	appear	ban sign over musicians + bubble "We're banning all of this!"	observed	high
+40468	appear	ban sign close-up	observed	high
+40516	layout_reset	cut: official pointing right alone	observed	high
+40520	subtle	settle	observed	medium
+40524	subtle	settle	observed	medium
+40527	subtle	settle	observed	medium
+40533	appear	dancers at his finger	observed	high
+40536	appear	4f: Saint Vitus painting	observed	high
+40598	appear	pilgrimage icon (dancers + praying hands)	observed	high
+40663	pose_swap	official praying + bubble "forgive our dancers' sins"	observed	high
+40706	layout_reset	cut: feathered engraving centre	observed	high
+40746	fade_step	engraving fades (opacity step 1)	observed	high
+40753	fade_step	fade step 2	observed	high
+40760	fade_step	fade step 3	observed	high
+40766	fade_step	fade step 4	observed	high
+40769	label	"faded by September"	observed	high
+40773	fade_step	fade step 5	observed	high
+40795	fade_step	fade step 6 (stepped fade-out ~7 frames each)	observed	high
+40798	enter	professor appears over faded image	observed	high
+40841	fade_step	engraving gone	observed	high
+40858	pose_swap	professor raised finger	observed	high
+40886	appear	crowd-with-brain icon (mass psychogenic illness)	observed	high
+40941	appear	starving person icon (famine)	observed	high
+40948	appear	plague victims icon	observed	high
+40963	appear	stress icon	observed	high
+40991	reposition	6f: icons compact, "ergotism" label + fungus icon	observed	high
+41038	appear	wheat stalks icon	observed	high
+41053	appear	arrow + infected wheat (ergot)	observed	high
+41126	pose_swap	professor thinking	observed	high
+41151	appear	thought bubble dizzy woman with ?	observed	high

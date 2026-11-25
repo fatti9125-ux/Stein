@@ -1,43 +1,26 @@
 {
  "video_01": {
-  "coverage": "in_progress",
-  "stage": "per-chapter event review",
-  "chapters_done": [
-   "C01",
-   "C02",
-   "C03",
-   "C04",
-   "C05",
-   "C06",
-   "C07",
-   "C08",
-   "C09",
-   "C10",
-   "C11",
-   "C12",
-   "C13",
-   "C14",
-   "C15",
-   "C16",
-   "C17",
-   "C18",
-   "C19",
-   "C20"
-  ],
-  "last_verified_frame": 39195,
-  "next_frame": 39196,
-  "next_chapter": "C21",
-  "method": "full per-frame scan (md5 exact + 640x360 diff>24) -> events (threshold 0.0004 of frame) -> visual review of before/first/last/after crops per event + per-frame strips for multi-frame events + tight-diff crops for low-intensity events",
+  "coverage": "complete_for_supported_methods",
+  "chapters_done": "C01-C22 + C21b (23 chapters)",
+  "frames_total": 44715,
+  "last_verified_frame": 44714,
+  "next_frame": null,
+  "status_counts": {
+   "identical_hold_verified": 18186,
+   "near_identical_hold_measured": 24423,
+   "visual_verified": 1557,
+   "event_interior_measured": 489,
+   "measured_codec_refresh": 60
+  },
+  "events": 1451,
   "open_uncertainties": [
-   "frame-level inspection of event interiors not stripped (15 frames in C01) marked event_interior_measured",
-   "codec keyframe refresh classification verified on a 7-event sample (td_c01.jpg), applied by rule (I-frame, frac<0.012, area>0.3, <=2 frames)"
-  ],
-  "evidence": "reference_analysis/01/evidence/",
-  "method_note_from_C05": "C05+ reviewed from compact sheets (before/after crop of every event changed-region, all events) instead of 4-crop sheets; multi-frame interiors not stripped unless noted"
+   "event interiors C05-C22 measured not individually viewed",
+   "audio identities unverified (no playback)"
+  ]
  },
  "video_02": {
-  "coverage": "unreviewed",
-  "reason": "queued after video 01"
+  "coverage": "in_progress",
+  "stage": "scan complete; event review next"
  },
  "excerpts": {
   "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",
@@ -45,6 +28,9 @@
  },
  "audio_01": {
   "coverage": "measured_unverified",
-  "note": "no playback in this environment; waveform/spectral analysis only; VO transcript in progress"
+  "files": [
+   "01/audio_cues.csv",
+   "01/audio_notes.md"
+  ]
  }
 }

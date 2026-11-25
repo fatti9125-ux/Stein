@@ -1,0 +1,53 @@
+first	type	description	evidence	confidence
+42744	hard_cut	C21b end -> index grid	observed	high
+42750	camera_zoom	zoom into tile "The Mysterious Radiation Burst" (graph image)	observed	high
+42812	hard_cut	canvas: graph left + scientist (green gloves) right, header	observed	high
+42833	label	"774–775 AD"	observed	high
+42901	subtle	settle	observed	medium
+42991	appear	atom + radiation icon + red up arrow	observed	high
+43010	label	"carbon-14"	observed	high
+43072	appear	arrow	observed	high
+43078	appear	tree stump with rings	observed	high
+43120	label	"1.2% increase" + percent icon	observed	high
+43146	label	"20 times bigger than normal" (bracketed)	observed	high
+43243	layout_reset	cut: scientist alone right	observed	high
+43265	appear	Japan map	observed	high
+43286	appear	cedar tree icon on Japan	observed	high
+43348	scale_down	3f: Japan map shrinks	observed	high
+43354	camera_zoom_out	5f: zoom out to world map	observed	high
+43395	appear	stump+radiation marker Europe	observed	high
+43412	appear	marker Russia	observed	high
+43432	appear	marker North America	observed	high
+43460	appear	marker South America	observed	high
+43489	appear	marker Africa	observed	high
+43492	layout_reset	cut: single stump marker	observed	high
+43495	scale_up	stump enlarges	observed	high
+43498	scale_up	stump enlarges	observed	high
+43505	appear	atom + check icon	observed	high
+43539	appear	Antarctica globe	observed	high
+43553	appear	3f: feathered ice-core photo + label "ice cores"	observed	high
+43597	pose_swap	scientist hand on chin	observed	high
+43631	appear	bar chart with spike + radiation icon	observed	high
+43644	label	2f: "greatest surge in"	observed	high
+43681	label	"10.000 years"	observed	high
+43728	layout_reset	5f: Earth icon + scientist	observed	high
+43764	appear	sun icon	observed	high
+43775	appear	solar flare arc to Earth	observed	high
+43881	appear	warning triangle	observed	high
+43977	pose_swap	scientist points	observed	high
+43980	subtle	settle	observed	medium
+44004	appear	exploding star icon	observed	high
+44013	label	"supernova"	observed	high
+44040	label	"Gamma Ray Burst" + feathered image	observed	high
+44131	layout_reset	cut: Earth with warning icon centre, header "Radiation Burst"	observed	high
+44139	subtle	header settle	observed	medium
+44165	enter	medieval peasant + bubble "did something happen?"	observed	high
+44261	enter	modern person panicking right	observed	high
+44305	appear	broken gear + warning (tech failure)	observed	high
+44316	appear	satellite icon + red arrow	observed	high
+44341	appear	cell tower + phone + red arrow	observed	high
+44368	appear	power pylon + red arrow	observed	high
+44415	layout_reset	2f: Earth + scientist	observed	high
+44422	appear	6f: graph image re-appears under Earth (callback)	observed	high
+44448	appear	old man in red robe pointing, bubble "This never happened again..."	observed	high
+44554	layout_reset	end card: old presenter pointing right, bubble "Watch these!" (end screen space right)	observed	high

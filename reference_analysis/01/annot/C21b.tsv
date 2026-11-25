@@ -1,0 +1,49 @@
+first	type	description	evidence	confidence
+41226	hard_cut	C21 end -> index grid	observed	high
+41232	camera_zoom	zoom into tile "The Titanic Prediction" (book cover "Futility") over 15f	observed	high
+41249	subtle	title card settle	observed	medium
+41278	hard_cut	canvas: B&W portrait left, header "Titanic Prediction"	observed	high
+41299	label	"1898"	observed	high
+41339	appear	US flag	observed	high
+41346	appear	book + quill icon	observed	high
+41376	label	"Morgan Robertson"	observed	high
+41426	appear	book cover "Futility" right	observed	high
+41444	label	"The Wreck of the Titan"	observed	high
+41520	label	"14 years before"	observed	high
+41523	subtle	settle	observed	medium
+41526	subtle	settle	observed	medium
+41535	appear	illustrated Titanic ship + label	observed	high
+41550	replace	ship sinking with iceberg	observed	high
+41585	layout_reset	cut: book cover small centre	observed	high
+41590	replace	12f: book cover dissolves into sepia ship illustration (cross-dissolve)	observed	high
+41647	label	"The Titan"	observed	high
+41694	appear	collision burst icon	observed	high
+41702	appear	iceberg + burst	observed	high
+41710	appear	globe "North Atlantic"	observed	high
+41793	reposition	globe + ship	observed	high
+41797	layout_reset	cut: ship alone	observed	high
+41800	scale_up	3f: ship enlarges	observed	high
+41850	appear	dimension "800 ft long"	observed	high
+41896	appear	propeller icon	observed	high
+41900	appear	propeller	observed	high
+41905	appear	3 propellers row	observed	high
+41949	appear	ship captain bust + bubble "it is "unsinkable""	observed	high
+41990	appear	2f: lifeboat icon with down arrow	observed	high
+42044	appear	real Titanic illustration right	observed	high
+42076	appear	dimension "882 ft long"	observed	high
+42139	appear	3 propellers row under Titanic	observed	high
+42177	layout_reset	4f: Titan side cleared	observed	high
+42184	subtle	settle	observed	medium
+42189	scale_up	6f: Titanic enlarges centre	observed	high
+42198	appear	iceberg collision icon	observed	high
+42232	appear	globe North Atlantic	observed	high
+42284	appear	lifeboat warning icon	observed	high
+42358	layout_reset	cut: Titanic sinking illustration right, header date "1912"	observed	high
+42399	enter	Robertson cartoon torso left	observed	high
+42417	appear	book "Futility" held	observed	high
+42426	enter	narrator enters	observed	high
+42431	appear	bubble "How did you know what would happen??"	observed	high
+42503	expression_swap	faces	observed	medium
+42549	appear	2f: Robertson bubble "I just know a thing or two about ships and sailing"	observed	high
+42649	appear	bubble "and those guys got in way over their heads with their "Titan"" + ship icon	observed	high
+42676	appear	life jacket + ring warning icon	observed	high

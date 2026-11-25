@@ -248,8 +248,21 @@
    39218
   ],
   "canvas_start": 39231,
-  "end": 42743,
+  "end": 41225,
   "events": 126
+ },
+ {
+  "id": "C21b",
+  "name": "The Titanic Prediction",
+  "grid_cut": 41226,
+  "zoom": [
+   41232,
+   41246
+  ],
+  "canvas_start": 41278,
+  "end": 42743,
+  "events": 0,
+  "note": "found during review: missed by the 22-transition scan because the 18-frame zoom exceeded the 12-16 frame filter"
  },
  {
   "id": "C22",
