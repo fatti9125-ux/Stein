@@ -1,0 +1,63 @@
+first	type	description	evidence	confidence
+4384	hard_cut	C02 last state -> index grid in 1 frame; grid holds 6 frames (F4384-F4389)	observed	high
+4390	camera_zoom	Grid zooms into tile 3 "Laughter Epidemic" over 14 frames (F4390-F4403); title card (feathered colour photo of laughing schoolgirls + title; next tile title "Do…" visible at right edge) holds F4404-F4447 (44 frames)	observed	high
+4448	hard_cut	Title card -> canvas: photo cut-out (people only, background removed, no feather) re-placed top-left (x≈.0-.4); header "Laughter Epidemic"/"January"	observed	high
+4465	text_update	Date extends in place "January" -> "January, 1962" (17 frames after header)	observed	high
+4505	appear	Three cartoon schoolgirls (laughing faces, white shirts) placed bottom-left cropped at chest	observed	high
+4538	appear	Coloured school-building icon (cross on roof) placed right of girls	observed	high
+4572	appear	Africa map (cream land, label "Africa") with red-filled Tanganyika circled in black, placed right half (x≈.43-.99)	observed	high
+4585	label	Map label "Tanganyika" placed left of circled country	observed	high
+4600	label	Second label "Tanzania" added above "Tanganyika" (stacked modern/historic name)	observed	high
+4670	pose_swap	Girls: all three swap to laughing poses (open red mouths, squinting eyes, hands to faces)	observed	high
+4716	scale_pop	Middle girl's head enlarged (head-only scale up ~1.4x, a "spotlight" pop on one face)	observed	high
+4719	layout_reset	Hard cut: header drops date; small laughing face icon + school icon placed centre (x≈.33-.39) — a symbol of "the laughter at the school"	observed	high
+4722	reposition	Laughing face moves from left-of-school to on-top-of-school (instant re-place)	observed	high
+4728	reposition	3-frame span: face rises slightly and holds above school	observed	medium
+4749	appear	Four orange curved arrows radiating out from face (spread)	observed	high
+4767	appear	Ring of black house/building icons placed all round the school cluster (whole canvas)	observed	high
+4785	appear	Two larger black school buildings (with flags) placed left and right on the ring	observed	high
+4847	appear	Under the school: black crowd silhouettes with laughing-face icons and orange arrows, label "1.000 people affected" (European decimal point as in source)	observed	high
+4895	appear	"CLOSED" sign tags placed on both big schools + red curved arrow + label "14 schools closed" lower-left	observed	high
+4971	appear	Calendar icon placed bottom-right corner	observed	high
+4980	label	Label "lasted around 18 months" placed left of calendar	observed	high
+5020	layout_reset	Hard cut: everything cleared except laughing-face icon, re-placed centre (x≈.48)	observed	high
+5023	scale_change	Face icon enlarges slightly in place (3 frames after reset)	observed	medium
+5043	reposition	Face icon moves down a little (instant)	observed	medium
+5072	appear	Red exclamation marks/dashes on both sides of the face (shock accents)	observed	high
+5088	appear	Laughing student (boy, white shirt) placed bottom-left-centre cropped at waist, holding belly	observed	high
+5112	appear	Second laughing student (tears, hands to face) placed bottom-right-centre	observed	high
+5135	appear	Clock-with-circular-arrow icon (recurring time) placed between the two students under the face	observed	high
+5162	appear	Calendar icon + 2-line label "Attacks lasting up to 16 days" placed below clock	observed	high
+5236	appear	Black pictogram lying flat (fainting, dizzy spiral) placed right of the exclamation marks	observed	high
+5259	appear	Black pictogram seated, shaking (restlessness) placed upper-right	observed	high
+5292	appear	Black pictogram running with speed lines placed top-right	observed	high
+5326	appear	Black pictogram standing, hands to throat/chest (breathing trouble) placed top-left	observed	high
+5352	appear	Black pictogram with pain marks at back (pain) placed left	observed	high
+5369	appear	Brown hand/arm with pink rash spots icon placed far-left	observed	high
+5400	appear	Black pictogram group of three people restraining/pushing placed top-left corner — symptom icons fill the canvas around the central face, 1 every ~0.8-1.1 s	observed	high
+5477	layout_reset	Hard cut: all symptom icons, face, label cleared; the two laughing students re-placed smaller, centre (x≈.33-.55), cropped at waist	observed	high
+5480	appear	Man in mustard shirt with glasses (teacher/elder) placed left of students, hand on a student's shoulder	observed	high
+5560	reposition+enter	All three shift left ~0.05 (make room); doctor (grey coat, green gloves) placed at right edge, hand on chin	observed	high
+5563	pose_swap	3-frame span: mustard man pose swap (hand off shoulder, hands on hips, worried look)	observed	medium
+5595	pose_swap+appear	Doctor pose swap to open palm speaking; black hand with blood drop (poison/injury) icon placed top-left of centre	observed	high
+5607	appear	Red X struck over the hand icon	observed	high
+5618	appear	Black germ/virus cluster icon placed right of struck hand	observed	high
+5628	appear	Red X struck over germ cluster	observed	high
+5643	appear	Small black virus icons placed further right top (next candidate)	observed	high
+5650	appear	Red X struck over the virus icons (3rd ruled-out cause; X follows each candidate ~0.3-0.4 s after it appears)	observed	high
+5703	enter	Tall man in long tan coat (glasses, gesturing) enters left edge, cropped at waist, pushing group right	observed	high
+5706	make_room	3-frame span: whole group (mustard man, students) + icons shift right; doctor shifts right partly out of frame (eased)	observed	high
+5735	appear	3-frame span: black crowd silhouette placed top-centre above group	observed	medium
+5748	appear	Head silhouette with brain + yellow lightning (stress) placed on top of the crowd	observed	high
+5787	appear	Laughing-face icon with yellow warning triangle placed right of crowd	observed	high
+5837	appear	7-frame span: header label "Tanganyika Independence" + two archive postage stamps (flag/soldier stamp, crest stamp) placed over centre; laughing face shifts down with red arrow pointing to it (cause -> effect)	observed	high
+5940	layout_reset	Hard cut: everything cleared; doctor/professor (grey suit, open book) placed centre-right, raised index finger; laughing face with warning triangle at his shoulder	observed	high
+5943	reposition	Face+triangle icon nudged left/up (instant)	observed	medium
+5947	reposition	Face+triangle nudged again (small up-left step) — 3 small nudges over F5943/F5947 = slight drift	observed	medium
+5975	pose_swap+appear	Professor pose swap to pointing left; black pictogram (person under pressure, arms up, papers/blocks falling) placed lower-left	observed	high
+6004	appear	Coloured teacher-with-pointer + 2 pupils + check mark icon placed top-left	observed	high
+6049	appear	Thought bubble with graduation cap + diploma placed right of teacher icon	observed	high
+6120	pose_swap	Professor: pointing left -> index finger up	observed	high
+6148	appear	Blue line-art anxious girl icon + red arrow pointing at laughing face placed right	observed	high
+6160	replace	Line-art girl icon replaced by full-colour girl face (curly hair, yellow top) — style upgrade in place	observed	high
+6233	appear	Yellow lightning/stress marks around the girl	observed	high
