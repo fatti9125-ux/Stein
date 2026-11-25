@@ -1,10 +1,19 @@
 {
  "video_01": {
   "coverage": "in_progress",
-  "stage": "frame index + change scan",
-  "last_verified_frame": null,
-  "next_frame": 0,
-  "open_uncertainties": []
+  "stage": "per-chapter event review",
+  "chapters_done": [
+   "C01"
+  ],
+  "last_verified_frame": 2299,
+  "next_frame": 2300,
+  "next_chapter": "C02 Miracle of the Sun (F002300 grid cut; canvas F002364)",
+  "method": "full per-frame scan (md5 exact + 640x360 diff>24) -> events (threshold 0.0004 of frame) -> visual review of before/first/last/after crops per event + per-frame strips for multi-frame events + tight-diff crops for low-intensity events",
+  "open_uncertainties": [
+   "frame-level inspection of event interiors not stripped (15 frames in C01) marked event_interior_measured",
+   "codec keyframe refresh classification verified on a 7-event sample (td_c01.jpg), applied by rule (I-frame, frac<0.012, area>0.3, <=2 frames)"
+  ],
+  "evidence": "reference_analysis/01/evidence/"
  },
  "video_02": {
   "coverage": "unreviewed",
@@ -13,5 +22,9 @@
  "excerpts": {
   "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",
   "evidence": ".claude/skills/hand-drawn-vox-explainer/references/sheet1-5.jpg"
+ },
+ "audio_01": {
+  "coverage": "measured_unverified",
+  "note": "no playback in this environment; waveform/spectral analysis only; VO transcript in progress"
  }
 }

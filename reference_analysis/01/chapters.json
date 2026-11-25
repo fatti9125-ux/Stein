@@ -1,0 +1,266 @@
+[
+ {
+  "id": "C01",
+  "name": "Mad Gasser of Mattoon",
+  "grid_cut": 0,
+  "zoom": [
+   7,
+   20
+  ],
+  "canvas_start": 65,
+  "end": 2299,
+  "events": 64
+ },
+ {
+  "id": "C02",
+  "name": "Miracle of the Sun",
+  "grid_cut": 2300,
+  "zoom": [
+   2307,
+   2321
+  ],
+  "canvas_start": 2364,
+  "end": 4383,
+  "events": 92
+ },
+ {
+  "id": "C03",
+  "name": "Laughter Epidemic",
+  "grid_cut": 4384,
+  "zoom": [
+   4390,
+   4403
+  ],
+  "canvas_start": 4448,
+  "end": 6289,
+  "events": 63
+ },
+ {
+  "id": "C04",
+  "name": "Umberto's Doppelg\u00e4nger",
+  "grid_cut": 6290,
+  "zoom": [
+   6296,
+   6310
+  ],
+  "canvas_start": 6354,
+  "end": 7916,
+  "events": 43
+ },
+ {
+  "id": "C05",
+  "name": "Sir Victor Goddard",
+  "grid_cut": 7917,
+  "zoom": [
+   7924,
+   7937
+  ],
+  "canvas_start": 7982,
+  "end": 10429,
+  "events": 75
+ },
+ {
+  "id": "C06",
+  "name": "Gil P\u00e9rez Incident",
+  "grid_cut": 10430,
+  "zoom": [
+   10437,
+   10450
+  ],
+  "canvas_start": 10503,
+  "end": 12675,
+  "events": 60
+ },
+ {
+  "id": "C07",
+  "name": "Lincoln-Kennedy Coincidences",
+  "grid_cut": 12676,
+  "zoom": [
+   12683,
+   12696
+  ],
+  "canvas_start": 12746,
+  "end": 15289,
+  "events": 77
+ },
+ {
+  "id": "C08",
+  "name": "The Battle of Nuremberg",
+  "grid_cut": 15290,
+  "zoom": [
+   15297,
+   15310
+  ],
+  "canvas_start": 15325,
+  "end": 17193,
+  "events": 56
+ },
+ {
+  "id": "C09",
+  "name": "Kinross Incident",
+  "grid_cut": 17194,
+  "zoom": [
+   17200,
+   17214
+  ],
+  "canvas_start": 17258,
+  "end": 18878,
+  "events": 56
+ },
+ {
+  "id": "C10",
+  "name": "MV Joyita",
+  "grid_cut": 18879,
+  "zoom": [
+   18885,
+   18899
+  ],
+  "canvas_start": 18943,
+  "end": 21370,
+  "events": 80
+ },
+ {
+  "id": "C11",
+  "name": "Tsutomu Yamaguchi",
+  "grid_cut": 21371,
+  "zoom": [
+   21377,
+   21391
+  ],
+  "canvas_start": 21435,
+  "end": 23017,
+  "events": 51
+ },
+ {
+  "id": "C12",
+  "name": "Valentich Disappearance",
+  "grid_cut": 23018,
+  "zoom": [
+   23025,
+   23038
+  ],
+  "canvas_start": 23083,
+  "end": 26099,
+  "events": 85
+ },
+ {
+  "id": "C13",
+  "name": "Lost Roman Legion",
+  "grid_cut": 26100,
+  "zoom": [
+   26106,
+   26120
+  ],
+  "canvas_start": 26164,
+  "end": 28154,
+  "events": 51
+ },
+ {
+  "id": "C14",
+  "name": "Greenland's Vanished Vikings",
+  "grid_cut": 28155,
+  "zoom": [
+   28161,
+   28174
+  ],
+  "canvas_start": 28219,
+  "end": 30049,
+  "events": 67
+ },
+ {
+  "id": "C15",
+  "name": "The Jim Twins",
+  "grid_cut": 30050,
+  "zoom": [
+   30056,
+   30070
+  ],
+  "canvas_start": 30102,
+  "end": 31425,
+  "events": 47
+ },
+ {
+  "id": "C16",
+  "name": "Goethe's Doppelg\u00e4nger",
+  "grid_cut": 31426,
+  "zoom": [
+   31432,
+   31445
+  ],
+  "canvas_start": 31477,
+  "end": 33207,
+  "events": 49
+ },
+ {
+  "id": "C17",
+  "name": "Vela Incident",
+  "grid_cut": 33208,
+  "zoom": [
+   33214,
+   33228
+  ],
+  "canvas_start": 33260,
+  "end": 34458,
+  "events": 51
+ },
+ {
+  "id": "C18",
+  "name": "Curse of Tippecanoe",
+  "grid_cut": 34459,
+  "zoom": [
+   34466,
+   34479
+  ],
+  "canvas_start": 34511,
+  "end": 36078,
+  "events": 49
+ },
+ {
+  "id": "C19",
+  "name": "Mark Twain's Death",
+  "grid_cut": 36079,
+  "zoom": [
+   36086,
+   36099
+  ],
+  "canvas_start": 36131,
+  "end": 37207,
+  "events": 26
+ },
+ {
+  "id": "C20",
+  "name": "Primarda Family",
+  "grid_cut": 37208,
+  "zoom": [
+   37214,
+   37228
+  ],
+  "canvas_start": 37260,
+  "end": 39195,
+  "events": 60
+ },
+ {
+  "id": "C21",
+  "name": "Dancing Plague",
+  "grid_cut": 39196,
+  "zoom": [
+   39203,
+   39218
+  ],
+  "canvas_start": 39231,
+  "end": 42743,
+  "events": 126
+ },
+ {
+  "id": "C22",
+  "name": "The Mysterious Radiation Burst",
+  "grid_cut": 42744,
+  "zoom": [
+   42750,
+   42763
+  ],
+  "canvas_start": 42773,
+  "end": 44714,
+  "events": 51
+ }
+]

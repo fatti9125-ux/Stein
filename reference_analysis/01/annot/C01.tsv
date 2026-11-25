@@ -1,0 +1,74 @@
+first	type	description	evidence	confidence
+7	camera_zoom	Index grid (24 tiles) zooms into tile "Mad Gasser of Mattoon": whole grid scales up and translates as one group over 14 frames; neighbour tile ("Mi…") visible at right edge on settle	observed	high
+65	hard_cut	Title card (centred feathered sepia portrait + big title) -> chapter canvas: portrait re-placed smaller at left (x≈.04-.25), red "?" beside it, two-line header top-centre ("Mad Gasser"/"September, 1944")	observed	high
+95	subtle_change	Low-area change across portrait/header region; no visible difference at sheet scale (possible re-composite)	measured	low
+128	appear	USA map (cream land, white state lines, label "Mattoon" + x) placed right of portrait in 1 frame	observed	high
+179	appear	Icon (black hooded scream-mask with grey hands) placed on the map above Mattoon in 1 frame	observed	high
+205	appear	Narrator (white blob figure, frown) enters lower-right cropped by bottom edge in 1 frame, overlapping map	observed	high
+230	pose_swap	Narrator: frown -> open red mouth + raised open-palm hand (replacement drawing, same anchor)	observed	high
+281	appear	Thought/speech bubble (cloud-ish outline, wind swirls + black house icon) appears to left of narrator, tail to narrator	observed	high
+300	mouth_swap	Narrator mouth: open red -> closed/neutral (small replacement on face); rest holds	observed	medium
+323	appear	Flower/plant icon with small sparkle marks placed inside the thought bubble above the house	observed	high
+417	appear	Black pictogram of a person lying down placed on east coast of map (right edge)	observed	high
+430	appear	Black pictogram of a person standing, hand to mouth with shake lines (nausea) placed above previous	observed	high
+442	appear	Black pictogram of a person vomiting/bent over placed on map near Mattoon x	observed	high
+474	layout_reset	Hard reset over 3 frames: map/portrait/icons cleared; header drops date line (only "Mad Gasser"); narrator re-placed centre-left smaller (neutral), police officer torso enters bottom-right holding notebook; empty speech bubble appears above narrator on F476	observed	high
+493	appear	Inside the bubble: black silhouette man-head profile breathing out a puff	observed	high
+528	appear	Inside the bubble, right of silhouette: sleeping-bee/insect icon with "zzz"	observed	high
+558	appear	Second speech bubble (from narrator, tail left) containing a window frame with a sleeping face + smell wavy lines; narrator pose swap to open palm pointing right in the same frame	observed	high
+649	appear_multi	Over 3 frames: flower icon + sniffing nose line-drawing placed above/right of the window bubble; narrator hand pose changes to pointing down-right	observed	medium
+684	subtle_change	Whole-frame low-area change; no visible difference at sheet scale (mouth/eye flicker suspected)	measured	low
+725	appear	Seated figure clutching leg with pain marks placed right of the window bubble, between bubble and officer	observed	high
+802	pose_swap	Seated figure: pain pose -> relaxed, legs out, smiling (replacement drawing, same footprint)	observed	high
+881	layout_reset	Hard reset: bubbles, icons, narrator, seated figure cleared; police officer re-placed from right edge to centre-right (x≈.55), header "Mad Gasser" holds	observed	high
+884	reposition+enter	5-frame span: officer re-placed to left edge (x≈.05-.2) and narrator appears at right edge (x≈.8-1.0) frowning with raised hand — check per-frame strip	observed	medium
+922	appear	Black-clad masked figure holding a spray hose/tank (the "gasser") placed centre (x≈.5-.68)	observed	high
+1031	subtle_change	Whole-frame low-area change; no visible difference at sheet scale (queued for tight-diff pass)	measured	low
+1040	appear	Close-up callout: hooded gas-mask head (dark hood, grey face, frown) placed left of the masked figure's head, overlapping	observed	high
+1093	appear	Pink female symbol + thin black curved arrow pointing from hood toward it (top-left of figure)	observed	high
+1105	appear	Disguise icon (blue glasses, big nose, moustache) under the female symbol with curved arrow	observed	high
+1116	appear	Blue male symbol placed under the disguise icon (column of 3 symbols)	observed	high
+1157	layout_reset	Hard reset: figure, symbols and narrator cleared; officer re-placed centre (x≈.55-.75) reading notebook	observed	high
+1166	appear	Torn report/news paper icon placed left of officer overlapping his hands	observed	high
+1173	appear	Second tilted report paper placed further left (stack builds leftward)	observed	high
+1180	appear	Third paper placed further left + 2-line black label "over 24 gassings reported" above the stack	observed	high
+1241	subtle_change	Low-area change around officer/papers; no visible difference at sheet scale (tight-diff pass)	measured	low
+1262	pose_swap+appear	Officer pose swap: notebook up -> hand on head, gritted teeth (stress); 3 "wanted" sketch posters placed right of officer + label "numerous sightings reported" above them	observed	high
+1338	layout_reset	3-frame reset: papers/posters/labels cleared; officer re-placed centre-left, pose swap to angry pointing finger up (F1338); speech bubble "The police WILL find the "Gasser"" appears F1340	observed	high
+1344	appear	Gasser figure re-placed centre with red crosshair/target over his chest	observed	high
+1394	pose_swap+appear	Officer: shouting point -> neutral frown, hand down; magnifier-with-footprints icon placed lower right of bubble	observed	high
+1400	appear	Red hand-drawn X struck over the footprint magnifier icon	observed	high
+1406	appear	Fuel can with yellow spill icon placed right of struck magnifier	observed	high
+1413	appear	Red X struck over the fuel-can icon (same red brush X as before)	observed	high
+1420	appear	Fingerprint magnifier icon placed right of struck fuel can (row of 3 clue icons builds left->right)	observed	high
+1424	appear+enter	2 frames: red X over fingerprint icon (F1424), then second officer (sunglasses, shrugging open palms) placed at right edge (F1425)	observed	high
+1451	subtle_change	Low-area whole-frame change; no visible difference at sheet scale (tight-diff pass)	measured	low
+1465	partial_reset	Bubble, gasser, clue row cleared; sunglasses officer pose swap to raised index finger + open mouth (speaking); first officer holds at left	observed	high
+1576	pose_swap+appear	Left officer pose swap to hand-on-chin thinking; purple-glove hand holding a spray/pad icon placed above right officer's raised finger	observed	high
+1609	appear	Black sitting dog silhouette with smell wavy lines placed above-left of the glove icon	observed	high
+1632	appear	3-frame span: black factory/building silhouette with smoke placed left of dog (lower)	observed	medium
+1653	appear	Poison barrel (skull & crossbones) + yellow warning triangle icon placed upper-left of factory	observed	high
+1661	subtle_change	Low-area whole-frame change; no visible difference at sheet scale (tight-diff pass)	measured	low
+1721	rearrange+enter	9-frame span: glove/dog cleared; second officer shifts next to first at left (pair); barrel+factory group re-placed centre; man in purple suit enters right (frown) — per-frame strip required	observed	medium
+1742	pose_swap	Suit man: frown, hand on hip -> raised palm + hand on chest, eyes closed, open mouth (denial gesture)	observed	high
+1757	bubble+camera	85-frame span: speech bubble "Yo, chill. It's not ALWAYS us!" + paper in hand (F1757), then scene changes to small officer+gasser at left and doctor with clipboard at right (F1841) — per-frame strip required to classify (zoom-out/pan vs cut)	observed	medium
+1844	rearrange	3-frame span: officer+gasser group at left enlarges (scale up) — per-frame strip required	observed	medium
+1865	pose_swap	Doctor: hand on chin (thinking) -> open green-gloved palm, speaking	observed	high
+1908	appear	Stacked icon: black crowd silhouettes above blue head with red brain placed between group and doctor	observed	high
+884	REFINED cut+slide_in	F884: officer hard re-placed from centre (x≈.55) to left (x≈.08-.22). F885-F888: narrator slides in from beyond right edge to x≈.83, 4 frames, decelerating (ease-out); settles F888	observed	high
+1338	REFINED reset+bubble	F1338 hard reset to officer-only pointing pose; F1339 hold; F1340 speech bubble appears (2-frame lag after the pose)	observed	high
+1632	REFINED make_room	F1632-F1634: factory icon placed at x≈.42-.55 while dog+glove group slides right ~0.05 width over 3 frames to open space	observed	high
+1721	REFINED make_room+enter	F1721: dog+glove cleared, barrel+factory re-placed centre; F1721-F1724 second officer slides left to stand beside first (eased); F1725-F1727 barrel group tilts/rotates and shifts right; F1728 suit man appears right (instant). Total 9 frames	observed	high
+1844	REFINED group_scale	F1844-F1846: officer+gasser group scales up ~1.6x around its left-top area over 3 frames (eased) after the doctor scene composition	observed	high
+1724	REFINED split	(part of 1721 make-room span, see 1721)	observed	high
+1839	hard_cut	F1839 hard cut from suit-man scene to new composition: small officer+gasser group upper-left (scale ≈0.6 of prior), doctor (grey coat, green gloves, clipboard) bottom-right, hand on chin; F1841 settle	observed	high
+1950	codec_keyframe_refresh	I-frame; diffuse edge-only diff, no content change	measured	high
+1965	appear	Black pictogram soldier with rifle + bombed city skyline + plane placed lower-centre between group and doctor	observed	high
+1997	appear	Coloured NEWS newspaper icon placed left of soldier pictogram	observed	high
+2051	appear	Thin pink curved line drawn from brain-head down-left toward newspaper (connector)	observed	high
+2066	appear	Black person pictogram with warning triangle + medical cross, with red arrow from brain toward it, placed between newspaper and brain	observed	high
+2110	compact+enter	8-frame span: whole icon cluster (crowd/brain/news/soldier/person) shrinks and moves to top-right corner, officer+gasser group shifts right toward centre; narrator (white, shrugging) enters lower-left; doctor holds — per-frame strip c01c	observed	high
+2166	appear	Confused white figure head with "?" marks and black arrow pointing at gasser placed above officer	observed	high
+2188	appear	Factory silhouette icon placed left above officer	observed	high
+2240	appear	Jester-hat prankster with sunglasses holding gas can + bubble "Just a prank bro" placed top-left	observed	high
+2110	REFINED compact+enter	F2110 crowd icon + red arrows removed; F2111 icon cluster starts shrinking; F2112-F2117 cluster and officer+gasser group slide up/right while shrinking (~0.7x), eased-out, settle F2117; narrator slides in from left edge F2112-F2116 (shrug pose); doctor pose swap to hand-on-chin at F2112	observed	high
