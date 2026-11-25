@@ -1,0 +1,32 @@
+first	type	description	evidence	confidence
+7424	hard_cut	C04 end -> roster	observed	high
+7431	camera_zoom	roster zoom into "Karl-Gustav Sauberzweig"	observed	high
+7489	hard_cut	profile canvas: portrait + eagle emblem	observed	high
+7534	appear	curved arrow	observed	high
+7551	appear	SS runes emblem	observed	high
+7595	appear	shield + "13th Mountain Division"	observed	high
+7662	label	"SS Handschar"	observed	high
+7713	appear	Bosnian flag	observed	high
+7732	appear	crescent + star	observed	high
+7776	appear	troops-in-mountains + "IX SS Mountain Corps"	observed	high
+7820	layout_reset	cut: puppet (fez cap, glasses) alone, header "January, 1945"	observed	high
+7869	appear	eagle + SS emblems	observed	high
+7880	expression_swap	close-up face	observed	medium
+7904	subtle	settle	observed	medium
+7909	subtle	settle	observed	medium
+7912	subtle	settle	observed	medium
+7930	label	"Generalleutnant" + arrow	observed	high
+7980	appear	saluting soldiers	observed	high
+7986	pose_swap	puppet points + "Army Group H"	observed	high
+8033	appear	SS emblem + map with front lines	observed	high
+8084	layout_reset	cut: puppet hands up + British soldier with rifle (surrender)	observed	high
+8124	pose_swap	handcuffed	observed	high
+8156	layout_reset	cut: prisoner behind bars, header "October 20, 1946"	observed	high
+8227	appear	Europe map with arrow to "Yugoslavia"	observed	high
+8277	appear	judge at bench on map (extradition)	observed	high
+8328	replace	prisoner lying behind bars	observed	high
+8339	appear	poison bottle icon	observed	high
+8362	replace	face -> X-eyes skull	observed	high
+8384	appear	feathered camp photo + "Civil Internment Camp No. 6"	observed	high
+8436	label	"(Neuengamme concentration camp)"	observed	high
+8503	label	"aged 47" + arrow	observed	high

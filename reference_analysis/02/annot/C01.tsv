@@ -1,0 +1,86 @@
+first	type	description	evidence	confidence
+7	camera_zoom	roster (feathered B&W portraits grid with names) zooms into "Bronislav Kaminski" portrait, 14f	observed	high
+65	hard_cut	profile canvas: portrait left, small header name; Soviet hammer&sickle icon	observed	high
+78	appear	swastika symbol icon (historical context)	observed	high
+89	appear	handshake icon between symbols (collaboration)	observed	high
+92	subtle	settle	observed	medium
+134	appear	feathered B&W archive photo + label "Kaminski Brigade"	observed	high
+177	appear	military badge icon	observed	high
+191	appear	shield icon	observed	high
+242	subtle	photo nudge	observed	medium
+245	appear	3f: USSR map with arrow	observed	high
+295	layout_reset	3f: torso puppet (black uniform) left, archive photo right; header name + "June, 1944"	observed	high
+300	expression_swap	puppet eyes	observed	medium
+345	appear	5f: Waffen SS emblem + label (photo removed)	observed	high
+398	appear	roundel	observed	high
+401	appear	5f: RONA patch + label "Russian People's Liberation Army (RONA)"	observed	high
+464	reposition	5f: emblems compact up-left	observed	high
+525	appear	skull pile icon (atrocities, symbolic)	observed	high
+550	appear	violence pictogram	observed	high
+577	appear	looting pictogram	observed	high
+610	layout_reset	cut: puppet + feathered photo "Warsaw Uprising", date "1944"	observed	high
+686	appear	thought bubble with soldiers icon	observed	high
+717	expression_swap	puppet eyes	observed	medium
+724	enter	superior officer (glasses) at left edge	observed	high
+736	appear	thought bubble "He gave me authority..."	observed	high
+756	subtle	settle	observed	medium
+771	partial_reset	3f: bubble/officer removed	observed	high
+776	enter	officer with cap enters right, pointing	observed	high
+792	pose_swap	Kaminski raises hand	observed	high
+804	label	"Erich von dem Bach-Zelewski"	observed	high
+862	subtle	settle	observed	medium
+867	subtle	settle	observed	medium
+873	expression_swap	eyes closed	observed	medium
+909	pose_swap	officer points finger	observed	high
+912	pose_swap	5f: both gesture	observed	high
+919	expression_swap	officer face	observed	medium
+946	partial_reset	6f: officer leaves, Kaminski explains	observed	high
+958	appear	looting soldier carrying bag from house	observed	high
+982	subtle	2f settle	observed	medium
+994	pose_swap	3f looter swap pose	observed	high
+1046	appear	thought bubble soldier with rifle	observed	high
+1058	pose_swap	puppet open palm speaking	observed	high
+1062	appear	red down arrow in bubble	observed	high
+1121	text_update	bubble -> "I gotta steal MORE!" with looter	observed	high
+1167	layout_reset	cut: puppet + row of brigade soldiers	observed	high
+1216	appear	fist-burst icon (violence)	observed	high
+1230	appear	Warsaw map with "Ochota" X	observed	high
+1281	appear	skull pile + "10.000 dead"	observed	high
+1355	partial_reset	map removed	observed	high
+1358	enter	leader figure pointing at right edge	observed	high
+1439	appear	looting pictogram	observed	high
+1497	appear	swastika bag + red mark on looter (stealing from Reich)	observed	high
+1560	enter	5f: officers group compacts, bubble "That 'bag' is mine!!"	observed	high
+1567	expression_swap	faces	observed	medium
+1609	pose_swap	officer gestures	observed	high
+1640	subtle	settle	observed	medium
+1643	subtle	icon nudge	observed	medium
+1682	appear	judge at podium (tribunal)	observed	high
+1731	layout_reset	cut: puppet alone, header "August 28"	observed	high
+1755	text_update	"August 28, 1944"	observed	high
+1812	appear	group of officers around him (arrest)	observed	high
+1815	expression_swap	faces	observed	medium
+1820	subtle	settle	observed	medium
+1867	layout_reset	cut: group full-body small (scale reduction to show walk)	observed	high
+1874	motion_step	group shifts	observed	medium
+1881	motion_step	group shifts	observed	medium
+1887	subtle	settle	observed	medium
+1914	appear	Poland map "Łódź" left	observed	high
+1968	layout_reset	cut: firing squad + group (execution implied, non-graphic)	observed	high
+2037	replace	figure on ground + "Killed at 45 years old"	observed	high
+2088	layout_reset	cut: thought bubble with portrait + RONA patch + soldiers	observed	high
+2160	enter	officer edge	observed	high
+2164	enter	SS officer thinking	observed	high
+2167	expression_swap	face	observed	medium
+2208	appear	bubble with car/bandit story	observed	high
+2292	appear	bubble "Not sure we buy that story..."	observed	high
+2348	layout_reset	cut: Gestapo emblem + agent	observed	high
+2395	appear	car icon	observed	high
+2412	rotate	3f: car tilts	observed	high
+2417	appear	car in ditch (staged ambush)	observed	high
+2450	appear	small gunman	observed	high
+2463	appear	muzzle flash + bullet streaks at car	observed	high
+2489	replace	gunman closer, red marks at car (non-graphic)	observed	high
+2508	appear	goose with gas mask + curved arrow (staged-cover gag)	observed	high
+2553	reposition	3f: compact group	observed	high
+2558	enter	3f: soldiers enter + bubble "Oh no! there WAS an accident... I guess"	observed	high

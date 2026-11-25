@@ -20,7 +20,17 @@
  },
  "video_02": {
   "coverage": "in_progress",
-  "stage": "scan complete; event review next"
+  "chapters_total": 27,
+  "chapters_done": [
+   "C01",
+   "C02",
+   "C03",
+   "C04",
+   "C05",
+   "C06"
+  ],
+  "last_verified_frame": 9726,
+  "next_frame": 9727
  },
  "excerpts": {
   "coverage": "overview sampled at 2 fps (partial, not frame-by-frame)",

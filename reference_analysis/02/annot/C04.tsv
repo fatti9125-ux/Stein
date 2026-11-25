@@ -1,0 +1,75 @@
+first	type	description	evidence	confidence
+4609	hard_cut	C03 end -> roster	observed	high
+4615	camera_zoom	roster zoom into "Hermann Fegelein"	observed	high
+4673	hard_cut	profile canvas: portrait left + SS emblem + up arrows	observed	high
+4743	appear	eyes + red ! + crosshair icon (ambition)	observed	high
+4752	replace	eyes with $ signs	observed	high
+4791	appear	climbing-ladder career icon	observed	high
+4846	appear	cavalry riders icon	observed	high
+4883	appear	"8th SS Cavalry Division Florian Geyer" shield	observed	high
+4960	enter	leader figure at right edge	observed	high
+4976	enter	puppet Fegelein at right	observed	high
+4990	appear	bubble "Guys, chill out..." with officers	observed	high
+5025	layout_reset	cut: puppet + pointing + soldiers pictogram	observed	high
+5057	appear	"17.000 killed" + skull pile (symbolic)	observed	high
+5143	appear	feathered marsh photo with rifle	observed	high
+5248	appear	"1.700 shot" + Polish flag + execution pictogram (non-graphic)	observed	high
+5305	appear	feathered archive photo "Kampinos Forest"	observed	high
+5363	layout_reset	cut: puppet alone, header "1944"	observed	high
+5428	appear	woman enters, handshake (wedding)	observed	high
+5438	label	"Gretl Braun"	observed	high
+5497	appear	family tree "Braun sisters" -> "Eva Braun"	observed	high
+5529	appear	leader handshake	observed	high
+5569	layout_reset	cut: Berlin map + leader hand-to-head right; header "April, 1945"	observed	high
+5608	appear	Soviet symbols + arrows closing on Berlin	observed	high
+5674	text_update	"April 27, 1945"	observed	high
+5714	appear	officer + label "SS Obersturmbannführer Peter Högl" left	observed	high
+5771	appear	bubble "Find Fegelein!" from leader (manifest checkpoint F005770/F005774)	observed	high
+5848	layout_reset	7f: map removed, two officers close-up	observed	high
+5858	expression_swap	faces	observed	medium
+5863	subtle	settle	observed	medium
+5868	appear	"Führerbunker" building illustration	observed	high
+5916	appear	Fegelein walking away full-body	observed	high
+5936	appear	bubble "I'm not signing up to die in the bunker!"	observed	high
+6007	layout_reset	cut: officer + drunk Fegelein on floor by bed	observed	high
+6028	subtle	settle	observed	medium
+6124	expression_swap	close-up drunk face	observed	medium
+6149	accent	drool/vomit marks (gag)	observed	high
+6182	subtle	settle	observed	medium
+6205	appear	suitcase icon	observed	high
+6208	subtle	settle	observed	medium
+6252	appear	suitcase opens with documents	observed	high
+6255	appear	3f: documents fan out	observed	high
+6280	appear	UK/US flag + figures conspiring with Soviet symbol (betrayal)	observed	high
+6377	layout_reset	cut: Fegelein handcuffed close-up	observed	high
+6383	enter	officer grabs him	observed	high
+6388	expression_swap	faces	observed	medium
+6415	enter	leader enters right pointing	observed	high
+6462	appear	inset conspirators	observed	high
+6543	expression_swap	leader face	observed	medium
+6600	appear	small soldier figure	observed	high
+6616	appear	red X over Fegelein figure	observed	high
+6637	replace	soldier aiming rifle	observed	high
+6698	enter	Eva Braun pleading	observed	high
+6730	appear	angel + kneeling figure icon	observed	high
+6784	layout_reset	cut: forest vignette (tree trunk, bushes), header "April 28, 1945"	observed	high
+6788	enter	Fegelein figure	observed	high
+6794	enter	2f: guard figure	observed	high
+6800	motion_step	walk step	observed	medium
+6804	motion_step	walk step	observed	medium
+6809	motion_step	walk step	observed	medium
+6907	pose_swap	guard raises pistol	observed	high
+6934	appear	arrow	observed	high
+6941	replace	Fegelein lying + "killed at 38 years old" (non-graphic)	observed	high
+7040	layout_reset	cut: bunker guard torso + figure lying	observed	high
+7043	label	"Rochus Misch"	observed	high
+7105	appear	bunker icon with arrow	observed	high
+7109	subtle	settle	observed	medium
+7155	pose_swap	2f: Misch points	observed	high
+7168	appear	leader inset	observed	high
+7186	appear	bubble "Hitler only ordered his demotion..."	observed	high
+7214	appear	Iron Cross + red down arrow (demotion)	observed	high
+7249	appear	revolver icon	observed	high
+7266	appear	red X over revolver	observed	high
+7307	appear	bubble "I know who killed Fegelein..."	observed	high
+7358	text_update	bubble "But I am not telling who it was..."	observed	high

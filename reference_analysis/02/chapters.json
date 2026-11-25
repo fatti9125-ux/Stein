@@ -1,0 +1,272 @@
+[
+ {
+  "id": "C01",
+  "roster_cut": 0,
+  "zoom": [
+   7,
+   20
+  ],
+  "canvas_start": 65,
+  "end": 2639
+ },
+ {
+  "id": "C02",
+  "roster_cut": 2640,
+  "zoom": [
+   2645,
+   2658
+  ],
+  "canvas_start": 2703,
+  "end": 3485
+ },
+ {
+  "id": "C03",
+  "roster_cut": 3486,
+  "zoom": [
+   3492,
+   3505
+  ],
+  "canvas_start": 3550,
+  "end": 4608
+ },
+ {
+  "id": "C04",
+  "roster_cut": 4609,
+  "zoom": [
+   4615,
+   4629
+  ],
+  "canvas_start": 4673,
+  "end": 7423
+ },
+ {
+  "id": "C05",
+  "roster_cut": 7424,
+  "zoom": [
+   7431,
+   7444
+  ],
+  "canvas_start": 7489,
+  "end": 8569
+ },
+ {
+  "id": "C06",
+  "roster_cut": 8570,
+  "zoom": [
+   8576,
+   8589
+  ],
+  "canvas_start": 8634,
+  "end": 9726
+ },
+ {
+  "id": "C07",
+  "roster_cut": 9727,
+  "zoom": [
+   9733,
+   9747
+  ],
+  "canvas_start": 9791,
+  "end": 11197
+ },
+ {
+  "id": "C08",
+  "roster_cut": 11198,
+  "zoom": [
+   11204,
+   11217
+  ],
+  "canvas_start": 11262,
+  "end": 12917
+ },
+ {
+  "id": "C09",
+  "roster_cut": 12918,
+  "zoom": [
+   12924,
+   12938
+  ],
+  "canvas_start": 12982,
+  "end": 13817
+ },
+ {
+  "id": "C10",
+  "roster_cut": 13818,
+  "zoom": [
+   13825,
+   13838
+  ],
+  "canvas_start": 13883,
+  "end": 15480
+ },
+ {
+  "id": "C11",
+  "roster_cut": 15481,
+  "zoom": [
+   15487,
+   15501
+  ],
+  "canvas_start": 15545,
+  "end": 16925
+ },
+ {
+  "id": "C12",
+  "roster_cut": 16926,
+  "zoom": [
+   16932,
+   16946
+  ],
+  "canvas_start": 16990,
+  "end": 17959
+ },
+ {
+  "id": "C13",
+  "roster_cut": 17960,
+  "zoom": [
+   17966,
+   17979
+  ],
+  "canvas_start": 18024,
+  "end": 18890
+ },
+ {
+  "id": "C14",
+  "roster_cut": 18891,
+  "zoom": [
+   18897,
+   18910
+  ],
+  "canvas_start": 18955,
+  "end": 20511
+ },
+ {
+  "id": "C15",
+  "roster_cut": 20512,
+  "zoom": [
+   20519,
+   20532
+  ],
+  "canvas_start": 20577,
+  "end": 21337
+ },
+ {
+  "id": "C16",
+  "roster_cut": 21338,
+  "zoom": [
+   21343,
+   21357
+  ],
+  "canvas_start": 21401,
+  "end": 22590
+ },
+ {
+  "id": "C17",
+  "roster_cut": 22591,
+  "zoom": [
+   22596,
+   22609
+  ],
+  "canvas_start": 22654,
+  "end": 23819
+ },
+ {
+  "id": "C18",
+  "roster_cut": 23820,
+  "zoom": [
+   23826,
+   23840
+  ],
+  "canvas_start": 23884,
+  "end": 25229
+ },
+ {
+  "id": "C19",
+  "roster_cut": 25230,
+  "zoom": [
+   25236,
+   25250
+  ],
+  "canvas_start": 25294,
+  "end": 26734
+ },
+ {
+  "id": "C20",
+  "roster_cut": 26735,
+  "zoom": [
+   26741,
+   26755
+  ],
+  "canvas_start": 26799,
+  "end": 28007
+ },
+ {
+  "id": "C21",
+  "roster_cut": 28008,
+  "zoom": [
+   28019,
+   28033
+  ],
+  "canvas_start": 28077,
+  "end": 29000
+ },
+ {
+  "id": "C22",
+  "roster_cut": 29001,
+  "zoom": [
+   29007,
+   29020
+  ],
+  "canvas_start": 29065,
+  "end": 30648
+ },
+ {
+  "id": "C23",
+  "roster_cut": 30649,
+  "zoom": [
+   30655,
+   30668
+  ],
+  "canvas_start": 30713,
+  "end": 31641
+ },
+ {
+  "id": "C24",
+  "roster_cut": 31642,
+  "zoom": [
+   31648,
+   31661
+  ],
+  "canvas_start": 31706,
+  "end": 33472
+ },
+ {
+  "id": "C25",
+  "roster_cut": 33473,
+  "zoom": [
+   33479,
+   33492
+  ],
+  "canvas_start": 33537,
+  "end": 35219
+ },
+ {
+  "id": "C26",
+  "roster_cut": 35220,
+  "zoom": [
+   35226,
+   35239
+  ],
+  "canvas_start": 35284,
+  "end": 36379
+ },
+ {
+  "id": "C27",
+  "roster_cut": 36380,
+  "zoom": [
+   36386,
+   36400
+  ],
+  "canvas_start": 36444,
+  "end": 37601
+ }
+]

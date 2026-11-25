@@ -1,0 +1,27 @@
+first	type	description	evidence	confidence
+2640	hard_cut	C01 end -> roster grid	observed	high
+2645	camera_zoom	roster zoom into "August Zehender" portrait	observed	high
+2703	hard_cut	profile canvas: portrait left, header name	observed	high
+2710	appear	commander pointing + troops pictogram	observed	high
+2740	appear	division emblem + label "SS Volunteer Division Maria Theresia"	observed	high
+2836	appear	feathered archive photo (column of troops)	observed	high
+2883	label	"Siege of Budapest"	observed	high
+2899	label	"1944"	observed	high
+2946	layout_reset	cut: torso puppet left, header name + "February 11"	observed	high
+2982	text_update	"February 11, 1945"	observed	high
+2998	appear	group of soldiers right	observed	high
+3037	appear	battle cutaway: tanks, attackers around (full-colour small figures)	observed	high
+3041	subtle	settle	observed	medium
+3150	subtle	settle	observed	medium
+3170	pose_swap	puppet wounded (small red marks), clutching arm	observed	high
+3233	layout_reset	cut: full-body limping figure with stick	observed	high
+3243	subtle	settle	observed	medium
+3254	appear	grenade + red curved arrow	observed	high
+3266	subtle	arrow nudge	observed	medium
+3277	subtle	arrow nudge	observed	medium
+3305	appear	exit-door pictogram (escape)	observed	high
+3347	expression_swap	close-up face grim	observed	medium
+3351	appear	prison-cell pictogram	observed	high
+3362	appear	red X over cell	observed	high
+3402	appear	2f: revolver icon (non-graphic)	observed	high
+3446	replace	figure lying + "aged 41"	observed	high

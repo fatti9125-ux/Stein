@@ -1,0 +1,43 @@
+first	type	description	evidence	confidence
+3486	hard_cut	C02 end -> roster	observed	high
+3492	camera_zoom	roster zoom into "Matthias Kleinheisterkamp"	observed	high
+3550	hard_cut	profile canvas: portrait left	observed	high
+3573	appear	rank stars + green up arrows (promotions)	observed	high
+3590	appear	SS runes emblem	observed	high
+3659	appear	skull emblem + "Division Totenkopf"	observed	high
+3693	appear	shield + "Panzer Division "Das Reich""	observed	high
+3722	appear	shield + "6th Mountain Division Nord"	observed	high
+3790	reposition	emblems compact	observed	high
+3794	appear	3f: commander-with-troops pictogram	observed	high
+3815	appear	Europe map with region highlighted	observed	high
+3855	appear	Knight's Cross medal photo	observed	high
+3864	label	"Knight's Cross of the Iron Cross"	observed	high
+3915	layout_reset	cut: puppet left, header + "April 1945"	observed	high
+3972	expression_swap	face	observed	medium
+3975	pose_swap	points + soldiers enter right	observed	high
+3996	appear	corps emblem + "XI SS Army Corps"	observed	high
+4038	replace	soldiers raise rifles	observed	high
+4055	subtle	settle	observed	medium
+4059	subtle	settle	observed	medium
+4065	reposition	compaction	observed	high
+4073	pose_swap	puppet points	observed	high
+4082	expression_swap	soldiers worried	observed	medium
+4094	appear	"German 9th Army" emblem	observed	high
+4114	camera_shift	group pans	observed	high
+4118	camera_shift	pan step	observed	high
+4122	camera_shift	3f pan step	observed	high
+4127	appear	enemy rifleman enters	observed	high
+4130	subtle	settle	observed	medium
+4135	appear	map Berlin area with fronts	observed	high
+4178	appear	feathered archive photo "Battle of Halbe"	observed	high
+4237	layout_reset	cut: puppet + Soviet soldier (red beret) facing (surrender talk)	observed	high
+4276	text_update	"April, 1945" -> "April 28, 1945"	observed	high
+4312	layout_reset	cut: full-body small figure alone	observed	high
+4342	replace	figure lying (suicide implied, non-graphic)	observed	high
+4386	appear	revolver icon	observed	high
+4469	label	"aged 51" + arrow	observed	high
+4510	appear	narrator bubble "Some people say he died in battle"	observed	high
+4547	subtle	settle	observed	medium
+4550	text_update	second date "May 2, 1945" + rifleman figure (alternative account)	observed	high
+4553	subtle	second date settle	observed	medium
+4575	replace	second account: figure lying beside rifleman (killed in battle version)	observed	high

@@ -1,0 +1,36 @@
+first	type	description	evidence	confidence
+8570	hard_cut	C05 end -> roster	observed	high
+8576	camera_zoom	roster zoom into "Theodor Eicke"	observed	high
+8634	hard_cut	profile canvas: portrait left	observed	high
+8644	appear	SS emblem + commander pointing pictogram	observed	high
+8753	appear	camp gate icon	observed	high
+8758	appear	Germany map with camp markers	observed	high
+8812	layout_reset	cut: puppet, header "1939"	observed	high
+8853	pose_swap	points	observed	high
+8872	appear	SS emblem	observed	high
+8880	appear	skull shield	observed	high
+8892	label	"SS Division Totenkopf"	observed	high
+8942	reposition	emblems compact	observed	high
+8945	appear	3f: Europe map highlighted	observed	high
+8957	appear	skull markers on map	observed	high
+9008	appear	tank on map	observed	high
+9037	appear	black blot + red arrows (invasion)	observed	high
+9059	appear	feathered photo "Operation Barbarossa"	observed	high
+9116	layout_reset	cut: puppet, header "February 26"	observed	high
+9139	text_update	"February 26, 1943"	observed	high
+9188	appear	map + red arrow + label "3rd Battle of Kharkov" + photo	observed	high
+9217	appear	small plane icon	observed	high
+9242	label	"Fieseler Storch" plane + arrow	observed	high
+9306	replace	plane crashes with smoke (shot down)	observed	high
+9340	appear	anti-aircraft gun on map	observed	high
+9408	expression_swap	close-up X-eyes	observed	medium
+9429	label	"Dead at 50" + arrow	observed	high
+9468	layout_reset	cut: small soldiers carrying body (recovery)	observed	high
+9521	appear	plane strafing	observed	high
+9582	layout_reset	cut: grave "R.I.P." + head	observed	high
+9612	appear	Ukraine map	observed	high
+9642	appear	arrow into grave	observed	high
+9647	appear	bulldozer enters	observed	high
+9650	motion_step	3f bulldozer advances	observed	medium
+9657	motion_step	bulldozer advances	observed	medium
+9660	motion_step	bulldozer over grave (grave destroyed later)	observed	medium
