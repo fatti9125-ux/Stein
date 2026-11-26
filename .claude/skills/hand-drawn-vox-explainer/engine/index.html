@@ -187,7 +187,7 @@ const R={
   return `<g transform="translate(${it.x},${it.y}) rotate(${it.rot??-1})"><clipPath id="h${it.uid}"><rect x="-10" y="-20" width="${(+it.w+20)*w}" height="${h+40}"/></clipPath><path d="${g.d}" fill="${YEL}" opacity=".85" clip-path="url(#h${it.uid})" filter="url(#rough${boil})"/></g>`},
  loop(it,t,p,boil,g){if(!g.d)g.d=loopPath(+it.x,+it.y,+it.rx,+it.ry);const d=out3(p/0.45);
   return `<path d="${g.d}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-d}" fill="none" stroke="${it.color||INK}" stroke-width="${it.sw||6}" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough${boil})"/>`},
- arrow(it,t,p,boil){const x1=+it.x,y1=+it.y,x2=+it.x2,y2=+it.y2,b=it.bend??30;const mx=(x1+x2)/2-(y2-y1)*b/200,my=(y1+y2)/2+(x2-x1)*b/200;const a=Math.atan2(y2-my,x2-mx),L=24,d=out3(p/0.4),hd=clamp((p-0.3)/0.1),col=it.color||INK;
+ arrow(it,t,p,boil){const x1=+it.x,y1=+it.y,x2=+it.x2,y2=+it.y2,b=it.bend??30;const mx=(x1+x2)/2-(y2-y1)*b/200,my=(y1+y2)/2+(x2-x1)*b/200;const a=Math.atan2(y2-my,x2-mx),L=24,d=it.noPop?1:out3(p/0.4),hd=it.noPop?1:clamp((p-0.3)/0.1),col=it.color||INK;
   return `<g filter="url(#rough${boil})" stroke="${col}" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M${x1},${y1} Q${mx},${my} ${x2},${y2}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${1-d}"/><path opacity="${hd}" d="M${x2-L*Math.cos(a-.45)},${y2-L*Math.sin(a-.45)} L${x2},${y2} L${x2-L*Math.cos(a+.45)},${y2-L*Math.sin(a+.45)}"/></g>`},
  sticker(it,t,p,boil,g){const fs=+it.size||36,s0=String(it.t||''),w=s0.length*fs*.5+40;if(!g.d)g.d=blob(-w/2,-fs*.85,w,fs*1.4,3);const s=back(p/0.25);
   return `<g transform="translate(${it.x},${it.y}) rotate(${(it.rot??-3)+[0,.5,-.4][boil]}) scale(${s})" opacity="${clamp(p/0.05)}"><g filter="url(#shadow)"><path d="${g.d}" fill="${YEL}" filter="url(#paint)"/></g><text x="0" y="${fs*.22}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(s0)}</text></g>`},
@@ -239,7 +239,7 @@ function itemSVG(sc,it,i,tq,boil,opts){
  const [ax,ay]=anchorOf(it);let tf='',op=1;
  if(!forced){
   if(it.in&&it.in!=='pop'&&p<IN_D){const q=1-out3(p/IN_D),d={left:[-1300,0],right:[1300,0],up:[0,-900],down:[0,900]}[it.in]||[0,0];tf+=`translate(${d[0]*q},${d[1]*q}) `}
-  const mv=parseMv(it.mv);if(mv.length){let dx=0,dy=0,sc2=1;for(const m of mv){if(tq<m.t)break;const q=inout((tq-m.t)/0.5);dx+=(m.dx-dx)*q;dy+=(m.dy-dy)*q;sc2+=(m.s-sc2)*q}
+  const mv=parseMv(it.mv);if(mv.length){let dx=0,dy=0,sc2=1;for(const m of mv){if(tq<m.t)break;const q=inout((tq-m.t)/0.27);dx+=(m.dx-dx)*q;dy+=(m.dy-dy)*q;sc2+=(m.s-sc2)*q}
    if(dx||dy||sc2!==1)tf+=`translate(${ax+dx},${ay+dy}) scale(${sc2}) translate(${-ax},${-ay}) `}
   if(outT!=null&&tq>=outT){const q=clamp((tq-outT)/0.22);op=1-q;tf+=`translate(${ax},${ay}) scale(${1-0.25*q}) translate(${-ax},${-ay}) `}
  }

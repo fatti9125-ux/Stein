@@ -9,6 +9,24 @@ The user writes the script, records the voiceover and supplies a hand-drawn asse
 
 `SKILL_DIR` is this folder. `references/sheet1–5.jpg` show the five reference clips at two frames per second. **Look at them before storyboarding.** `engine/index.html` is both the editor and the renderer, so the preview is exactly what gets rendered.
 
+## How a scene is built (most important; see `references/scene_build/ss01a.jpg`, `ss01b.jpg`, `ss02a.jpg`)
+These sheets show the state after every change in reference scenes. A scene is **one joined-up picture that grows**, never a neat row of small items:
+1. **The anchor comes first.** A portrait or a big waist-up character on the left.
+2. **The hero comes next.** A large picture (map, photo, place, big prop) fills most of the free area and may run off the edge.
+3. **Then 4–6 satellites join.** Each is placed above, beside, or partly over the hero and the anchor's pointing hand, at different heights and sizes:
+   - an icon on the map;
+   - a group at the pointing hand;
+   - a label above its thing;
+   - a second character overlapping the edge of the map;
+   - a bubble on top.
+4. **Earlier elements make room.** On every arrival they shrink and glide to new places in about 8 frames (0.27 s, eased). Nothing is reshuffled across the frame.
+5. **Special layouts:**
+   - **Comparisons:** sit side by side with their numbers attached underneath.
+   - **Step sequences:** zig-zag diagonally with arrows running edge to edge.
+6. **Reset.** A hard cut clears the scene down to the anchor, and the next build starts.
+
+The builder in `examples/buffet_build_board_v5_scene_build.py` implements this. It has hero and satellite templates `TPL[n]`, `CHAIN` and comparison rows. Each arrival switches to the template for the new count, and earlier elements get `mv` make-room moves. Red X marks and circles follow their element. Arrows are redrawn after each re-pack. To study a new reference scene, run `scripts/reference_analysis/statestrip.py`.
+
 ## Measured reference rules (read `references/Explainer_Motion_and_Style_Guide.md` first)
 These rules come from a frame-by-frame analysis of two full reference videos: 82,317 frames, 2,606 events (`reference_analysis/` in the repo). **They override anything below that conflicts with them.**
 
