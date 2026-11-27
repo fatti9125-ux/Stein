@@ -47,6 +47,7 @@ FALLBACK = {'A-ocb': 'B03-01', 'A-running_sushi': 'B01-03', 'A-vacant_ryans': 'B
             'A-vegas_buffet': 'B01-01', 'A-stardust': 'B03-03', 'A-gc_storefront': 'B04-03', 'A-gc_buffet': 'B01-02'}
 def P(a, cue=None, cap=None, w=560, gray=False, **k):
     if a not in LIB: a, gray = FALLBACK[a], False      # archive photo not downloaded yet -> matching plate
+    elif a.startswith('A-') and a != 'A-gc_buffet': gray = True              # real photos = grayscale feathered archive vignettes (ref clips 01/04)
     return dict(kind='p', a=a, cue=cue, cap=cap, w=w, gray=gray, **k)
 def Tx(t, cue=None, size=46, cls='hand', color=None, w=None, **k): return dict(kind='t', t=t, cue=cue, size=size, cls=cls, color=color, w=w, **k)
 def X(cue): return dict(kind='x', cue=cue)            # red X over the previous element
@@ -146,7 +147,7 @@ def scene(cue, head=('', '', ''), anchors=(), rows=(), extra=(), z=None, out_pre
     # a one-to-one row of numbers/words under a row of pictures = small labels sitting ABOVE those pictures (space reserved)
     if len(rows) == 2:
         r1 = [i for i, e in enumerate(els) if e['sp'] in rows[0]]; r2 = [i for i, e in enumerate(els) if e['sp'] in rows[1]]
-        if len(r1) == len(r2) and all(els[i]['sp']['kind'] in ('n', 't') for i in r2) and any(els[i]['sp']['kind'] in ('e', 'p') for i in r1):
+        if len(r1) == len(r2) and all(els[i]['sp']['kind'] in ('n', 't') for i in r2) and all(els[i]['sp']['kind'] in ('e', 'p') for i in r1):
             for a_, b_ in zip(r1, r2):
                 els[b_]['att'] = a_; pa = els[a_]; ex = els[b_]['h'] + 2
                 pa['ext'] = ex; pa['h'] += ex; pa['oy'] += ex / 2; pa['w'] = max(pa['w'], els[b_]['w'])
@@ -283,7 +284,7 @@ scene('to forty people', ('Golden Corral', 'Bensalem, 2022'), [A('C03-11')],
 scene('this is how all-you-can-eat', ('All you can eat', '', ''), [A('C02-03')],
       [[E('F03-07', None, 'eat 5 plates', h=300), ARW(), E('P02-09', 'make money', 'how is that profitable?', h=220)]])
 scene('At a lot of Golden Corrals', GC, [A('C02-01', lab='Gary')],
-      [[P('B04-03', None, cap='Golden Corral', w=560), Nm(17, 'seventeen dollars gets', pre='$', cap='dinner', size=140)]],
+      [[E('A-gc_logo', None, h=120), P('A-gc_storefront', None, w=560), Nm(17, 'seventeen dollars gets', pre='$', cap='dinner', size=140)]],
       [SFX('ding', 'gets you dinner', 0.35)])
 scene('Not a dinner', GC, [A('C02-01', noPop=True)],
       [[Tx('not "a" dinner…', None, size=48), Tx('ALL of it', 'All of it', size=64, color=RED)],
@@ -329,7 +330,7 @@ scene('But every now and then', ('Gary', '…on a diet?', ''), [A('C02-01', noPo
       [BUB('"…he makes ME look like I\'m on a diet"', 'look like', 560, 170, 760, 420, 380, h=120, size=32), REEN()])
 H3 = ('Jaroslav Bobrowski', 'September 2018', 'triathlete, 30')
 scene('In September 2018', H3, [A('C03-01')],
-      [[P('B02-01', 'walked into a restaurant', cap='Running Sushi', w=560), E('P05-12', 'Landshut', 'Landshut, Bavaria', h=230)]], [REEN()])
+      [[P('A-running_sushi', 'walked into a restaurant', cap='a running-sushi belt', w=560), E('P05-12', 'Landshut', 'Landshut, Bavaria', h=230)]], [REEN()])
 scene('It was all-you-can-eat for', H3, [A('C03-01', noPop=True)],
       [[Nm(15.9, '€15.90', pre='€', dec=2, cap='all you can eat', size=120), Tx('≈ $18.50', 'eighteen and a half', size=46)],
        [E('P04-06', "doesn't eat for 20", 'fasts ~20 hours', h=220), ARW(), E('F03-06', "eats until he's full", 'then eats until full', h=200)]], [REEN()])
@@ -362,7 +363,7 @@ scene("So buffets can't just hope", ("Buffets don't hope", '', ''), [A('C02-08',
 # ============================ 3. Why are the rolls always first? ============================
 H6 = ('Why are the rolls always first?', '', '')
 scene('Walk into almost any buffet', H6, [A('C02-01', lab='Gary')],
-      [[P('B01-02', None, cap='the start of the line', w=560)],
+      [[P('A-gc_buffet', None, cap='the start of the line', w=520)],
        [E('F01-07', 'salad', 'salad', h=140), ARW(), E('F01-08', 'bread rolls', 'rolls', h=140), ARW(), E('F01-06', 'potatoes something', 'potatoes', h=140), ARW(), E('F01-03', 'something fried', 'fried', h=140)]])
 scene('The expensive meat is usually', H6, [A('C02-01', noPop=True), B('C02-06', 'served by a person')],
       [[E('F01-01', None, 'further in…', h=230)], [Tx('a "specific idea" of a portion', 'fairly specific idea', size=40)]])
@@ -451,7 +452,7 @@ scene('In early 2016', ('Old Country Buffet', 'early 2016', ''), [A('C04-10')],
       [[Nm(74, '74 restaurants', cap='closed at once', size=110, color='red'), Nm(92, '92 more', pre='+', cap='a month later', size=110, color='red')],
        [E('P03-11', 'without warning', 'often without warning staff', h=200)]], [SFX('stamp', 'in one go', 0.35)])
 scene('That same year', ('Souplantation & Sweet Tomatoes', '2016', ''), [A('C04-12')],
-      [[E('G05-06', 'Souplantation', h=100), E('G05-07', 'Sweet Tomatoes', h=100)], [Nm(175, '$175 million', pre='$', suf='M', cap='of debt', size=130, color='red')]])
+      [[P('A-souplantation', 'Souplantation', w=480), E('G05-07', 'Sweet Tomatoes', h=100)], [Nm(175, '$175 million', pre='$', suf='M', cap='of debt', size=130, color='red')]])
 scene('Debt is especially dangerous', ('Cook first, hope later', '', ''), [A('C04-05', lab='normal restaurant'), B('C04-06', 'A buffet cooks first', lab='buffet')],
       [[Tx('cooks AFTER you order', 'after you order', size=40)], [Tx('cooks FIRST, then hopes', 'hopes people turn up', size=40, color=RED)]])
 scene('If the dining room is half empty', ('7 p.m.', 'half empty', ''), [A('C04-10')],
@@ -463,7 +464,7 @@ scene('Somewhere between 5 and 25', ('Waste', '', ''), [A('C04-07')],
 scene('Then in 2020', ('2020', 'pandemic', ''), [A('C04-11')],
       [[E('P03-12', 'sharing serving tongs', 'shared tongs', h=200), X('least appealing')], [Tx("what was left didn't make it", "didn't make it", size=46)]])
 scene('By early 2021', ('By early 2021', '', ''), [A('C04-12')],
-      [[E('G05-02', 'every Old Country', h=90), E('G05-05', 'HomeTown Buffet', h=90), E('G05-04', "and Ryan's", h=90)], [E('G05-11', 'had closed', h=150)]],
+      [[E('G05-02', 'every Old Country', h=90), E('G05-05', 'HomeTown Buffet', h=90), E('G05-04', "and Ryan's", h=90)], [P('A-vacant_ryans', 'had closed', cap="a closed Ryan's", w=480), E('G05-11', 'had closed', h=150)]],
       [SFX('stamp', 'had closed', 0.45)])
 scene('The odd thing is', ('The odd thing', '', ''), [A('C04-01')], [],
       [THK('the most famous buffets never even TRIED to make money', 'the most famous', 680, 230, 880, 520, 470, h=190, size=38)])
@@ -471,9 +472,9 @@ scene('The odd thing is', ('The odd thing', '', ''), [A('C04-01')], [],
 # ============================ 6. Why did Las Vegas give up on buffets? ============================
 H11 = ('Las Vegas', 'for decades', '')
 scene('For decades the Las Vegas buffet', H11, [A('C04-01', lab='casino executive')],
-      [[P('B03-02', None, cap='Las Vegas Strip', w=560), E('G08-01', 'loss leaders', h=150)]], [SFX('ding', 'loss leaders', 0.35)])
+      [[P('A-vegas_buffet', None, cap='a Las Vegas buffet', w=560), E('G08-01', 'loss leaders', h=150)]], [SFX('ding', 'loss leaders', 0.35)])
 scene('Back in the 1980s', ('Las Vegas', '1980s', ''), [A('C04-01', noPop=True)],
-      [[P('B03-03', None, cap='casino floor', w=520), Nm(75, 'three-quarters', pre='≈ ', suf='%', cap='of revenue: gambling', size=120)]])
+      [[P('A-stardust', None, cap='the Stardust, Las Vegas', w=560), Nm(75, 'three-quarters', pre='≈ ', suf='%', cap='of revenue: gambling', size=120)]])
 scene('so a cheap all-you-can-eat dinner', ('Las Vegas', '1980s', ''), [A('C04-02', lab='diner')],
       [[E('F02-12', None, 'cheap dinner', h=180), ARW(), E('P05-10', 'through the door', 'in the door', h=200), ARW(), E('P04-05', 'back to the tables', 'back to the tables', h=170)]])
 scene('That works as long as', ('Las Vegas', 'today', ''), [A('C04-03'), B('C04-02', 'a giant room losing')],
@@ -540,8 +541,8 @@ for sc in S:
 import random
 random.seed(7)
 # T1 chapter index -> title card: 6f hold + 14f zoom + ~1.4 s card, starting 1.0 s before the chapter's first scene
-TILES = [dict(bg='B02-02', t='A $17 dinner, no limit'), dict(bg='B01-01', t='What does it cost?'), dict(bg='B01-02', t='Why rolls first?'),
-         dict(bg='B02-03', t='A drink with that?'), dict(bg='B03-01', t='Why others went broke'), dict(bg='B03-02', t='Why Vegas gave up'),
+TILES = [dict(bg='A-gc_storefront', t='A $17 dinner, no limit'), dict(bg='A-gc_buffet', t='What does it cost?'), dict(bg='B01-02', t='Why rolls first?'),
+         dict(bg='B02-03', t='A drink with that?'), dict(bg='A-vacant_ryans', t='Why others went broke'), dict(bg='A-stardust', t='Why Vegas gave up'),
          dict(bg='B04-01', t='How $17 makes money')]
 CH_START = ['From a triathlete', 'According to the Wall Street Journal', 'Walk into almost any buffet', 'At most Golden Corrals',
             "Here's the part that surprises", 'For decades the Las Vegas buffet', 'So how does it manage that']
