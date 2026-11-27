@@ -36,6 +36,12 @@ Look at `references/scene_build/clip01_cluster.jpg` and `clip05_cluster.jpg`. Th
 
 `examples/buffet_build_board_v6_cluster.py` implements this in its v6 layout block (`try_pack`/`pack`: top-left adjacency packing with a shrink-to-fit loop). The v5 template builder is kept only for history.
 
+## Chapter framing (v7; clips 01–07 of `Claude_Animation_Reference_Clips.zip`, see `reference_analysis/clips14/README.md`)
+1. **Chapter grid.** Tiles are isolated illustrated objects from the pack with a bold label underneath, no photo frames (index scene `tiles:[{icon,t}]`). Hold the grid 6 frames, push in over 14 frames, then hard-cut to the chapter.
+2. **Chapter title.** Every scene carries `ch:{t,icon}`: a bold all-caps title (font class `comic`, about 72 px) at the top centre, with the chapter icon in the top-right corner. The scene's own header drops below it as a small sub-header. Don't repeat the chapter title as a sub-header.
+3. **Date cards.** Before a dated story, show a big centred date alone for about 1.3 s ("September 2018"), then build the scene.
+4. **Elements still come one by one into one tight cluster** beside the anchor (v6 rules above). If the next item doesn't fit, the earlier group shrinks toward the top-left.
+
 ## Measured reference rules (read `references/Explainer_Motion_and_Style_Guide.md` first)
 These rules come from a frame-by-frame analysis of two full reference videos: 82,317 frames, 2,606 events (`reference_analysis/` in the repo). **They override anything below that conflicts with them.**
 

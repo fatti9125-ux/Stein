@@ -1,7 +1,7 @@
 <title>Buffet Storyboard</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=Patrick+Hand&family=Special+Elite&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue:wght@700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=Patrick+Hand&family=Special+Elite&display=block" rel="stylesheet">
 <style>
 /* Layout: editor workbench — stage + transport on the left, scene/item inspector on the right; stacks on phones. Single dark look so the sky-blue stage reads true. */
 :root{
@@ -56,7 +56,7 @@ label{display:flex;flex-direction:column;gap:3px;color:var(--muted);font-size:11
 .thumb img{max-height:84px;max-width:100%}
 .empty{color:var(--muted);font-size:12px}
 .note{color:var(--muted);font-size:11px}
-.hand{font-family:'Patrick Hand',cursive}.serif{font-family:'DM Serif Display',Georgia,serif}.anton{font-family:Anton,Impact,sans-serif}.type{font-family:'Special Elite','Courier New',monospace}
+.hand{font-family:'Patrick Hand',cursive}.serif{font-family:'DM Serif Display',Georgia,serif}.anton{font-family:Anton,Impact,sans-serif}.comic{font-family:'Comic Neue','Comic Sans MS',sans-serif;font-weight:700}.type{font-family:'Special Elite','Courier New',monospace}
 body.render{padding:0;margin:0;background:#BFE6F5;overflow:hidden}html:has(body.render){overflow:hidden}
 body.render .top,body.render .transport,body.render .scrub,body.render .say,body.render .side{display:none}
 body.render .wrap{display:block}
@@ -244,7 +244,11 @@ function itemSVG(sc,it,i,tq,boil,opts){
   if(outT!=null&&tq>=outT){const q=clamp((tq-outT)/0.22);op=1-q;tf+=`translate(${ax},${ay}) scale(${1-0.25*q}) translate(${-ax},${-ay}) `}
  }
  return `<g data-i="${i}" class="it"${forced?' opacity=".35"':op<1?` opacity="${op.toFixed(2)}"`:''}${tf?` transform="${tf}"`:''}>${s}</g>`}
-function header(sc){const h=sc.h||{};let s='',y=48;for(const [k,fs] of [['a',36],['b',30],['c',30]]){if(h[k]){s+=`<text x="960" y="${y}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(h[k])}</text>`;y+=fs+4}}return s}
+function header(sc){const h=sc.h||{};let s='',y=48;
+ if(sc.ch){const C=sc.ch;s+=`<text x="960" y="76" text-anchor="middle" class="comic" font-size="${+C.fs||72}" fill="${INK}" stroke="${INK}" stroke-width="2.2" stroke-linejoin="round">${esc(String(C.t||'').toUpperCase())}</text>`;
+  if(C.icon){const L=LIB[C.icon]||{w:100,h:100},bw=150,bh=92,f=Math.min(bw/L.w,bh/L.h),w=L.w*f,hh=L.h*f;s+=`<image href="${src(C.icon)}" x="${1840-w/2}" y="${58-hh/2}" width="${w}" height="${hh}"/>`}
+  y=128}
+ for(const [k,fs] of [['a',sc.ch?32:36],['b',28],['c',28]]){if(h[k]){s+=`<text x="960" y="${y}" text-anchor="middle" class="hand" font-size="${fs}" fill="${INK}">${esc(h[k])}</text>`;y+=fs+4}}return s}
 function cam(sc,tq){let z=1,cx=960,cy=540;const Z=String(sc.z||'').split(';').map(x=>x.trim()).filter(Boolean).map(x=>x.split(',').map(Number));
  for(const [t,s,x,y] of Z){if(tq<t)break;const q=inout((tq-t)/0.45);z+=(s-z)*q;cx+=((x||960)-cx)*q;cy+=((y||540)-cy)*q}
  if(sc.cam)z*=1+(+sc.cam)*clamp((tq-sc.s)/Math.max(2,sc.e-sc.s));
@@ -252,6 +256,7 @@ function cam(sc,tq){let z=1,cx=960,cy=540;const Z=String(sc.z||'').split(';').ma
 function indexSVG(sc,tq){const X=sc.index,T=X.tiles,n=T.length,cols=X.cols||4,rows=Math.ceil(n/cols),tw=430,th=242,gx=24,gy=70;
  const W0=cols*tw+(cols-1)*gx,H0=rows*(th+gy),x0=(1920-W0)/2,y0=(1080-H0)/2+10;let g='';
  T.forEach((t,i)=>{const x=x0+(i%cols)*(tw+gx),y=y0+Math.floor(i/cols)*(th+gy),id='ix'+i;
+  if(t.icon){g+=`<image href="${src(t.icon)}" x="${x+20}" y="${y+6}" width="${tw-40}" height="${th-12}" preserveAspectRatio="xMidYMid meet"/><text x="${x+tw/2}" y="${y+th+44}" text-anchor="middle" class="comic" font-size="38" fill="${INK}" stroke="${INK}" stroke-width="1.2">${esc(t.t)}</text>`;return}
   g+=`<mask id="${id}"><rect x="${x+14}" y="${y+14}" width="${tw-28}" height="${th-28}" rx="18" fill="#fff" filter="url(#feather)"/></mask><image href="${src(t.bg)}" x="${x}" y="${y}" width="${tw}" height="${th}" preserveAspectRatio="xMidYMid slice" mask="url(#${id})"/><text x="${x+tw/2}" y="${y+th+40}" text-anchor="middle" class="hand" font-size="34" fill="${INK}">${esc(t.t)}</text>`});
  const k=X.sel,tx=x0+(k%cols)*(tw+gx)+tw/2,ty=y0+Math.floor(k/cols)*(th+gy)+th/2+22,zs=Math.min(1920/(tw*1.08),1080/((th+60)*1.15));
  const el=tq-sc.s,F=Math.floor(el*30),hold=6,zf=14;let s=1,cx=960,cy=540;
