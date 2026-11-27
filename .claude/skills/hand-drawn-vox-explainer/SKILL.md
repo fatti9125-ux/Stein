@@ -1,6 +1,6 @@
 ---
 name: hand-drawn-vox-explainer
-description: Turn a voiceover, a script and a hand-drawn asset pack into a long-form (10–20 min) cartoon-history explainer in the user's reference style. The style has a flat pale-blue background, one big waist-up main character on the left, a small stacked header at the top, and content that builds left to right like a sentence, with hand-lettered labels, red arrows and Xs, feathered archive photos and counting numbers. Builds a live, editable browser storyboard (save, version history, autosave) and renders it to 540p preview / 1080p / 4K MP4. Use whenever the user sends a script + voiceover + asset zip and asks for a video, preview or sample, says "same style as the clips", "same style as Perseus" or "vox style", or asks for a re-render after edits.
+description: Turn a voiceover, a script and a hand-drawn asset pack into a long-form (10–20 min) cartoon-history explainer in the user's reference style. The style has a flat pale-blue background, one big waist-up main character (a real person from the story, never a mascot) on the left, a small stacked header at the top, and content that builds as one tight touching cluster beside the character, with small hand-lettered labels above each picture, red arrows and Xs, and feathered archive photos. Builds a live, editable browser storyboard (save, version history, autosave) and renders it to 540p preview / 1080p / 4K MP4. Use whenever the user sends a script + voiceover + asset zip and asks for a video, preview or sample, says "same style as the clips", "same style as Perseus" or "vox style", or asks for a re-render after edits.
 ---
 
 # Hand-drawn explainer (reference-clip style)
@@ -9,23 +9,32 @@ The user writes the script, records the voiceover and supplies a hand-drawn asse
 
 `SKILL_DIR` is this folder. `references/sheet1–5.jpg` show the five reference clips at two frames per second. **Look at them before storyboarding.** `engine/index.html` is both the editor and the renderer, so the preview is exactly what gets rendered.
 
-## How a scene is built (most important; see `references/scene_build/ss01a.jpg`, `ss01b.jpg`, `ss02a.jpg`)
-These sheets show the state after every change in reference scenes. A scene is **one joined-up picture that grows**, never a neat row of small items:
-1. **The anchor comes first.** A portrait or a big waist-up character on the left.
-2. **The hero comes next.** A large picture (map, photo, place, big prop) fills most of the free area and may run off the edge.
-3. **Then 4–6 satellites join.** Each is placed above, beside, or partly over the hero and the anchor's pointing hand, at different heights and sizes:
-   - an icon on the map;
-   - a group at the pointing hand;
-   - a label above its thing;
-   - a second character overlapping the edge of the map;
-   - a bubble on top.
-4. **Earlier elements make room.** On every arrival they shrink and glide to new places in about 8 frames (0.27 s, eased). Nothing is reshuffled across the frame.
-5. **Special layouts:**
-   - **Comparisons:** sit side by side with their numbers attached underneath.
-   - **Step sequences:** zig-zag diagonally with arrows running edge to edge.
-6. **Reset.** A hard cut clears the scene down to the anchor, and the next build starts.
+## How a scene is built (most important; v6, from a deep re-read of clips 01–05)
+Look at `references/scene_build/clip01_cluster.jpg` and `clip05_cluster.jpg`. The measurements are in `reference_analysis/clips_deep/README.md` in the repo.
 
-The builder in `examples/buffet_build_board_v5_scene_build.py` implements this. It has hero and satellite templates `TPL[n]`, `CHAIN` and comparison rows. Each arrival switches to the template for the new count, and earlier elements get `mv` make-room moves. Red X marks and circles follow their element. Arrows are redrawn after each re-pack. To study a new reference scene, run `scripts/reference_analysis/statestrip.py`.
+**What went wrong in v5.** v5 scattered about 6 separate islands per scene with roughly 90 px of blue between them. The references build **one or two touching clusters**: they need about 2 groups and 18–36 px to merge them.
+
+**Rules:**
+1. **The anchor is a person from the story.** Draw them big and waist-up at the left, cropped by the bottom of the frame.
+   - Never use a mascot or animal narrator. The user had the mouse "Inspector Crumb" removed.
+   - In scenes that only explain, use the most relevant human: the manager, chef, director, cashier or a diner.
+2. **Elements form one cluster that touches the anchor.**
+   - The first element goes right beside the head and shoulder, near the top.
+   - Each next element takes the first free spot reading left to right, then the next row down, touching its neighbours (14 px gap).
+   - Feathered photos may be overlapped at their edges.
+3. **Sizes at 1080p:**
+   - icons and props: 230–470 px tall;
+   - photos and maps: about 0.35–0.4 of the frame width;
+   - second characters: the same scale as the anchor, standing near and facing them.
+4. **Text:**
+   - Labels sit directly above their picture: one or two lines (`lab` with a `|` line break), about 38–40 px, black hand lettering.
+   - Numbers are labels too, about 58 px with a 38 px caption. A number that belongs to a picture sits above it.
+   - **Never use giant typographic numbers or red words.**
+5. **Earlier elements hold still.** Only when a newcomer doesn't fit does the whole group shrink and re-pack (`mv`, 0.27 s). When something leaves, the rest close up.
+6. **Accent colour.** Red is only for X marks, circles and arrows. Arrows run edge to edge between neighbours, and a 95 px slot is reserved for the arrow.
+7. **Reset.** A hard cut clears the scene down to the anchor.
+
+`examples/buffet_build_board_v6_cluster.py` implements this in its v6 layout block (`try_pack`/`pack`: top-left adjacency packing with a shrink-to-fit loop). The v5 template builder is kept only for history.
 
 ## Measured reference rules (read `references/Explainer_Motion_and_Style_Guide.md` first)
 These rules come from a frame-by-frame analysis of two full reference videos: 82,317 frames, 2,606 events (`reference_analysis/` in the repo). **They override anything below that conflicts with them.**
